@@ -1,8 +1,7 @@
 // App Shared Sass
 // --------------------------------------------------
 // All Core Sass files goes into the theme/core files (variables, globals)
-@import 'core/sprite-small';
-@import 'core/variables';
+//@import 'core/variables';
 @import 'core/globals';
 @import 'core/mixins';
 
@@ -37,7 +36,7 @@
 // hero Style
 @import 'components/hero';
 // icons Style
-@import 'components/icons';
+//@import 'components/icons';
 // input text Style
 @import 'components/inputText';
 // labels Style

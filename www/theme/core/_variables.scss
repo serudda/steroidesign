@@ -37,21 +37,14 @@
 
 // 1. Global
 // ---------
-$main-palette: (
-  primary: #00B592,
-  secondary: #018a6f,
-  success: #3adb76,
-  warning: #e8ce47,
-  alert: #ff5a5f,
-  alert-secondary: #d45054,
-);
+
 
 $cloud: #f5f5f5;
 $light-gray: #dce0e0;
 $medium-gray: #bcc1c1;
 $dark-gray: #8a8a8a;
 $black: #555;
-$white: #fefefe;
+$white: #FFF;
 
 $global-font-sizes:(
     small: 12px,
@@ -84,10 +77,6 @@ $global-badge-file: "waysily-badge-teacher.svg";
 $global-flags-file: "waysily-countries-flags.svg";
 $global-line-icons-file: "icons.svg";
 $global-payment-methods-icons-file: "cards.svg";
-
-$ieSprite: '.lt-ie9' !default;
-$sprite: map-get($icons, sprite) !default;
-$baseFontSize: 16px !default;
 
 $global-sprite-icons-file: "sprite-liner.svg";
 $global-sprite-path: $global-image-path + $global-sprite-icons-file;
@@ -200,48 +189,6 @@ $boxMenu-item-withIcon-margin: 0;
 // 2. Badge
 // ----------
 $badge-path: $global-image-path + '/' + $global-badge-file;
-
-
-// 2. Buttons
-// ----------
-$button-margin: 0 0 $global-margin 0;
-$button-font-sizes: (
-  small: map-get($global-font-sizes, small),
-  default: map-get($global-font-sizes, default),
-  medium: map-get($global-font-sizes, medium),
-  large: map-get($global-font-sizes, large),
-);
-$button-font-color: $white;
-$button-radius: 4px;
-$button-lineheight: 1.43;
-$button-paddings: (
-  small: 4px 12px,
-  default: 7px 21px,
-  medium: 9px 27px,
-  large: 12px 27px,
-);
-$button-opacity-disabled: 0.25;
-
-$button-primary-border-color: map-get($main-palette, secondary);
-$button-primary-background: map-get($main-palette, primary);
-$button-primary-background-hover: #00987b;
-
-$button-secondary-border: 2px solid $button-primary-background;
-$button-secondary-background: map-get($main-palette, secondary);
-$button-secondary-background-hover: scale-color($button-secondary-background, $lightness: -15%);
-$button-secondary-color: map-get($main-palette, primary);
-$button-secondary-border-color: map-get($main-palette, secondary);
-
-$button-tertiary-border: 2px solid $white;
-$button-tertiary-color: $white;
-$button-secondary-color-hover: map-get($main-palette, primary);
-$button-tertiary-border-color: $light-gray;
-
-$button-alert-border-color: map-get($main-palette, alert-secondary);
-$button-alert-background: map-get($main-palette, alert);
-$button-alert-background-hover: map-get($main-palette, alert-secondary);
-
-$button-block-width: 100%;
 
 
 // 2. DateTime Picker
@@ -645,23 +592,6 @@ $logo-short-width: 32px;
 $logo-short-height: 30px;
 $logo-primary-short-width: 61px;
 $logo-primary-short-height: 61px;
-
-
-// 9. Paragraph
-// -------------
-
-$paragraph-font-size: 14px;
-$paragraph-lineHeight: 1.5;
-$paragraph-lines-to-show: 3;
-//reference: http://revelry.co/multi-line-ellipsis-using-pure-css/
-
-$paragraph-font-color: $dark-gray;
-$paragraph-bold-font-color: $black;
-
-$paragraph-alert-font-color: map-get($main-palette, alert);
-$paragraph-primary-font-color: map-get($main-palette, primary);
-$paragraph-info-font-color: map-get($main-palette, secondary);
-$paragraph-white-font-color: $white;
 
 
 // 10. Progress Bar

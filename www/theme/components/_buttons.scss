@@ -2,51 +2,103 @@
 /*                        BUTTONS                         */
 /**********************************************************/
 
+/* VARIABLES */
+$button-radius: 4px;
+$button-border: 2px solid transparent;
+
+$button-paddings: (
+  small: 8px 16px,
+  default: 12px 22px,
+  large: 12px 24px,
+);
+
+$button-line-heights: (
+  small: 15px,
+  default: 22px,
+  large: 22px,
+);
+
+$button-background-color: (
+    primary: map-get($main-palette, primary),
+    primary-without-bg: transparent,
+    secondary: map-get($main-palette, secondary),
+    secondary-without-bg: transparent,
+    minimal: $white,
+);
+
+$button-font-sizes: (
+  small: 14px,
+  default: 17px,
+  large: 19px,
+);
+
+$button-font-weight: (
+  small: 700,
+  default: 700,
+  large: 700,
+);
+
+$button-font-colors: (
+    primary: $white,
+    primary-without-bg: map-get($main-palette, primary),
+    secondary: $white,
+    secondary-without-bg: map-get($main-palette, secondary),
+    minimal: $body-font-color,
+);
+
+$button-border-colors: (
+    primary: transparent,
+    primary-without-bg: map-get($main-palette, primary),
+    secondary: transparent,
+    secondary-without-bg: map-get($main-palette, secondary),
+    minimal: #C4C4C4,
+);
+
+$button-opacity-disabled: 0.25;
+$button-block-width: 100%;
+
+
+/**********************************************************/
+
 .ma-btn {
+
+    cursor: pointer;
+    -webkit-transition: background 0.3s, border-color 0.3s;
+    -moz-transition: background 0.3s, border-color 0.3s;
+    transition: background 0.3s, border-color 0.3s;
+    position: relative;
     display: inline-block;
-    //margin-bottom: 0;
+    text-align: center;
+    text-decoration: none;
     -webkit-border-radius: $button-radius;
     -moz-border-radius: $button-radius;
     border-radius: $button-radius;
-    border: 1px solid transparent;
-    text-align: center;
-    vertical-align: middle;
-    font-weight: bold;
-    line-height: $button-lineheight;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    white-space: nowrap;
-    cursor: pointer;
-    text-decoration: none;
-    text-rendering: optimizeLegibility;
+    border: $button-border;
+    width: auto;
     -webkit-font-smoothing: antialiased;
-    transition: background 300ms ease-out;
-    outline: none;
-    box-shadow: none;
-    text-shadow: none;
+
 
     ///BUTTON_SIZE
 
     &--small {
         padding: map-get($button-paddings, small);
         font-size: map-get($button-font-sizes, small);
+        font-weight: map-get($button-font-weight, small);
+        line-height: map-get($button-line-heights, small);
     }
 
     &--default {
         padding: map-get($button-paddings, default);
         font-size: map-get($button-font-sizes, default);
-    }
-
-    &--medium {
-        padding: map-get($button-paddings, medium);
-        font-size: map-get($button-font-sizes, medium);
+        font-weight: map-get($button-font-weight, default);
+        line-height: map-get($button-line-heights, default);
     }
 
     &--large {
         padding: map-get($button-paddings, large);
         font-size: map-get($button-font-sizes, large);
+        font-weight: map-get($button-font-weight, large);
+        line-height: map-get($button-line-heights, large);
     }
 
     &--block {
@@ -59,159 +111,96 @@
     ///BUTTON_COLOR
 
     &--primary {
-        background-color: $button-primary-background;
-        color: $button-font-color;
-        border-bottom-color: $button-primary-border-color;
+        background: 0 0;
+        color: map-get($button-font-colors, primary);
+        background-color: map-get($button-background-color, primary);
 
         &:hover {
-            background-color: $button-primary-background-hover;
-            text-decoration: none;
-            color: $button-font-color;
+            background: 0 0;
+            color: map-get($button-font-colors, primary);
+            background-color: map-get($button-background-color, primary);
         }
 
         &:focus {
-            background-color: $button-primary-background;
-            color: $button-font-color;
-            border-bottom-color: $button-primary-border-color;
-            text-decoration: none;
+            background: 0 0;
+            color: map-get($button-font-colors, primary);
+            background-color: map-get($button-background-color, primary);
+        }
+    }
+
+    &--primary-without-bg {
+        background: 0 0;
+        color: map-get($button-font-colors, primary-without-bg);
+        background-color: map-get($button-background-color, primary-without-bg);
+        border-color: map-get($button-border-colors, primary-without-bg);
+
+        &:hover {
+            background: 0 0;
+            color: map-get($button-font-colors, primary-without-bg);
+            background-color: map-get($button-background-color, primary-without-bg);
+            border-color: map-get($button-border-colors, primary-without-bg);
+        }
+
+        &:focus {
+            background: 0 0;
+            color: map-get($button-font-colors, primary-without-bg);
+            background-color: map-get($button-background-color, primary-without-bg);
+            border-color: map-get($button-border-colors, primary-without-bg);
         }
     }
 
     &--secondary {
         background: 0 0;
-        border: $button-secondary-border;
-        color: $button-primary-background;
+        color: map-get($button-font-colors, secondary);
+        background-color: map-get($button-background-color, secondary);
 
         &:hover {
-            background-color: $button-secondary-color;
-            color: $button-font-color;
-            border-bottom-color: $button-secondary-border-color;
-            text-decoration: none;
+            background: 0 0;
+            color: map-get($button-font-colors, secondary);
+            background-color: map-get($button-background-color, secondary);
         }
 
         &:focus {
             background: 0 0;
-            border: $button-secondary-border;
-            color: $button-primary-background;
-            text-decoration: none;
+            color: map-get($button-font-colors, secondary);
+            background-color: map-get($button-background-color, secondary);
         }
     }
 
-    &--tertiary {
-        background: 0 0;
-        border: $button-tertiary-border;
-        color: $button-tertiary-color;
+    &--secondary-without-bg {
+        color: map-get($button-font-colors, secondary-without-bg);
+        background-color: map-get($button-background-color, secondary-without-bg);
+        border-color: map-get($button-border-colors, secondary-without-bg);
 
         &:hover {
-            background-color: $button-tertiary-color;
-            color: $button-secondary-color-hover;
-            border-bottom-color: $button-tertiary-border-color;
-            text-decoration: none;
+            color: map-get($button-font-colors, secondary-without-bg);
+            background-color: map-get($button-background-color, secondary-without-bg);
+            border-color: map-get($button-border-colors, secondary-without-bg);
         }
 
         &:focus {
-            background: 0 0;
-            border: $button-tertiary-border;
-            color: $button-tertiary-color;
-            text-decoration: none;
-        }
-
-        &--active {
-            background-color: $button-tertiary-color;
-            color: $button-secondary-color-hover;
-            border-bottom-color: $button-tertiary-border-color;
-            text-decoration: none;
+            color: map-get($button-font-colors, secondary-without-bg);
+            background-color: map-get($button-background-color, secondary-without-bg);
+            border-color: map-get($button-border-colors, secondary-without-bg);
         }
     }
 
-    &--alert {
-        background-color: $button-alert-background;
-        color: $button-font-color;
-        border-bottom-color: $button-alert-border-color;
+    &--minimal {
+        background-color: map-get($button-background-color, minimal);
+        color: map-get($button-font-colors, minimal);
+        border: 1px solid map-get($button-border-colors, minimal);
 
         &:hover {
-            background-color: $button-alert-background-hover;
-            text-decoration: none;
-            color: $button-font-color;
-        }
-
-         &:focus {
-            background-color: $button-alert-background;
-            color: $button-font-color;
-            text-decoration: none;
-            border-bottom-color: $button-alert-border-color;
-         }
-    }
-
-    &--transparent {
-        background-color: transparent;
-        color: $dark-gray;
-        border: 0 hidden transparent;
-        border-radius: 0;
-        font-weight: normal;
-
-        &:hover {
-            text-decoration: none;
-            color: $black;
-            border-bottom: 2px dashed $button-primary-background;
+            background-color: map-get($button-background-color, minimal);
+            color: map-get($button-font-colors, minimal);
+            border: 1px solid map-get($button-border-colors, minimal);
         }
 
         &:focus {
-            background-color: transparent;
-            color: $dark-gray;
-            border: 0 hidden transparent;
-            border-radius: 0;
-            font-weight: normal;
-            text-decoration: none;
+            background-color: map-get($button-background-color, minimal);
+            color: map-get($button-font-colors, minimal);
+            border: 1px solid map-get($button-border-colors, minimal);
         }
-    }
-
-    &--white {
-        background-color: $white;
-        color: $button-primary-background;
-        border: 0 hidden transparent;
-        font-weight: normal;
-
-        &:hover {
-            background-color: $button-primary-background-hover;
-            text-decoration: none;
-            color: $button-font-color;
-        }
-
-        &:focus {
-            background-color: $button-primary-background;
-            color: $button-font-color;
-            border-bottom-color: $button-primary-border-color;
-            text-decoration: none;
-        }
-    }
-
-    &--box-shadow {
-        box-shadow: rgba(0, 0, 0, 0.298039) 0px 1px 4px -1px;
-    }
-
-    /// SIMPLE BUTTON WITH ICON
-    &--withIcon {
-        .material-icons {
-            vertical-align: text-bottom;
-        }
-    }
-
-    /// BUTTON WITH ICON AND WITHOUT TEXT
-    &--onlyIcon {
-
-        &--small {
-            padding: 4px 9px 4px 8px;
-        }
-
-        &--default {
-            padding: 7px 12px 7px 11px;
-        }
-
-        &--large {
-            padding: 12px 17px 12px 15px;
-        }
-
     }
 
 }
