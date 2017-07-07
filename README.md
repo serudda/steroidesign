@@ -9,15 +9,16 @@ Themes based on the biggest StartUps (buttons, color palette, components, etc.) 
 
 **2:** On terminal (inside root directory) run the following commands:
 
-It'll install gulp, bower and express components
+1. It'll install gulp, bower and express components
 ```shell
 npm install
 ```
-It'll install basic components such as boostrap, jquery, animate.css
+
+2. It'll install basic components such as boostrap, jquery, animate.css
 ```shell
 bower install
 ```
-It'll launch a local server in order to see styles guideline
+3. It'll launch a local server in order to see styles guideline
 ```shell
 gulp start
 ```
