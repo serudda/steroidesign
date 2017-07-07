@@ -1,0 +1,26 @@
+{
+  "name": "AirbnbStyleGuideline",
+  "version": "1.0.0",
+  "description": "Theme based on Airbnb styles (buttons, color palette, components, etc.) ready to use in your own projects.",
+  "keywords": [],
+  "author": "Rosita & Sergio",
+  "license": "REGULAR LICENSE",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "bower-files": "^4.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifycss": "^1.0.8",
+    "gulp-util": "^3.0.8",
+    "gulp-webserver": "^0.9.1",
+    "phantomjs": "^2.1.7"
+  }
+}

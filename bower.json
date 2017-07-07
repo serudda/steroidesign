@@ -1,0 +1,24 @@
+{
+  "name": "AirbnbStyleGuideline",
+  "authors": [
+    "Rosita & Sergio"
+  ],
+  "description": "Theme based on Airbnb styles (buttons, color palette, components, etc.) ready to use in your own projects.",
+  "keywords": [],
+  "license": "REGULAR LICENSE",
+  "homepage": "url",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "boostrap#^3.3.7",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1"
+  }
+}

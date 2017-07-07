@@ -1,0 +1,218 @@
+/**********************************************************/
+/*                     INPUT TEXT                         */
+/**********************************************************/
+
+/* TEXT INPUT */
+.ma-input {
+    border: $input-border;
+    -webkit-border-radius: $input-radius;
+    -moz-border-radius: $input-radius;
+    border-radius: $input-radius;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    background-color: $input-background;
+    color: $input-font-color;
+    display: block;
+    width: $input-width;
+
+    &:focus {
+        border-color: $input-primary-border-focus;
+        outline: $input-outline-focus;
+    }
+
+    &--small {
+        padding: map-get($input-paddings, small);
+    }
+
+    &--default {
+        padding: map-get($input-paddings, default);
+        font-size: $input-font-size-default;
+    }
+
+    &--large {
+        padding: map-get($input-paddings, large);
+        font-size: $input-font-size-large;
+    }
+
+    &--border-round {
+        border-radius: $select-borderRound-radius;
+    }
+
+    &--invalid {
+        background-color: #fff2ef;
+        border-color: #ffd1c4;
+    }
+
+    &--left-addon {
+        border-left: 0 hidden transparent;
+    }
+
+    &--right-addon {
+        border-right: 0 hidden transparent;
+    }
+}
+
+/* INPUT-GROUP */
+.ma-input-group {
+
+    /* INPUT ADDON */
+    .ma-input-group-addon {
+
+        /// ADDON SIZE
+        &--small {
+
+        }
+
+        &--default {
+            font-size: $input-font-size-default;
+        }
+
+        &--large {
+            font-size: $input-font-size-large;
+        }
+
+        /// ADDON COLOR
+        &--primary {
+            background-color: $input-group-addon-primary-background;
+            border: $input-group-addon-primary-border;
+            color: $input-group-addon-primary-font-color;
+        }
+
+        &--secondary {
+            background-color: $input-group-addon-secondary-background;
+            border: $input-group-addon-secondary-border;
+            color: $input-group-addon-secondary-font-color;
+        }
+
+        &--alert {
+            background-color: $input-group-addon-alert-background;
+            border: $input-group-addon-alert-border;
+            color: $input-group-addon-alert-font-color;
+        }
+
+        &--alert-secondary {
+            background-color: $input-group-addon-primary-alert-background;
+            border: $input-group-addon-primary-alert-border;
+            color: $input-group-addon-primary-alert-font-color;
+        }
+    }
+}
+
+/* SELECT INPUT */
+.ma-select-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+
+    &:before {
+        content: '\25bc';
+        position: absolute;
+        pointer-events: none;
+        color: $select-icon-color;
+        padding-top: $select-icon-padding;
+        line-height: $select-icon-lineHeight;
+        width: $select-icon-width;
+        text-align: center;
+        transform: $select-icon-transform;
+        -webkit-transform: $select-icon-transform;
+        -moz-transform: $select-icon-transform;
+        -ms-transform: $select-icon-transform;
+        -o-transform: $select-icon-transform;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand')";
+        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand');
+    }
+
+    &--small {
+        font-size: $select-container-font-size-small;
+
+        &:before {
+            top: map-get($select-icon-top, small);
+            bottom: map-get($select-icon-bottom, small);
+            right: map-get($select-icon-right, small);
+            font-size: $select-icon-font-size-small;
+        }
+
+    }
+
+    &--default {
+        &:before {
+            top: map-get($select-icon-top, default);
+            bottom: map-get($select-icon-bottom, default);
+            right: map-get($select-icon-right, default);
+        }
+    }
+
+    &--large {
+        &:before {
+            top: map-get($select-icon-top, large);
+            bottom: map-get($select-icon-bottom, large);
+            right: map-get($select-icon-right, large);
+        }
+    }
+
+    &--tertiary {
+        &:before {
+            color: $select-tertiary-icon-color;
+        }
+    }
+
+    &--block {
+        width: 100%;
+    }
+
+    .ma-select {
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
+        background: $select-background;
+        line-height: normal;
+
+        &--small {
+            padding: map-get($input-paddings, small);
+            padding-right: $select-padding-small;
+        }
+
+        &--default {
+            //padding: map-get($input-paddings, default);
+            //Testing
+            padding: 12px;
+            padding-right: $select-padding;
+            font-size: $input-font-size-default;
+        }
+
+        &--large {
+            //padding: map-get($input-paddings, large);
+            //Testing
+            padding: 15px;
+            padding-right: $select-padding;
+            font-size: $input-font-size-large;
+        }
+
+        &--block {
+            width: 100%;
+        }
+
+        &--invalid {
+            background-color: $input-invalid-background;
+            border-color: $input-invalid-border;
+        }
+
+        /// SELECT COLOR
+        &--tertiary {
+            background: 0 0;
+            border: $select-tertiary-border;
+            color: $select-tertiary-font-color;
+        }
+
+        &--border-round {
+            border-radius: $select-borderRound-radius;
+        }
+    }
+
+}
+
+/* TEXTAREA */
+.ma-textarea {
+    resize: vertical;
+}

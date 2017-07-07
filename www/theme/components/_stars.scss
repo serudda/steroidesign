@@ -1,0 +1,45 @@
+/**********************************************************/
+/*                         STARS                          */
+/**********************************************************/
+
+.ma-stars {
+    display:inline-block;
+
+    &__icon {
+        color: $star-font-color;
+
+            &--tiny {
+                width: map-get($star-sizes, tiny);
+                height: map-get($star-sizes, tiny);
+                font-size: map-get($star-font-sizes, tiny);
+            }
+
+            &--small {
+                width: map-get($star-sizes, small);
+                height: map-get($star-sizes, small);
+                font-size: map-get($star-font-sizes, small);
+            }
+
+            &--default {
+                width: map-get($star-sizes, default);
+                height: map-get($star-sizes, default);
+                font-size: map-get($star-font-sizes, default);
+            }
+
+            &--large {
+                width: map-get($star-sizes, large);
+                height: map-get($star-sizes, large);
+                font-size: map-get($star-font-sizes, large);
+            }
+    }
+
+}
+
+.ma-stars-withLabel {
+    &__label-container {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1.2;
+        margin-left: 3px;
+    }
+}

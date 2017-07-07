@@ -1,0 +1,58 @@
+/**********************************************************/
+/*                      SWITCH BUTTONS                    */
+/**********************************************************/
+
+.ma-switch {
+    display: inline-block;
+    position: relative;
+    height: $switch-height;
+    border: $switch-border;
+    vertical-align: bottom;
+    box-sizing: border-box;
+    border-radius: $switch-radius;
+
+    &__btn {
+        border: $switch-button-border;
+        height: $switch-button-height;
+        width: auto;
+        text-align: center;
+        background: transparent;
+        color: $switch-button-font-color;
+        padding: $switch-button-padding;
+        transition: none;
+
+        &:hover {
+            color: $switch-button-font-color-hover;
+        }
+
+        &:first-child {
+            border-right: $switch-border;
+            border-radius: $switch-button-firstChild-radius;
+        }
+
+        &:nth-child(2) {
+            border-right: $switch-border;
+            border-radius: $switch-button-secondChild-radius;
+            margin-left: $switch-button-secondChild-margin;
+        }
+
+        &:last-child {
+            border-radius: $switch-button-lastChild-radius;
+            border-right: $switch-button-lastChild-border;
+            margin-left: $switch-button-lastChild-margin;
+        }
+    }
+
+    &__btn[disabled] {
+        opacity: $switch-button-opacity-disabled;
+        background: $switch-button-background-disabled;
+        color: $switch-button-font-color-disabled;
+        box-shadow: $switch-button-boxShadow-disabled;
+        border-right: none;
+        border-bottom: $switch-button-border-disabled;
+        &:hover {
+            color: $switch-button-font-color-disabled-hover;
+        }
+    }
+
+}

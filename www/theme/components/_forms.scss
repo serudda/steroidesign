@@ -1,0 +1,56 @@
+/**********************************************************/
+/*                          FORM                         */
+/**********************************************************/
+
+.ma-form {
+
+    &--basic {
+        .ma-form-group {
+            .ma-p {
+                margin-top: $form-basic-p-margin;
+            }
+
+            .middle-label {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    &--horizontal {
+
+        .ma-form-group {
+
+            label {
+                display: block;
+                padding-bottom: map-get($form-horizontal-label-paddings, withoutModifier);
+                margin-bottom: $form-horizontal-label-margin;
+            }
+
+            .middle-label {
+                margin: 0 10px;
+            }
+
+            &--small {
+                label {
+                    padding-top: map-get($form-horizontal-label-paddings, small);
+                }
+            }
+
+            &--default {
+                label{
+                    padding-top: map-get($form-horizontal-label-paddings, default);
+                }
+            }
+
+            &--large {
+                label {
+                    //padding-top: map-get($form-horizontal-label-paddings, large);
+                    //TEST
+                    padding-top: 12px;
+                }
+            }
+
+        }
+
+    }
+}

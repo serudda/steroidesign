@@ -1,0 +1,25 @@
+/**********************************************************/
+/*                      LOCATION MAP                      */
+/**********************************************************/
+
+.location-map {
+
+    height: 100%;
+
+    .angular-google-map {
+        height: 100%;
+    }
+
+    .angular-google-map-container {
+        height: 100%;
+    }
+
+    &--border {
+        border: 1px solid $light-gray;
+        &--invalid {
+            background-color: #fff2ef;
+            border-color: #ffd1c4;
+        }
+    }
+
+}

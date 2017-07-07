@@ -1,0 +1,128 @@
+/**********************************************************/
+/*                          LISTS                         */
+/**********************************************************/
+
+.ma-list {
+    list-style: none;
+    padding-left: 0;
+
+    &--text-indent-10 {
+        text-indent: -10px;
+    }
+
+    &--text-indent-20 {
+        text-indent: -20px;
+    }
+
+    &--text-indent-30 {
+        text-indent: -30px;
+    }
+
+    &--bullet {
+
+        // Type of bullets
+        &--arrow {
+            li {
+                &:before {
+                    content: "\00bb";
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &--check {
+            li {
+                &:before {
+                    content: "\2713";
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        /// Bullet Size
+        &--small {
+            li {
+                &:before {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &--default {
+            li {
+                &:before {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &--large {
+            li {
+                &:before {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        /// Bullet Colors
+        &--primary {
+            li {
+                &:before {
+                    color: map-get($main-palette, primary);
+                }
+            }
+        }
+
+        &--alert {
+            li {
+                &:before {
+                    color: map-get($main-palette, alert);
+                }
+            }
+        }
+
+    }
+
+}
+
+
+
+// List of message on waysily inbox
+.ma-message-list {
+
+    &__info {
+
+        &__message {
+            &--unread {
+                font-weight: $list-message-info-font-weight-unread;
+                color: $list-message-info-font-color-unread;
+            }
+        }
+
+    }
+
+    &__status {
+        display: none;
+        &--unread {
+            display: inline-block;
+            background-color: $list-message-status-background-unread;
+            width: $list-message-status-width-unread;
+            height: $list-message-status-height-unread;
+            flex-grow: 0!important;
+        }
+    }
+
+    &.vertical-align {
+        .status-container {
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+.ma-message {
+
+    &__info {
+        cursor: pointer;
+    }
+}

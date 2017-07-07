@@ -1,0 +1,153 @@
+/**********************************************************/
+/*                         METERS                         */
+/**********************************************************/
+
+/* VARIABLES */
+$meter-circle-rating-1-backcolor: #ff5a5f;
+$meter-circle-rating-2-backcolor: #e89947;
+$meter-circle-rating-3-backcolor: #e8ce47;
+$meter-circle-rating-4-backcolor: #82B541;
+$meter-circle-rating-5-backcolor: #adea5f;
+
+
+/**********************************************************/
+
+.ma-meter {
+
+    display: inline-block;
+
+    &--border {
+        border: 1px solid #e5e5e5;
+    }
+
+    &--border-1 {
+        border-radius: 4px;
+    }
+
+    // SIZE
+
+    &--small {
+        padding: 6px 15px;
+    }
+
+    &--default {
+        padding: 10px 20px;
+    }
+
+    &--medium {
+        padding: 12px 20px;
+    }
+
+    &--large {
+        padding: 15px 25px;
+    }
+
+    // LABEL TEXT
+    p {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+
+    // CIRCLES CHILDREN
+    ol {
+        display: inline-block;
+        vertical-align: text-bottom;
+        list-style: none;
+
+        .circle {
+            display: inline-block;
+            background-color: #d8d8d8;
+            border-radius: 50%;
+
+            // SIZE
+            &--small {
+                height: 8px;
+                width: 8px;
+                margin: 0 2px;
+            }
+
+            &--default {
+                height: 10px;
+                width: 10px;
+                margin: 0 4px;
+            }
+
+            &--medium {
+                height: 12px;
+                width: 12px;
+                margin: 0 4px;
+            }
+
+            &--large {
+                height: 14px;
+                width: 14px;
+                margin: 0 5px;
+            }
+
+        }
+    }
+
+    // CIRCLE COLORS
+    &--rating-1 {
+        ol {
+            .circle {
+                &:first-child {
+                    background-color: $meter-circle-rating-1-backcolor;
+                }
+            }
+        }
+    }
+
+    &--rating-2 {
+        ol {
+            .circle {
+                &:first-child, &:nth-child(-n+2) {
+                    background-color: $meter-circle-rating-2-backcolor;
+                }
+            }
+        }
+    }
+
+    &--rating-3 {
+        ol {
+            .circle {
+                &:first-child, &:nth-child(-n+3) {
+                    background-color: $meter-circle-rating-3-backcolor;
+                }
+            }
+        }
+    }
+
+    &--rating-4 {
+        ol {
+            .circle {
+                &:first-child, &:nth-child(-n+4) {
+                    background-color: $meter-circle-rating-4-backcolor;
+                }
+            }
+        }
+    }
+
+    &--rating-5 {
+        ol {
+            .circle {
+                &:first-child, &:nth-child(-n+5) {
+                    background-color: $meter-circle-rating-5-backcolor;
+                }
+            }
+        }
+    }
+
+    //Circle Text
+    .u-visually-hidden {
+        border: 0!important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px,1px,1px,1px);
+        height: 1px!important;
+        overflow: hidden;
+        padding: 0!important;
+        position: absolute!important;
+        width: 1px!important;
+    }
+
+}

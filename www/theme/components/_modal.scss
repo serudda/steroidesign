@@ -1,0 +1,28 @@
+/**********************************************************/
+/*                         LOADING                        */
+/**********************************************************/
+
+@media (min-width: 768px) {
+  .mainApp {
+
+    .modal-xs {
+        width: 300px;
+    }
+
+    .modal-sm {
+        width: 450px;
+    }
+
+    .modal-md {
+        width: 600px;
+    }
+
+  }
+}
+
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}

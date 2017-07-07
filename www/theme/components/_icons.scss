@@ -1,0 +1,762 @@
+/**********************************************/
+/*                 VARIABLES                  */
+/**********************************************/
+
+$icon-container-count-top: -5px;
+$icon-container-count-left: 14px;
+$icon-container-count-radius: 12px;
+
+$icon-container-size: (
+    small: 25px,
+    default: 35px,
+    medium: 45px,
+    large: 55px,
+);
+
+$icon-container-count-background-primary: map-get($main-palette, primary);
+$icon-container-count-background-secondary: $white;
+$icon-container-count-background-alert: $white;
+
+$icon-container-count-font-color-primary: $white;
+$icon-container-count-font-color-secondary: map-get($main-palette, primary);
+$icon-container-count-font-color-alert: map-get($main-palette, alert);
+
+$icon-container-count-border-primary: 2px solid map-get($main-palette, primary);
+$icon-container-count-border-secondary: 2px solid map-get($main-palette, primary);
+$icon-container-count-border-alert: 2px solid map-get($main-palette, alert);
+
+$icon-container-count-paddings: (
+    tiny: 0px 4px,
+    small: 3px 6px,
+    default: 4px 7px,
+);
+
+$icon-container-count-lineHeight: (
+    tiny: 13px,
+    small: 11px,
+    default: 12px,
+);
+
+$icon-container-count-font-sizes: (
+    tiny: 10px,
+    small: 10px,
+    default: 12px,
+);
+
+
+/**********************************************************/
+/*                         ICONS                          */
+/**********************************************************/
+///MATERIAL DESIGN ICONS
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+  /* Rules for sizing the icon. */
+  &.md-12 { font-size: 12px; }
+  &.md-18 { font-size: 18px; }
+  &.md-24 { font-size: 24px; }
+  &.md-30 { font-size: 30px; }
+  &.md-36 { font-size: 36px; }
+  &.md-48 { font-size: 48px; }
+  &.md-60 { font-size: 60px; }
+  &.md-72 { font-size: 72px; }
+
+  /// ICONS COLOR
+  &.md-primary {
+      color: map-get($main-palette, primary);
+
+      &--clicked {
+          &:hover {
+            cursor: pointer;
+            color: map-get($main-palette, secondary);
+            font-weight: bold;
+          }
+      }
+
+      &.md-inactive { opacity: 0.7; }
+  }
+
+  &.md-alert {
+      color: map-get($main-palette, alert);
+
+      &--clicked {
+          &:hover {
+            cursor: pointer;
+            color: shade(map-get($main-palette, alert), 100);
+            font-weight: bold;
+          }
+      }
+
+      &.md-inactive { opacity: 0.7; }
+  }
+
+  &.md-dark {
+      color: rgba(0, 0, 0, 0.54);
+
+      &--clicked {
+          &:hover {
+            cursor: pointer;
+            color: shade(rgba(0, 0, 0, 0.54), 100);
+            font-weight: bold;
+          }
+      }
+
+      &.md-inactive { color: rgba(0, 0, 0, 0.26); }
+  }
+
+  &.md-light {
+      color: rgba(255, 255, 255, 1);
+
+      &--clicked {
+          &:hover {
+            cursor: pointer;
+            color: shade(rgba(255, 255, 255, 1), 100);
+            font-weight: bold;
+          }
+      }
+
+      &.md-inactive { color: rgba(255, 255, 255, 0.3); }
+  }
+
+}
+
+
+/**********************************************************/
+/*                      LINER-ICONS                       */
+/**********************************************************/
+/* NOTE: Warning this classes name are connected with a functionsUtil method.
+If you have to modified here, you should look for any reference */
+.ma-liner-icons {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+
+    // SIZES
+    &--small {
+
+        &--wifi {
+            @include sprite(wifi);
+        }
+
+        &--air-conditing {
+            @include sprite(air-condition);
+        }
+
+        &--bathroom {
+            @include sprite(bathroom);
+        }
+
+        &--washer {
+            @include sprite(washer);
+        }
+
+        &--video-projector {
+            @include sprite(video-projector);
+        }
+
+        &--tv {
+            @include sprite(tv);
+        }
+
+        &--tea {
+            @include sprite(tea);
+        }
+
+        &--school {
+            @include sprite(school);
+        }
+
+        &--snack {
+            @include sprite(snack);
+        }
+
+        &--pool {
+            @include sprite(pool);
+        }
+
+        &--lunch {
+            @include sprite(lunch);
+        }
+
+        &--lounge {
+            @include sprite(lounger);
+        }
+
+        &--laptop {
+            @include sprite(laptop);
+        }
+
+        &--kitchen {
+            @include sprite(kitchen);
+        }
+
+        &--heating {
+            @include sprite(heating);
+        }
+
+        &--hammock {
+            @include sprite(hammock);
+        }
+
+        &--dinner {
+            @include sprite(dinner);
+        }
+
+        &--computer {
+            //width: 34px;
+            @include sprite(computer-room);
+        }
+
+        &--coffee {
+            @include sprite(coffee);
+        }
+
+        &--class-room {
+            @include sprite(classroom);
+        }
+
+        &--breakfast {
+            @include sprite(breakfast);
+        }
+
+        &--big-bed {
+            @include sprite(big-bed);
+        }
+
+        &--cable-tv {
+            @include sprite(tv-cable);
+        }
+
+        &--close-to {
+            @include sprite(close-to);
+        }
+
+        &--private-room {
+            @include sprite(person);
+        }
+
+        &--shared-room {
+            @include sprite(people);
+        }
+
+        &--teacher {
+            @include sprite(teacher);
+        }
+    }
+
+    &--default {
+
+        &--wifi {
+            @include sprite(wifi);
+        }
+
+        &--air-conditing {
+            @include sprite(air-condition);
+        }
+
+        &--bathroom {
+            @include sprite(bathroom);
+        }
+
+        &--washer {
+            @include sprite(washer);
+        }
+
+        &--video-projector {
+            @include sprite(video-projector);
+        }
+
+        &--tv {
+            @include sprite(tv);
+        }
+
+        &--tea {
+            @include sprite(tea);
+        }
+
+        &--school {
+            @include sprite(school);
+        }
+
+        &--snack {
+            @include sprite(snack);
+        }
+
+        &--pool {
+            @include sprite(pool);
+        }
+
+        &--lunch {
+            @include sprite(lunch);
+        }
+
+        &--lounge {
+            @include sprite(lounger);
+        }
+
+        &--laptop {
+            @include sprite(laptop);
+        }
+
+        &--kitchen {
+            @include sprite(kitchen);
+        }
+
+        &--heating {
+            @include sprite(heating);
+        }
+
+        &--hammock {
+            @include sprite(hammock);
+        }
+
+        &--dinner {
+            @include sprite(dinner);
+        }
+
+        &--computer {
+            //width: 34px;
+            @include sprite(computer-room);
+        }
+
+        &--coffee {
+            @include sprite(coffee);
+        }
+
+        &--class-room {
+            @include sprite(classroom);
+        }
+
+        &--breakfast {
+            @include sprite(breakfast);
+        }
+
+        &--big-bed {
+            @include sprite(big-bed);
+        }
+
+        &--cable-tv {
+            @include sprite(tv-cable);
+        }
+
+        &--close-to {
+            @include sprite(close-to);
+        }
+
+        &--private-room {
+            @include sprite(person);
+        }
+
+        &--shared-room {
+            @include sprite(people);
+        }
+
+        &--teacher {
+            @include sprite(teacher);
+        }
+    }
+
+}
+
+
+
+/**********************************************************/
+/*                   PAYMENT-METHODS-ICONS                */
+/**********************************************************/
+/* NOTE: Warning this classes name are connected with a functionsUtil method.
+If you have to modified here, you should look for any reference */
+
+.ma-payment-methods-icons {
+    background-color: transparent;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url($payment-methods-icons-path);
+
+    &--disabled {
+        opacity: 0.1;
+    }
+
+    // SIZES
+    &--small {
+        width: 25px;
+        height: 25px;
+        background-size: 33px;
+        //TODO: Modificar cuando se necesiten, no corresponden
+        &--mastercard {
+            background-position: -4px 36px;
+        }
+
+        &--visa {
+            background-position: -4px -4px;
+        }
+
+        &--cash {
+            background-position: -4px -43px;
+        }
+
+        &--paypal {
+            background-position: -4px -43px;
+        }
+
+        &--american-express {
+            background-position: -4px -43px;
+        }
+
+    }
+
+    &--default {
+        width: 32px;
+        height: 32px;
+        background-size: 40px;
+        //TODO: Modificar cuando se necesiten, no corresponden
+        &--mastercard {
+            background-position: -4px 36px;
+        }
+
+        &--visa {
+            background-position: -4px -4px;
+        }
+
+        &--cash {
+            background-position: -4px -43px;
+        }
+
+        &--paypal {
+            background-position: -4px -43px;
+        }
+
+        &--american-express {
+            background-position: -4px -43px;
+        }
+
+    }
+
+    &--medium {
+        width: 56px;
+        height: 41px;
+        background-size: 450px;
+
+        &--mastercard {
+            background-position: -121px -57px;
+        }
+
+        &--visa {
+            background-position: -45px -57px;
+        }
+
+        &--cash {
+            background-position: -121px -178px;
+        }
+
+        &--paypal {
+            background-position: -272px -117px;
+        }
+
+        &--american-express {
+            background-position: -45px -117px;
+        }
+    }
+
+    &--large {
+        width: 45px;
+        height: 45px;
+        background-size: 123px;
+        //TODO: Modificar cuando se necesiten, no corresponden
+        &--mastercard {
+            background-position: -4px 36px;
+        }
+
+        &--visa {
+            background-position: -4px -4px;
+        }
+
+        &--cash {
+            background-position: -4px -43px;
+        }
+
+        &--paypal {
+            background-position: -4px -43px;
+        }
+
+        &--american-express {
+            background-position: -4px -43px;
+        }
+    }
+}
+
+
+/**********************************************************/
+/*                      ICON SCROLL                       */
+/**********************************************************/
+
+.animation-scroll {
+   -webkit-animation-duration: 1.5s;
+           animation-duration: 1.5s;
+   -webkit-animation-iteration-count: infinite;
+           animation-iteration-count: infinite;
+   -webkit-animation-name: scroll;
+           animation-name: scroll;
+}
+
+.ma-icon-scroll, .ma-icon-scroll:before {
+   position: absolute;
+   left: 50%;
+}
+
+.ma-icon-scroll {
+   width: 35px;
+   height: 60px;
+   margin-left: -20px;
+   top: 50%;
+   margin-top: -35px;
+   box-shadow: inset 0 0 0 2px $white;
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   border-radius: 25px;
+}
+
+.ma-icon-scroll:before {
+   content: '';
+   width: 8px;
+   height: 8px;
+   background: $white;
+   margin-left: -4px;
+   top: 8px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+            transform: translateY(46px);
+  }
+}
+
+
+
+/**********************************************************/
+/*                     ICONS CONTAINER                    */
+/**********************************************************/
+
+.ma-icon-container {
+    position: relative;
+    text-align: center;
+
+    /// WRAP COLOR
+    &--primary {
+        background-color: map-get($main-palette, primary);
+        color: $white;
+        border: 2px solid map-get($main-palette, primary);
+    }
+
+    &--secondary {
+        border: 2px solid map-get($main-palette, primary);
+        color: map-get($main-palette, primary);;
+        background-color: $white;
+    }
+
+    &--alert {
+        background-color: map-get($main-palette, alert);
+        border: 2px solid map-get($main-palette, alert);
+        color: $white;
+    }
+
+    &--alert-secondary {
+        background-color: $white;
+        border: 2px solid map-get($main-palette, alert);
+        color: map-get($main-palette, alert);
+    }
+
+    &--white {
+        background-color: $white;
+        border: 2px solid $white;
+        color: map-get($main-palette, primary);
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: 0 hidden transparent;
+    }
+
+    /// WRAP SIZE
+    &--small {
+        width: map-get($icon-container-size, small);
+        height: map-get($icon-container-size, small);
+
+        &__icon {
+            line-height: 22px;
+            font-size: 16px;
+        }
+    }
+
+    &--default {
+        width: map-get($icon-container-size, default);
+        height: map-get($icon-container-size, default);
+
+        &__icon {
+            line-height: 31px;
+            font-size: 22px;
+        }
+    }
+
+    &--medium {
+        width: map-get($icon-container-size, medium);
+        height: map-get($icon-container-size, medium);
+
+        &__icon {
+            line-height: 45px;
+            font-size: 30px;
+        }
+    }
+
+    &--large {
+        width: map-get($icon-container-size, large);
+        height: map-get($icon-container-size, large);
+
+        &__icon {
+            line-height: 52px;
+            font-size: 35px;
+        }
+    }
+
+    // ICONS WITH COUNTER
+    &__count {
+        display:inline-block;
+        top: $icon-container-count-top;
+        left: $icon-container-count-left;
+        right: auto;
+        position: absolute;
+        font-style: normal;
+        font-weight: bold;
+        -webkit-border-radius: $icon-container-count-radius;
+        -moz-border-radius: $icon-container-count-radius;
+        border-radius: $icon-container-count-radius;
+        display: inline-block;
+        z-index: 1;
+
+        /// COUNT COLOR
+
+        &--primary {
+            background-color: $icon-container-count-background-primary;
+            color: $icon-container-count-font-color-primary;
+            border: $icon-container-count-border-primary;
+        }
+
+        &--secondary {
+            background-color: $icon-container-count-background-secondary;
+            color: $icon-container-count-font-color-secondary;
+            border: $icon-container-count-border-secondary;
+        }
+
+        &--alert {
+            background-color: $icon-container-count-background-alert;
+            color: $icon-container-count-font-color-alert;
+            border: $icon-container-count-border-alert;
+        }
+
+        /// COUNT SIZE
+
+        &--tiny {
+            padding: map-get($icon-container-count-paddings, tiny);
+            line-height: map-get($icon-container-count-lineHeight, tiny);
+            font-size: map-get($icon-container-count-font-sizes, tiny);
+        }
+
+        &--small {
+            padding: map-get($icon-container-count-paddings, small);
+            line-height: map-get($icon-container-count-lineHeight, small);
+            font-size: map-get($icon-container-count-font-sizes, small);
+        }
+
+        &--default {
+            padding: map-get($icon-container-count-paddings, default);
+            line-height: map-get($icon-container-count-lineHeight, default);
+            font-size: map-get($icon-container-count-font-sizes, default);
+        }
+
+    }
+
+
+    /// BADGE ICON
+    &__badge {
+        background-image: url($badge-path);
+        background-repeat: no-repeat;
+        display: inline-block;
+
+        /// BADGE SIZES
+
+        &--small {
+            width: map-get($icon-container-size, small);
+            height: map-get($icon-container-size, small);
+            background-size: 25px 25px;
+        }
+
+        &--default {
+            width: map-get($icon-container-size, default);
+            height: map-get($icon-container-size, default);
+            background-size: 35px 35px;
+        }
+
+        &--medium {
+            width: map-get($icon-container-size, medium);
+            height: map-get($icon-container-size, medium);
+            background-size: 45px 45px;
+        }
+
+        &--large {
+            width: map-get($icon-container-size, large);
+            height: map-get($icon-container-size, large);
+            background-size: 55px 55px;
+        }
+    }
+
+}
+
+
+/********************** END - ICONS ***********************/

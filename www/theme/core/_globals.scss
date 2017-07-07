@@ -1,0 +1,561 @@
+/**********************************************************/
+/*                      MIXINS STYLES                     */
+/**********************************************************/
+
+@mixin text-truncate-multiline($font-size: $paragraph-font-size, $line-height: 1.4, $lines-to-show: 3, $excerpt-bg: transparent) {
+  background: $excerpt-bg;
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @-moz-document url-prefix() {
+    overflow: hidden;
+    position: relative;
+    &:before {
+      background: $excerpt-bg;
+      bottom: 0;
+      position: absolute;
+      right: 0;
+      float: right;
+      content: '\2026';
+      margin-left: -3rem;
+      width: 3rem;
+    }
+    &:after {
+      content: '';
+      background: $excerpt-bg;
+      position: absolute;
+      height: 50px;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}
+
+
+/************ END - GENERAL COMPONENTS STYLES  ************/
+
+/**********************************************************/
+/*                       MODIFIERS                        */
+/**********************************************************/
+
+.background-gradient {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 6%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 89%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 6%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 70%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 6%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 70%,rgba(0,0,0,0.5) 89%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+}
+
+.link-reset {
+    color: inherit;
+    text-decoration: none!important;
+}
+
+.margin-reset {
+    margin: 0;
+}
+
+/* Spaces */
+.space-1 {
+    margin-bottom: 6px;
+}
+.space-top-1 {
+    margin-top: 6px;
+}
+.space-right-1 {
+    margin-right: 6px;
+}
+.space-left-1 {
+    margin-left: 6px;
+}
+.space-2 {
+    margin-bottom: 12px;
+}
+.space-top-2 {
+    margin-top: 12px;
+}
+.space-right-2 {
+    margin-right: 12px;
+}
+.space-left-2 {
+    margin-left: 12px;
+}
+.space-3 {
+    margin-bottom: 18px;
+}
+.space-top-3 {
+    margin-top: 18px;
+}
+.space-right-3 {
+    margin-right: 18px;
+}
+.space-left-3 {
+    margin-left: 18px;
+}
+.space-4 {
+    margin-bottom: 24px;
+}
+.space-top-4 {
+    margin-top: 24px;
+}
+.space-right-4 {
+    margin-right: 24px;
+}
+.space-left-4 {
+    margin-left: 24px;
+}
+.space-5 {
+    margin-bottom: 30px;
+}
+.space-top-5 {
+    margin-top: 30px;
+}
+.space-right-5 {
+    margin-right: 30px;
+}
+.space-left-5 {
+    margin-left: 30px;
+}
+.space-6 {
+    margin-bottom: 36px;
+}
+.space-top-6 {
+    margin-top: 36px;
+}
+.space-right-6 {
+    margin-right: 36px;
+}
+.space-left-6 {
+    margin-left: 36px;
+}
+.space-7 {
+    margin-bottom: 42px;
+}
+.space-top-7 {
+    margin-top: 42px;
+}
+.space-right-7 {
+    margin-right: 42px;
+}
+.space-left-7 {
+    margin-left: 42px;
+}
+.space-8 {
+    margin-bottom: 48px;
+}
+.space-top-8 {
+    margin-top: 48px;
+}
+.space-right-8 {
+    margin-right: 48px;
+}
+.space-left-8 {
+    margin-left: 48px;
+}
+.space-9 {
+    margin-bottom: 54px;
+}
+.space-top-9 {
+    margin-top: 54px;
+}
+.space-right-9 {
+    margin-right: 54px;
+}
+.space-left-9 {
+    margin-left: 54px;
+}
+.space-10 {
+    margin-bottom: 60px;
+}
+.space-top-10 {
+    margin-top: 60px;
+}
+.space-right-10 {
+    margin-right: 60px;
+}
+.space-left-10 {
+    margin-left: 60px;
+}
+.space-11 {
+    margin-bottom: 66px;
+}
+.space-top-11 {
+    margin-top: 66px;
+}
+.space-right-11 {
+    margin-right: 66px;
+}
+.space-left-11 {
+    margin-left: 66px;
+}
+.space-12 {
+    margin-bottom: 72px;
+}
+.space-top-12 {
+    margin-top: 72px;
+}
+.space-right-12 {
+    margin-right: 72px;
+}
+.space-left-12 {
+    margin-left: 72px;
+}
+.space-13 {
+    margin-bottom: 78px;
+}
+.space-top-13 {
+    margin-top: 78px;
+}
+.space-right-13 {
+    margin-right: 78px;
+}
+.space-left-13 {
+    margin-left: 78px;
+}
+.space-14 {
+    margin-bottom: 84px;
+}
+.space-top-14 {
+    margin-top: 84px;
+}
+.space-right-14 {
+    margin-right: 84px;
+}
+.space-left-14 {
+    margin-left: 84px;
+}
+.space-15 {
+    margin-bottom: 90px;
+}
+.space-top-15 {
+    margin-top: 90px;
+}
+.space-right-15 {
+    margin-right: 90px;
+}
+.space-left-15 {
+    margin-left: 90px;
+}
+
+.padding-reset {
+    padding: 0;
+}
+
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+}
+
+.vertical-align > [class^="col-"] > div,
+.vertical-align > [class*=" col-"] > div {
+  flex-grow: 1;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-text-top {
+    vertical-align: text-top;
+}
+
+.vertical-align-text-bottom {
+    vertical-align: text-bottom;
+}
+
+.text-wrap {
+    word-wrap: break-word;
+}
+
+.round {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.border-transparent {
+    border: 0 hidden transparent;
+}
+
+.border-1 {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.border-2 {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.border-3 {
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    border-radius: 18px;
+}
+
+.line-height-1 {
+    line-height: 6px;
+}
+
+.line-height-2 {
+    line-height: 12px;
+}
+
+.line-height-3 {
+    line-height: 18px;
+}
+
+.line-height-4 {
+    line-height: 24px;
+}
+
+.line-height-5 {
+    line-height: 30px;
+}
+
+
+.underline {
+
+    &--primary {
+        border-bottom: 2px solid map-get($main-palette, primary);
+    }
+
+    &--alert {
+        border-bottom: 2px solid map-get($main-palette, alert);
+    }
+
+    &--strong {
+        font-weight: 600;
+    }
+
+}
+
+.strong {
+    font-weight: 600!important;
+
+    &--primary {
+        color: map-get($main-palette, primary);
+    }
+
+    &--alert {
+        color: map-get($main-palette, alert);
+    }
+
+}
+
+.line-through {
+    text-decoration: line-through!important;
+}
+
+.text-italic {
+    font-style: italic!important;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.bottom-block {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+}
+
+.stick-container {
+    position: fixed !important;
+}
+
+.normal-container {
+    position: absolute !important;
+    width: 100% !important;
+}
+
+
+/******************** END - MODIFIERS *********************/
+
+
+/**********************************************************/
+/*                GENERAL COMPONENTS STYLES               */
+/**********************************************************/
+
+/// USER PHOTO + REVIEWS COMPONENT
+.ma-user-photo-review-block {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    text-align: center;
+    position:relative;
+    display: block;
+
+    &__photo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__reviews {
+        text-align: center;
+    }
+}
+
+/// POINT SEPARATE
+.point-separate {
+    padding: 0px 10px;
+
+    &:before {
+        content: ' · ';
+    }
+}
+
+
+/// SEPARATOR WITH DASHED ALTERNATE IMAGE
+.ma-separator-dashed-image {
+    background-image: url(../../../../assets/images/dash-alternate.svg);
+    background-repeat: repeat-x;
+    height: 4px;
+    background-position: -12px center;
+    border: 0;
+}
+
+/************ END - GENERAL COMPONENTS STYLES  ************/
+
+
+/**********************************************************/
+/*                    BODY MAIN STYLES                    */
+/**********************************************************/
+
+body.mainApp {
+
+    padding: 0;
+    background-color: $body-background;
+    font-family: $body-font-family;
+    font-weight: $global-weight-normal;
+    line-height: $global-lineheight;
+    color: $body-font-color;
+    overflow-x: hidden;
+    height: 100%;
+
+    .row:before {
+        display: inherit;
+    }
+
+    label {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+
+    .ma-logo {
+        background-image: url($logo-path);
+        background-repeat: no-repeat;
+        height: $logo-height;
+        width: $logo-width;
+        display: inline-block;
+
+        &--secondary {
+            background-image: url($logo-path-secondary);
+        }
+        &--secondary-short {
+            background-image: url($logo-path-secondary-short);
+            height: $logo-short-height;
+            width: $logo-short-width;
+        }
+        &--primary-short {
+            background-image: url($logo-path-primary-short);
+
+            &--small {
+                height: 32px;
+                width: 32px;
+            }
+
+            &--default {
+                height: $logo-primary-short-height;
+                width: $logo-primary-short-width;
+            }
+
+            &--large {
+                height: 81px;
+                width: 81px;
+            }
+        }
+    }
+
+    .header-separator {
+        display: block;
+        height: 61px;
+    }
+
+    .footer-separator {
+        display: block;
+        height: 20px;
+    }
+
+    .app_content {
+        min-height: 100%;
+        position: relative;
+    }
+
+
+    .screen-reader-only {
+        border: 0;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    blockquote:before {
+        display: block;
+        content: "\201C";
+        font-size: 80px;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        color: #7a7a7a;
+    }
+
+}
+
+
+/**************** END - BODY MAIN STYLES  *****************/

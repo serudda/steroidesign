@@ -1,0 +1,66 @@
+/**********************************************************/
+/*                       PARAGRAPHS                       */
+/**********************************************************/
+
+.ma-p {
+    letter-spacing: 0;
+    font-weight: 400;
+    font-style: normal;
+    color: $paragraph-font-color;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    &__bold {
+        color: $paragraph-bold-font-color;
+    }
+
+    &--small {
+        font-size: 14px;
+    }
+
+    &--default {
+        font-size: 17px;
+    }
+
+    &--large {
+        font-size: 20px;
+    }
+
+    /// COLOR
+    &--alert {
+        color: $paragraph-alert-font-color;
+
+        strong {
+            font-size: map-get($global-font-sizes, large);
+        }
+    }
+
+    &--primary {
+        color: $paragraph-primary-font-color;
+
+        strong {
+            font-size: map-get($global-font-sizes, large);
+        }
+    }
+
+    &--info {
+        color: $paragraph-info-font-color;
+
+        strong {
+            font-size: map-get($global-font-sizes, large);
+        }
+    }
+
+    &--white {
+        color: $paragraph-white-font-color;
+
+        strong {
+            font-size: map-get($global-font-sizes, large);
+        }
+    }
+
+    &--disable-line-through {
+        text-decoration: line-through;
+        color: #ccc;
+    }
+}

@@ -1,0 +1,151 @@
+/**********************************************************/
+/*                         AGENDA                         */
+/**********************************************************/
+
+.ma-agenda {
+
+    /* TOOLBAR */
+    .fc-toolbar {
+        .fc-button {
+            @extend .ma-btn;
+            @extend .ma-btn--secondary;
+        }
+
+        .fc-center {
+            h2 {
+                color: $agenda-toolbar-center-font-color;
+            }
+        }
+        // This important is necessary in order to hide 'day' button
+        .fc-agendaDay-button {
+            display: none!important;
+        }
+    }
+
+    /* CALENDAR */
+    .fc-view {
+
+        /*calendar header (months list)*/
+        .fc-head-container {
+            border-top: $agenda-view-header-border;
+            border-left: $agenda-view-header-border;
+            border-right: $agenda-view-header-border;
+            border-color: $agenda-view-header-border-color;
+
+            .fc-row {
+
+                .fc-day-header {
+                    border: $agenda-view-header-day-border;
+                    text-align: left;
+
+                    span {
+                        color: $agenda-view-header-day-span-font-color;
+                        border: $agenda-view-header-day-span-border;
+                        font-size: $agenda-view-header-day-span-font-size;
+                        font-weight: $agenda-view-header-day-span-font-weight;
+                    }
+                }
+            }
+
+        }
+
+        /* body */
+        .fc-body {
+            border-color: $agenda-view-body-border;
+
+            .fc-widget-content {
+                border-color: $agenda-view-body-border;
+
+                .fc-row {
+
+                    .fc-bg {
+                        /* days */
+                        .fc-day {
+                            border-color: $agenda-view-body-border;
+                        }
+                        /* today */
+                        .fc-today {
+                            background-color: $agenda-view-body-today-background;
+                        }
+                        /* disabled days */
+                        .fc-past {
+                            background-color: $agenda-view-body-border;
+                        }
+                    }
+
+                    .fc-content-skeleton {
+
+                        .fc-day-top {
+                            .fc-day-number {
+                                color: $agenda-view-content-dayTop-number-font-color;
+                            }
+                        }
+
+                        .fc-today {
+                            .fc-day-number {
+                                color: $agenda-view-content-today-number-font-color;
+                                font-weight: bold;
+                            }
+                        }
+
+                        .fc-event-container {
+                            /* event label*/
+                            .fc-event {
+                                padding: $agenda-view-content-event-padding;
+                                background-color: $agenda-view-content-event-background;
+                                border: $agenda-view-content-event-border;
+                            }
+                        }
+                    }
+                }
+
+                /* day view*/
+                .fc-time-grid-container {
+
+                    .fc-content-skeleton {
+
+                        .fc-event-container {
+                            /* event label*/
+                            .fc-event {
+                                padding: $agenda-view-content-event-padding;
+                                background-color: $agenda-view-content-event-background;
+                                border: $agenda-view-content-event-border;
+                                font-size: $agenda-view-body-timeContainer-event-font-size;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .fc-agendaDay-view {
+
+        /*calendar header on agendaDay view */
+        .fc-head-container {
+
+            .fc-row {
+                border-right: $agenda-view-header-border;
+
+                .fc-day-header {
+                    border: $agenda-view-header-border;
+                    text-align: left;
+
+                    span {
+                        color: $agenda-view-header-day-span-font-color;
+                        border: $agenda-view-header-day-span-border;
+                        font-size: $agenda-view-header-day-span-font-size-large;
+                        font-weight: normal;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

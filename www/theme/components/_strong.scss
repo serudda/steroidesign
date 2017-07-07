@@ -1,0 +1,26 @@
+/**********************************************************/
+/*                         STRONG                         */
+/**********************************************************/
+
+.ma-strong {
+
+    &--small {
+        font-size: map-get($strong-font-sizes, small);
+    }
+
+    &--default {
+        font-size: map-get($strong-font-sizes, default);
+    }
+
+    &--medium {
+        font-size: map-get($strong-font-sizes, medium);
+    }
+
+    &--large {
+        font-size: map-get($strong-font-sizes, large);
+    }
+
+    &--dark {
+        color: $black;
+    }
+}

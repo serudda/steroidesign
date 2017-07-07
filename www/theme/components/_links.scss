@@ -1,0 +1,158 @@
+/**********************************************************/
+/*                         LINK                           */
+/**********************************************************/
+
+.ma-link {
+    text-decoration: none;
+    font-weight: normal;
+    color: $link-font-color;
+    border: $link-border;
+    transition: background 300ms ease-out;
+    cursor: pointer;
+
+
+    /*               LINK BOX                */
+    /*****************************************/
+
+    &--box {
+
+        ///BOX LINK SIZE
+
+        &--small {
+            font-size: map-get($link-simple-font-sizes, small);
+        }
+
+        &--default {
+            font-size: map-get($link-simple-font-sizes, default);
+        }
+
+        &--large {
+            font-size: map-get($link-simple-font-sizes, large);
+        }
+
+        /// TYPE OF
+
+        &--primary {
+            color: map-get($main-palette, primary);
+            &:hover {
+                background-color: $link-box-primary-background-hover;
+                border-bottom-color: $link-box-primary-border-hover;
+                color: $link-box-font-color-hover;
+                border-radius: $link-box-radius-hover;
+                text-decoration: none;
+            }
+
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        &--alert {
+            color: map-get($main-palette, alert);
+            &:hover {
+                background-color: $link-box-alert-background-hover;
+                border-bottom-color: $link-box-alert-border-hover;
+                color: $link-box-font-color-hover;
+                border-radius: $link-box-radius-hover;
+                text-decoration: none;
+            }
+
+            &:focus {
+                color: map-get($main-palette, alert);
+                color: $link-font-color;
+            }
+        }
+
+        &--underline {
+            &--primary {
+                border-bottom: 2px solid map-get($main-palette, primary);
+                &:hover {
+                    background-color: $link-box-primary-background-hover;
+                    border-bottom-color: $link-box-primary-border-hover;
+                    color: $link-box-font-color-hover;
+                    border-radius: $link-box-radius-hover;
+                    text-decoration: none;
+                }
+
+                &:focus {
+                    border-bottom: 2px solid map-get($main-palette, primary);
+                    color: $link-font-color;
+                    text-decoration: none;
+                }
+            }
+
+            &--alert {
+                border-bottom: 2px solid map-get($main-palette, alert);
+                &:hover {
+                    background-color: $link-box-alert-background-hover;
+                    border-bottom-color: $link-box-alert-border-hover;
+                    color: $link-box-font-color-hover;
+                    border-radius: $link-box-radius-hover;
+                    text-decoration: none;
+                }
+
+                &:focus {
+                    border-bottom: 2px solid map-get($main-palette, alert);
+                    color: $link-font-color;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+    /*              SIMPLE LINK              */
+    /*****************************************/
+
+    &--simple {
+        letter-spacing: 0;
+        font-style: normal;
+        font-weight: normal;
+        //margin-bottom: 0;
+        color: $link-simple-font-color;
+
+        &:hover {
+            text-decoration: none;
+            color: $link-simple-font-color;
+        }
+
+        &:focus {
+            color: $link-simple-font-color;
+            text-decoration: none;
+        }
+
+        ///SIMPLE LINK SIZE
+
+        &--small {
+            font-size: map-get($link-simple-font-sizes, small);
+        }
+
+        &--default {
+            font-size: map-get($link-simple-font-sizes, default);
+        }
+
+        &--large {
+            font-size: map-get($link-simple-font-sizes, large);
+        }
+
+        ///SIMPLE LINK COLOR
+
+        &--primary {
+            color: map-get($main-palette, primary);
+
+            &:hover:enabled, &:focus {
+                color: map-get($main-palette, secondary);
+            }
+        }
+
+        /// SIMPLE LINK WITH ICON
+        &--withIcon {
+            .material-icons {
+                vertical-align: text-bottom;
+            }
+        }
+
+    }
+
+}

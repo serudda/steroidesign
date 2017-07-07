@@ -1,0 +1,203 @@
+////
+/// @author Mike Street
+/// @group Sprite
+////
+
+/**
+ * The following variable and function originate from the sass-mq library.
+ * If you have already included it, you can eliminate the below
+ * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
+ */
+
+/// Base font size on the `<body>` element
+/// @type Number (unit)
+$mq-base-font-size: 16px !default;
+
+/// Convert pixels to ems
+///
+/// @param {Number} $px - value to convert
+/// @param {Number} $base-font-size ($mq-base-font-size) - `<body>` font size
+///
+/// @example scss
+///  $font-size-in-ems: mq-px2em(16px);
+///  p { font-size: mq-px2em(16px); }
+///
+/// @requires $mq-base-font-size
+/// @returns {Number}
+@function mq-px2em($px, $base-font-size: $mq-base-font-size) {
+    @if unitless($px) {
+        @warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels.";
+        @return mq-px2em($px + 0px); // That may fail.
+    } @else if unit($px) == em {
+        @return $px;
+    }
+    @return ($px / $base-font-size) * 1em;
+}
+/// Add class for <IE9 sprite fallback
+/// @group sprite
+/// @type String
+$ieSprite: '.lt-ie9' !default;
+
+/// Set the `$sprite` map
+/// @group sprite
+$sprite: map-get($icons, sprite) !default;
+
+/// Retrive an attributes value for a specific icon in the sprite map
+/// @param {string} $icon - The name of the icon
+/// @param {string} $attr - The attribute you wish to retrieve (e.g. width)
+@function sprite-attr($icon, $attr) {
+	$newIcon: map-get($icons, $icon);
+	@if $newIcon == null {
+		@warn "Can't find an icon with the name #{$icon}";
+	}
+	@return map-get($newIcon, $attr);
+}
+
+/// Create a map with the specified icon of attributes
+/// @param {string} $icon - The name of the icon
+@function icon-attr($icon) {
+	$attr: (
+		width: sprite-attr($icon, width),
+		height: sprite-attr($icon, height),
+		x: sprite-attr($icon, backgroundX),
+		y: sprite-attr($icon, backgroundY)
+	);
+
+	@return $attr;
+}
+
+/// Get the width of an icon in em
+/// @param {string} $icon - The name of the icon
+@function icon_width($icon) {
+	@return mq-px2em(sprite-attr($icon, width));
+}
+
+/// Get the height of an icon in em
+/// @param {string} $icon - The name of the icon
+@function icon_height($icon) {
+	@return mq-px2em(sprite-attr($icon, height));
+}
+
+/// Assign the correct SVG background image and dimensions to the element
+%sprite {
+	display: inline-block;
+	background-image: url(map-get($sprite, svgPath));
+	background-size: mq-px2em(map-get($sprite, width)) mq-px2em(map-get($sprite, height));
+}
+/// Assign the correct PNG background image and dimensions to the element
+%ie-sprite {
+	 background-image: url(map-get($sprite, pngPath));
+}
+
+/// Add a sprite PNG icon for browsers with the `$ieSprite` class with px for positioning
+/// @param {string} $icon - The name of the icon
+/// @param {string} $type [all] - The properties wanted (can be `all`, `size` or `bg`).
+/// - `all` ensures the icon has the background, position and size.
+/// - `size` is just for dimensions
+/// - `bg` just  applies the backgrounds to an element
+/// @example scss - Usage
+/// .class {
+/// 	@include ie-sprite(arrow);
+/// 	&:hover {
+/// 		@include ie-sprite(arrowDown, bg)
+/// 	}
+/// }
+///
+/// @example css - Output
+/// .lt-ie9 .class {
+///     background-image: url("../img/sprite.png");
+/// }
+/// .lt-ie9 .class {
+///     width: 20px;
+///     height: 20px;
+///     background-position: -5px -5px;
+/// }
+/// .lt-ie9 .class:hover {
+///     background-position: -36px -36px;
+/// }
+@mixin ie-sprite($icon, $type: all) {
+	$iconMap: icon-attr($icon);
+
+	@if $ieSprite {
+		#{$ieSprite} & {
+			@if $type == all {
+				// Shares the PNG background
+				@extend %ie-sprite;
+			}
+			// Outputs dimensions of icon
+			@if $type == all or $type == size {
+				width: map-get($iconMap, width);
+				height: map-get($iconMap, height);
+			}
+			// Outputs background position
+			@if $type == all or $type == bg {
+				background-position: (map-get($iconMap, x) - 5) (map-get($iconMap, y) - 5);
+			}
+		}
+	}
+}
+
+/// Add an SVG sprite icon using em positioning, with a PNG icon for browsers with the `$ieSprite` class using px positioning
+/// @param {string} $icon - The name of the icon
+/// @param {string} $type [all] - The properties wanted (can be `all`, `size` or `bg`).
+/// - `all` ensures the icon has the background, position and size.
+/// - `size` is just for dimensions
+/// - `bg` just  applies the backgrounds to an element
+/// @example scss - Usage
+/// .class {
+/// 	@include sprite(arrow);
+/// 	&:hover {
+/// 		@include sprite(arrowDown, bg)
+/// 	}
+/// }
+///
+/// @example css - Output
+/// .class {
+/// 	display: inline-block;
+/// 	background-image: url("../img/sprite.svg");
+/// 	background-size: 34.25em 32.1875em;
+/// }
+///
+/// .lt-ie9 .class {
+/// 	background-image: url("../img/sprite.png");
+/// }
+///
+/// .class {
+/// 	width: 1.3125em;
+/// 	height: 1.3125em;
+/// 	background-position: -0.3125em -0.3125em;
+/// }
+/// .lt-ie9 .class {
+/// 	width: 20px;
+/// 	height: 20px;
+/// 	background-position: -5px -5px;
+/// }
+/// .class:hover {
+/// 	background-position: -2.25em -2.25em;
+/// }
+/// .lt-ie9 .class:hover {
+/// 	background-position: -36px -36px;
+/// }
+@mixin sprite($icon, $type: all) {
+	@if $type == all {
+		// Shares the backgrounds
+		@extend %sprite;
+	}
+
+	$iconMap: icon-attr($icon);
+
+	// Outputs dimensions in em
+	@if $type == all or $type == size {
+		width: mq-px2em(map-get($iconMap, width) + 1);
+		height: mq-px2em(map-get($iconMap, height) + 1);
+	}
+
+	// Outputs background position in em
+	@if $type == all or $type == bg {
+		background-position: mq-px2em(map-get($iconMap, x) - 5) mq-px2em(map-get($iconMap, y) - 5);
+	}
+
+	// Add ie fallback
+	@include ie-sprite($icon, $type);
+
+}
