@@ -551,25 +551,6 @@ $mask-opacity: 0;
 $mask-opacity-active: 0.7;
 $mask-opacity-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
-// 6. Links
-// ---------
-$link-font-color: $black;
-$link-border: 1px solid transparent;
-
-$link-box-radius-hover: 3px;
-$link-box-primary-background-hover: map-get($main-palette, primary);
-$link-box-primary-border-hover: map-get($main-palette, secondary);
-$link-box-alert-background-hover: map-get($main-palette, alert);
-$link-box-alert-border-hover: map-get($main-palette, alert-secondary);
-$link-box-font-color-hover: $white;
-
-$link-simple-font-color: $black;
-$link-simple-font-sizes: (
-  small: 15px,
-  default: 20px,
-  large: 30px,
-);
-
 // 13. Lists
 // ----------
 $list-message-info-font-weight-unread: bold!important;

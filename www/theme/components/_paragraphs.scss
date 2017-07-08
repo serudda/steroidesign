@@ -4,9 +4,9 @@
 
 /* VARIABLES */
 $paragraph-font-sizes: (
-  small: 15px,
-  default: 19px,
-  large: 22px,
+  small: map-get($global-font-sizes, small),
+  default: map-get($global-font-sizes, default),
+  large: map-get($global-font-sizes, large),
 );
 $paragraph-font-weight: 300;
 

@@ -18,7 +18,7 @@ $button-line-heights: (
   large: 22px,
 );
 
-$button-background-color: (
+$button-bg-color: (
     primary: map-get($main-palette, primary),
     primary-without-bg: transparent,
     secondary: map-get($main-palette, secondary),
@@ -33,9 +33,9 @@ $button-font-sizes: (
 );
 
 $button-font-weight: (
-  small: 700,
-  default: 700,
-  large: 700,
+  small: $global-font-weight,
+  default: $global-font-weight,
+  large: $global-font-weight,
 );
 
 $button-font-colors: (
@@ -57,15 +57,37 @@ $button-border-colors: (
 $button-opacity-disabled: 0.25;
 $button-block-width: 100%;
 
+$button-helpful-font-color: $light-dark;
+$button-helpful-bg-color: $white;
+$button-helpful-bg-color-hover: #f5f5f5;
+$button-helpful-colors: (
+    primary: map-get($main-palette, primary),
+    secondary: map-get($main-palette, secondary),
+    minimal: $button-helpful-font-color,
+);
+$button-helpful-paddings: (
+    small: 4px 12px,
+);
+$button-helpful-font-sizes: (
+    icon: 15px,
+    text: 15px,
+    count: 14px,
+);
+$button-helpful-text-padding: 10px;
+$button-helpful-count-padding: 10px;
+$button-helpful-count-margin: 10px;
+$button-helpful-count-border-color: #dce0e0;
+$button-helpful-count-font-weight: $global-font-weight;
+
 
 /**********************************************************/
 
 .ma-btn {
 
     cursor: pointer;
-    -webkit-transition: background 0.3s, border-color 0.3s;
-    -moz-transition: background 0.3s, border-color 0.3s;
-    transition: background 0.3s, border-color 0.3s;
+    //-webkit-transition: background 0.3s, border-color 0.3s;
+    //-moz-transition: background 0.3s, border-color 0.3s;
+    //transition: background 0.3s, border-color 0.3s;
     position: relative;
     display: inline-block;
     text-align: center;
@@ -113,38 +135,38 @@ $button-block-width: 100%;
     &--primary {
         background: 0 0;
         color: map-get($button-font-colors, primary);
-        background-color: map-get($button-background-color, primary);
+        background-color: map-get($button-bg-color, primary);
 
         &:hover {
             background: 0 0;
             color: map-get($button-font-colors, primary);
-            background-color: map-get($button-background-color, primary);
+            background-color: map-get($button-bg-color, primary);
         }
 
         &:focus {
             background: 0 0;
             color: map-get($button-font-colors, primary);
-            background-color: map-get($button-background-color, primary);
+            background-color: map-get($button-bg-color, primary);
         }
     }
 
     &--primary-without-bg {
         background: 0 0;
         color: map-get($button-font-colors, primary-without-bg);
-        background-color: map-get($button-background-color, primary-without-bg);
+        background-color: map-get($button-bg-color, primary-without-bg);
         border-color: map-get($button-border-colors, primary-without-bg);
 
         &:hover {
             background: 0 0;
             color: map-get($button-font-colors, primary-without-bg);
-            background-color: map-get($button-background-color, primary-without-bg);
+            background-color: map-get($button-bg-color, primary-without-bg);
             border-color: map-get($button-border-colors, primary-without-bg);
         }
 
         &:focus {
             background: 0 0;
             color: map-get($button-font-colors, primary-without-bg);
-            background-color: map-get($button-background-color, primary-without-bg);
+            background-color: map-get($button-bg-color, primary-without-bg);
             border-color: map-get($button-border-colors, primary-without-bg);
         }
     }
@@ -152,54 +174,121 @@ $button-block-width: 100%;
     &--secondary {
         background: 0 0;
         color: map-get($button-font-colors, secondary);
-        background-color: map-get($button-background-color, secondary);
+        background-color: map-get($button-bg-color, secondary);
 
         &:hover {
             background: 0 0;
             color: map-get($button-font-colors, secondary);
-            background-color: map-get($button-background-color, secondary);
+            background-color: map-get($button-bg-color, secondary);
         }
 
         &:focus {
             background: 0 0;
             color: map-get($button-font-colors, secondary);
-            background-color: map-get($button-background-color, secondary);
+            background-color: map-get($button-bg-color, secondary);
         }
     }
 
     &--secondary-without-bg {
         color: map-get($button-font-colors, secondary-without-bg);
-        background-color: map-get($button-background-color, secondary-without-bg);
+        background-color: map-get($button-bg-color, secondary-without-bg);
         border-color: map-get($button-border-colors, secondary-without-bg);
 
         &:hover {
             color: map-get($button-font-colors, secondary-without-bg);
-            background-color: map-get($button-background-color, secondary-without-bg);
+            background-color: map-get($button-bg-color, secondary-without-bg);
             border-color: map-get($button-border-colors, secondary-without-bg);
         }
 
         &:focus {
             color: map-get($button-font-colors, secondary-without-bg);
-            background-color: map-get($button-background-color, secondary-without-bg);
+            background-color: map-get($button-bg-color, secondary-without-bg);
             border-color: map-get($button-border-colors, secondary-without-bg);
         }
     }
 
     &--minimal {
-        background-color: map-get($button-background-color, minimal);
+        background-color: map-get($button-bg-color, minimal);
         color: map-get($button-font-colors, minimal);
         border: 1px solid map-get($button-border-colors, minimal);
 
         &:hover {
-            background-color: map-get($button-background-color, minimal);
+            background-color: map-get($button-bg-color, minimal);
             color: map-get($button-font-colors, minimal);
             border: 1px solid map-get($button-border-colors, minimal);
         }
 
         &:focus {
-            background-color: map-get($button-background-color, minimal);
+            background-color: map-get($button-bg-color, minimal);
             color: map-get($button-font-colors, minimal);
             border: 1px solid map-get($button-border-colors, minimal);
+        }
+    }
+
+
+    /*              SPECIAL BUTTONS               */
+    /**********************************************/
+
+    &--helpful {
+        border: 1px solid map-get($button-border-colors, minimal);
+        overflow: hidden;
+        background: $button-helpful-bg-color;
+
+        ///HELPFUL_BUTTON_SIZE
+
+        &--small {
+            padding: map-get($button-helpful-paddings, small);
+        }
+
+        ///HELPFUL_BUTTON_COLOR
+
+        &--primary {
+            color: map-get($button-helpful-colors, primary);
+
+            &:hover {
+                border-color: map-get($button-helpful-colors, primary);
+            }
+        }
+
+        &--secondary {
+            color: map-get($button-helpful-colors, secondary);
+
+            &:hover {
+                border-color: map-get($button-helpful-colors, secondary);
+            }
+        }
+
+        &--minimal {
+            color: map-get($button-helpful-colors, minimal);
+
+            &:hover {
+                background-color: $button-helpful-bg-color-hover;
+            }
+        }
+
+
+        ///HELFUL_BUTTON_ELEMENTS
+
+        i {
+            font-size: map-get($button-helpful-font-sizes, icon);
+        }
+
+        &__text {
+            font-size: map-get($button-helpful-font-sizes, text);
+            padding-left: $button-helpful-text-padding;
+            display: inline;
+            font-weight: normal;
+        }
+
+        &__count {
+            font-size: map-get($button-helpful-font-sizes, count);
+            border-left: 1px solid $button-helpful-count-border-color;
+            margin-left: $button-helpful-count-margin;
+            padding-left: $button-helpful-count-padding;
+            display: inline-block;
+            overflow: hidden;
+            font-weight: $button-helpful-count-font-weight;
+            vertical-align: bottom;
         }
     }
 
