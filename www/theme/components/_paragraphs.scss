@@ -9,6 +9,11 @@ $paragraph-font-sizes: (
   large: map-get($global-font-sizes, large),
 );
 $paragraph-font-weight: 300;
+$paragraph-font-colors: (
+    primary: map-get($main-palette, primary),
+    secondary: map-get($main-palette, secondary),
+    alert: #d93900,
+);
 
 /**********************************************************/
 
@@ -20,6 +25,9 @@ $paragraph-font-weight: 300;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 
+
+    /// PARAGRAPH SIZES
+
     &--small {
         font-size: map-get($paragraph-font-sizes, small);
     }
@@ -30,6 +38,13 @@ $paragraph-font-weight: 300;
 
     &--large {
         font-size: map-get($paragraph-font-sizes, large);
+    }
+
+
+    /// PARAGRAPH COLORS
+
+    &--alert {
+        color: map-get($paragraph-font-colors, alert);
     }
 
 }

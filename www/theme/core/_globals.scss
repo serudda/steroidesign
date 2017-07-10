@@ -45,16 +45,10 @@ $title-line-height: 1.1;
 $sepator-border-color: #dce0e0;
 $separator-margin: 30px auto;
 
-/******************************** Validado hasta aqui *************************/
-
-$cloud: #f5f5f5;
-$light-gray: #dce0e0;
-$medium-gray: #bcc1c1;
-$dark-gray: #8a8a8a;
-$black: #555;
-
-
 // reference: https://github.com/zurb/foundation-sites/blob/develop/scss/settings/_settings.scss
+
+/**********************************************************/
+
 
 
 /**********************************************************/
@@ -179,8 +173,12 @@ $black: #555;
     font-style: italic!important;
 }
 
+.font-weight-normal {
+    font-weight: normal!important;
+}
 
 /******************** END - MODIFIERS *********************/
+
 
 
 /**********************************************************/
@@ -242,6 +240,14 @@ body.mainApp {
         font-weight: $title-font-weight;
         line-height: $title-line-height;
         text-rendering: optimizelegibility;
+    }
+
+    label {
+        font-weight: normal;
+        display: block;
+        padding-top: 9px;
+        padding-bottom: 8px;
+        margin-bottom: 0px;
     }
 
     .ma-separator {

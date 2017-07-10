@@ -2,222 +2,42 @@
 /*                          BOX                           */
 /**********************************************************/
 
+/* VARIABLES */
+$box-bg-color: $white;
+$box-border: 1px solid #dce0e0;
+$box-paddings: (
+    title: 12px 20px,
+    content: 20px,
+    footer: 20px,
+);
+
+$box-title-bg-color: #edefed;
+$box-title-font-color: $body-font-color;
+$box-title-font-size: 16px;
+
+/**********************************************************/
+
+
+
 .ma-box {
-    background-color: $box-background;
+    background-color: $box-bg-color;
     border: $box-border;
     text-align: left;
 
-    &--border-transparent {
-        border: $box-border-transparent;
-    }
-
-    &--box-shadow {
-        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.06);
-    }
-
-    &--border-hover {
-        border: $box-border-transparent;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    }
-
-    &--border-1 {
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-    }
-
-    &--border-2 {
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;
-    }
-
-    &--border-3 {
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-    }
-
     &__title {
-        border-bottom: $box-title-border;
-        padding: $box-title-padding;
+        border-bottom: $box-border;
+        padding: map-get($box-paddings, title);
+        background-color: $box-title-bg-color;
+        color: $box-title-font-color;
+        font-size: $box-title-font-size;
     }
 
     &__content {
-        padding: $box-content-padding;
-
-        &--padding-reset {
-            padding: 0;
-        }
-
-        &--map {
-            height: 500px;
-        }
+        padding: map-get($box-paddings, content);
     }
 
     &__footer {
-        padding: $box-footer-padding;
-        border-top: $box-footer-border;
-
-        .row {
-            margin-bottom: $box-footer-row-margin;
-        }
-    }
-}
-
-
-/* VERIFIED BOX */
-.verified-box {
-
-    &__item {
-        margin-top: $boxVerified-item-margin;
-        padding-left: $boxVerified-item-padding;
-
-        &__icon {
-            vertical-align:middle;
-        }
-
-        &__text {
-            display: inline-block;
-            position: relative;
-            font-size: $boxVerified-item-text-font-size;
-            margin-left: $boxVerified-item-text-margin;
-
-            .ma-label {
-                display: table;
-            }
-        }
-    }
-
-}
-
-/* BASIC INFO BOX */
-.basic-info-box {
-
-    .row {
-        margin-bottom: $boxBasicInfo-row-margin;
-    }
-
-    &__last-block {
-        margin-bottom: $boxBasicInfo-lastBlock-margin;
-    }
-
-    &__age {
-        border-bottom: $boxBasicInfo-age-border;
-    }
-
-    &__name {
-        margin-bottom: $boxBasicInfo-name-margin;
-    }
-
-    &__from {
-        padding-left: $boxBasicInfo-from-padding;
-    }
-    &__live {
-        padding-left: $boxBasicInfo-live-padding;
-    }
-    &__job, &__degree {
-        display: inline-block;
-
-        .material-icons {
-            vertical-align: middle;
-            margin-right: $boxBasicInfo-jobDegree-icon-margin;
-        }
-
-        .ma-label {
-            line-height: $boxBasicInfo-jobDegree-label-lineHeight;
-        }
-    }
-}
-
-/* BADGES SECTION */
-.badges-section {
-    &__container {
-        display: inline-block;
-        margin-right: $boxBadgeSection-container-margin;
-
-        .ma-p {
-            display: inline-block;
-            margin-left: $boxBadgeSection-paragraph-margin;
-        }
-    }
-}
-
-/* LANGUAGE SECTION */
-.language-info-box {
-    margin-bottom: $boxLanguage-margin;
-
-    &__content {
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-around;
-
-       .ma-label {
-           margin: $boxLanguage-content-label-margin;
-       }
-    }
-}
-
-/* REVIEWS SECTION */
-.reviews-info-box {
-    margin-bottom: $boxReviews-margin;
-
-    &__content {
-
-       &__block {
-           display: inline-block;
-           margin-right: $boxReviews-content-block-margin;
-       }
-    }
-
-    &__footer {
-        &__comments-block {
-            &__date-flag {
-                .material-icons {
-                    vertical-align: middle;
-                }
-            }
-        }
-    }
-}
-
-/* MENU SECTION BOX */
-.menu-box {
-
-    &__item {
-        border-bottom: $boxMenu-item-border;
-        padding: $boxMenu-item-padding;
-        margin-top: $boxMenu-item-margin;
-        font-size: $boxMenu-item-font-size;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $boxMenu-item-background-hover;
-            border-left: $boxMenu-item-border-hover;
-        }
-
-        &--active {
-            border-left: $boxMenu-item-border-active;
-            &:hover {
-                background-color: transparent;
-                border-left: $boxMenu-item-border-active;
-            }
-        }
-
-        &--green-option:hover {
-            background-color: $boxMenu-item-background-green-hover;
-            border-left: $boxMenu-item-border-green-hover;
-            color: $boxMenu-item-font-color-green-hover;
-        }
-
-        &--with-button {
-            padding: $boxMenu-item-withIcon-padding;
-            margin-top: $boxMenu-item-withIcon-margin;
-            border-bottom: none;
-            &:hover {
-                background-color: transparent;
-                border-left: none;
-            }
-        }
+        padding: map-get($box-paddings, footer);
+        border-top: $box-border;
     }
 }

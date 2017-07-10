@@ -2,7 +2,85 @@
 /*                     INPUT TEXT                         */
 /**********************************************************/
 
-/* TEXT INPUT */
+/* VARIABLES */
+$input-border: 1px solid #aaa;
+$input-radius: 2px;
+$input-bg-color: $white;
+$input-invalid-bg-color: #fff2ef;
+$input-invalid-border-color: #d93900;
+$input-font-color: $body-font-color;
+$input-width: 100%;
+$input-paddings: (
+  small: 8px 10px,
+  default: 10px,
+  large: 13px,
+);
+
+$input-font-sizes: (
+  small: 14px,
+  default: 16px,
+  large: 18px,
+);
+
+$input-border-color-focus: map-get($main-palette, secondary);
+$input-outline-focus: 0;
+$input-disabled-opacity: 0.5;
+$input-disabled-bg-color: #F5F5F5;
+
+$select-paddings: (
+  small: 8px 25px 8px 10px,
+  default: 12px 30px 12px 12px,
+  large: 15px 35px 15px 15px,
+);
+
+$select-icon-top: (
+    small: 3px,
+    default: 4px,
+    large: 6px,
+);
+$select-icon-bottom: (
+    small: 0,
+    default: 0,
+    large: 0,
+);
+$select-icon-right: (
+    small: 0,
+    default: 1px,
+    large: 3px,
+);
+
+// Select
+$select-background: white\0 !important;
+
+$select-icon-font-size-small: 10px;
+$select-icon-color: $light-dark;
+$select-icon-width: 2em;
+$select-icon-padding: 0.7em;
+$select-icon-line-height: 1;
+$select-icon-transform: scale(0.84, 0.42);
+
+// Checkbox
+$checkbox-font-color: $body-font-color;
+$checkbox-bg-color: $white;
+$checkbox-margin: 2px 5px 0 0;
+$checkbox-height: 1.25em;
+$checkbox-width: 1.25em;
+$checkbox-font-size: 0.85em;
+$checkbox-left: 1px;
+$checkbox-width: 1.25em;
+$checkbox-color: (
+    primary: map-get($main-palette, primary),
+    secondary: map-get($main-palette, secondary),
+    minimal: $body-font-color,
+    disabled: $light-dark,
+);
+
+/**********************************************************/
+
+
+
+/*                 TEXT INPUT                 */
+/**********************************************/
 .ma-input {
     border: $input-border;
     -webkit-border-radius: $input-radius;
@@ -11,95 +89,47 @@
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    background-color: $input-background;
+    background-color: $input-bg-color;
     color: $input-font-color;
     display: block;
     width: $input-width;
 
     &:focus {
-        border-color: $input-primary-border-focus;
+        border-color: $input-border-color-focus;
         outline: $input-outline-focus;
     }
 
     &--small {
         padding: map-get($input-paddings, small);
+        font-size: map-get($input-font-sizes, small);
     }
 
     &--default {
         padding: map-get($input-paddings, default);
-        font-size: $input-font-size-default;
+        font-size: map-get($input-font-sizes, default);
     }
 
     &--large {
         padding: map-get($input-paddings, large);
-        font-size: $input-font-size-large;
-    }
-
-    &--border-round {
-        border-radius: $select-borderRound-radius;
+        font-size: map-get($input-font-sizes, large);
     }
 
     &--invalid {
-        background-color: #fff2ef;
-        border-color: #ffd1c4;
-    }
-
-    &--left-addon {
-        border-left: 0 hidden transparent;
-    }
-
-    &--right-addon {
-        border-right: 0 hidden transparent;
+        background-color: $input-invalid-bg-color;
+        border-color: $input-invalid-border-color;
     }
 }
 
-/* INPUT-GROUP */
-.ma-input-group {
-
-    /* INPUT ADDON */
-    .ma-input-group-addon {
-
-        /// ADDON SIZE
-        &--small {
-
-        }
-
-        &--default {
-            font-size: $input-font-size-default;
-        }
-
-        &--large {
-            font-size: $input-font-size-large;
-        }
-
-        /// ADDON COLOR
-        &--primary {
-            background-color: $input-group-addon-primary-background;
-            border: $input-group-addon-primary-border;
-            color: $input-group-addon-primary-font-color;
-        }
-
-        &--secondary {
-            background-color: $input-group-addon-secondary-background;
-            border: $input-group-addon-secondary-border;
-            color: $input-group-addon-secondary-font-color;
-        }
-
-        &--alert {
-            background-color: $input-group-addon-alert-background;
-            border: $input-group-addon-alert-border;
-            color: $input-group-addon-alert-font-color;
-        }
-
-        &--alert-secondary {
-            background-color: $input-group-addon-primary-alert-background;
-            border: $input-group-addon-primary-alert-border;
-            color: $input-group-addon-primary-alert-font-color;
-        }
-    }
+.ma-input[disabled] {
+    opacity: $input-disabled-opacity;
+    cursor: not-allowed;
+    background-color: $input-disabled-bg-color;
 }
 
-/* SELECT INPUT */
+
+
+/*                SELECT INPUT                */
+/**********************************************/
 .ma-select-container {
     position: relative;
     display: inline-block;
@@ -111,7 +141,7 @@
         pointer-events: none;
         color: $select-icon-color;
         padding-top: $select-icon-padding;
-        line-height: $select-icon-lineHeight;
+        line-height: $select-icon-line-height;
         width: $select-icon-width;
         text-align: center;
         transform: $select-icon-transform;
@@ -123,16 +153,16 @@
         filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand');
     }
 
-    &--small {
-        font-size: $select-container-font-size-small;
 
+    /// SELECT CONTAINER SIZES
+
+    &--small {
         &:before {
             top: map-get($select-icon-top, small);
             bottom: map-get($select-icon-bottom, small);
             right: map-get($select-icon-right, small);
             font-size: $select-icon-font-size-small;
         }
-
     }
 
     &--default {
@@ -151,14 +181,8 @@
         }
     }
 
-    &--tertiary {
-        &:before {
-            color: $select-tertiary-icon-color;
-        }
-    }
-
     &--block {
-        width: 100%;
+        width: $input-width;
     }
 
     .ma-select {
@@ -168,51 +192,103 @@
         background: $select-background;
         line-height: normal;
 
+
+        /// SELECT SIZES
+
         &--small {
-            padding: map-get($input-paddings, small);
-            padding-right: $select-padding-small;
+            padding: map-get($select-paddings, small);
         }
 
         &--default {
-            //padding: map-get($input-paddings, default);
-            //Testing
-            padding: 12px;
-            padding-right: $select-padding;
-            font-size: $input-font-size-default;
+            padding: map-get($select-paddings, default);
+            font-size: map-get($input-font-sizes, default);
         }
 
         &--large {
-            //padding: map-get($input-paddings, large);
-            //Testing
-            padding: 15px;
-            padding-right: $select-padding;
-            font-size: $input-font-size-large;
+            padding: map-get($select-paddings, large);
+            font-size: map-get($input-font-sizes, large);
         }
 
         &--block {
-            width: 100%;
+            width: $input-width;
         }
 
         &--invalid {
-            background-color: $input-invalid-background;
-            border-color: $input-invalid-border;
+            background-color: $input-invalid-bg-color;
+            border-color: $input-invalid-border-color;
         }
 
-        /// SELECT COLOR
-        &--tertiary {
-            background: 0 0;
-            border: $select-tertiary-border;
-            color: $select-tertiary-font-color;
-        }
-
-        &--border-round {
-            border-radius: $select-borderRound-radius;
-        }
     }
 
 }
 
-/* TEXTAREA */
+
+
+/*                 TEXTAREA                   */
+/**********************************************/
 .ma-textarea {
     resize: vertical;
+}
+
+
+
+/*                 CHECKBOX                   */
+/**********************************************/
+.ma-checkbox {
+    input[type="checkbox"] {
+        position: relative;
+        -webkit-appearance: none;
+        height: $checkbox-height;
+        width: $checkbox-width;
+        margin: $checkbox-margin;
+        vertical-align: top;
+        border: $input-border;
+        -webkit-border-radius: $input-radius;
+        -moz-border-radius: $input-radius;
+        border-radius: $input-radius;
+        background-color: $checkbox-bg-color;
+        color: $checkbox-font-color;
+
+        &:checked:before {
+            content: "\2713";
+            position: absolute;
+            font-size: $checkbox-font-size;
+            left: $checkbox-left;
+            text-align: center;
+            width: $checkbox-width;
+        }
+    }
+
+    &--primary {
+        input[type="checkbox"] {
+            &:checked:before {
+                color: map-get($checkbox-color, primary);
+            }
+        }
+    }
+
+    &--secondary {
+        input[type="checkbox"] {
+            &:checked:before {
+                color: map-get($checkbox-color, secondary);
+            }
+        }
+    }
+
+    &--minimal {
+        input[type="checkbox"] {
+            &:checked:before {
+                color: map-get($checkbox-color, minimal);
+            }
+        }
+    }
+
+    &--disabled {
+        color: map-get($checkbox-color, disabled);
+        cursor: not-allowed;
+
+        input[type="checkbox"][disabled] {
+            opacity: $input-disabled-opacity;
+        }
+    }
 }

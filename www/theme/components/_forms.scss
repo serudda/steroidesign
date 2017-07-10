@@ -1,20 +1,20 @@
 /**********************************************************/
 /*                          FORM                         */
 /**********************************************************/
+//TODO: Limpiar este archivo
+
+/* VARIABLES */
+$form-horizontal-label-paddings: (
+    withoutModifier: 8px,
+    small: 6px,
+    default: 10px,
+    large: 16px,
+);
+$form-horizontal-label-margin: 0;
+
+/**********************************************************/
 
 .ma-form {
-
-    &--basic {
-        .ma-form-group {
-            .ma-p {
-                margin-top: $form-basic-p-margin;
-            }
-
-            .middle-label {
-                margin: 0 10px;
-            }
-        }
-    }
 
     &--horizontal {
 
