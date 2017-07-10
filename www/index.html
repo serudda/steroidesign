@@ -293,7 +293,11 @@
 
                 <h2>Labels</h2>
 
-                <div class="row space-top-4">
+                <div class="row space-top-3">
+
+                    <div class="col-xs-12 space-2">
+                        <h3>Box Label</h3>
+                    </div>
 
                     <div class="col-xs-12 space-2">
 
@@ -320,6 +324,10 @@
                         <span class="ma-label ma-label--box ma-label--box--secondary ma-label--box--large">New</span>
                         <span class="ma-label ma-label--box ma-label--box--white ma-label--box--large strong">GUIDE</span>
 
+                    </div>
+
+                    <div class="col-xs-12 space-2">
+                        <h3>Simple Label</h3>
                     </div>
 
                     <div class="col-xs-12 space-2">
@@ -355,6 +363,248 @@
 
                     </div>
 
+                </div>
+
+            </section>
+
+
+            <hr class="ma-separator">
+
+
+            <!-------------------------------->
+            <!--            FORMS           -->
+            <!-------------------------------->
+            <section class="forms-section">
+
+                <h2>Form's elements</h2>
+
+                <div class="row">
+
+                    <div class="col-xs-12">
+
+                        <! Form Container >
+                        <div class="ma-box">
+
+                            <!Title Form Container >
+                            <div class="ma-box__title">Basic Form</div>
+
+                            <!Content Form Container >
+                            <div class="ma-box__content">
+
+                                <form class="ma-form ma-form--basic">
+
+                                    <! Text Inputs >
+                                    <h3>Text Inputs</h3>
+
+                                    <!-- Small Input Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input1">Small Input Text</label>
+                                        <input id="input1" type="text" class="ma-input ma-input--small" placeholder="Name">
+                                    </div>
+
+                                    <!-- Default Input Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input2">Default Input Text</label>
+                                        <input id="input2" type="text" class="ma-input ma-input--default" placeholder="Name">
+                                    </div>
+
+                                    <!-- Large Input Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input3">Large Input Text</label>
+                                        <input id="input3" type="text" class="ma-input ma-input--large" placeholder="Name">
+                                    </div>
+
+                                    <!-- Input with Help Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input4">Input with Help Text</label>
+                                        <input id="input4" type="text" class="ma-input ma-input--default" placeholder="Input with Help Text">
+                                        <p class="ma-p ma-p--small font-weight-normal space-top-1">
+                                            The magical day you were dropped from the sky
+                                            by a stork. We use this data for analysis and
+                                            never share it with other users.
+                                        </p>
+                                    </div>
+
+                                    <!-- Invalid Input Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input5">Invalid Input Text</label>
+                                        <input id="input5" type="text" class="ma-input ma-input--default ma-input--invalid" placeholder="Invalid Input Text">
+                                        <p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+                                            Name required.
+                                        </p>
+                                    </div>
+
+                                    <!-- Disabled Input Text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="input6">Disabled Input Text</label>
+                                        <input id="input6" type="text" class="ma-input ma-input--default" placeholder="Disabled Input Text" disabled>
+                                    </div>
+
+
+                                    <hr class="space-top-5 space-5">
+
+
+                                    <! Selects >
+                                    <h3>Selects</h3>
+
+                                    <!-- Small Select -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="select1">Small Select</label>
+                                        <div class="ma-select-container ma-select-container--small">
+                                            <select id="select1" class="ma-input ma-select ma-select--small">
+                                                <option value="" disabled selected>Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Default Select -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="select2">Default Select</label>
+                                        <div class="ma-select-container ma-select-container--default">
+                                            <select id="select2" class="ma-input ma-select ma-select--default">
+                                                <option value="" disabled selected>Gender</option>
+                                                <option value="Male">Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Large Select -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="select3">Large Select</label>
+                                        <div class="ma-select-container ma-select-container--large">
+                                            <select id="select3" class="ma-input ma-select ma-select--large">
+                                                <option value="" disabled selected>Country</option>
+                                                <option value="AR">Argentina</option>
+                                                <option value="NL">Netherlands</option>
+                                                <option value="MP">Northern Mariana Islands</option>
+                                                <option value="GS">South Georgia and the South Sandwich Islands</option>
+                                                <option value="TH">Thailand</option>
+                                                <option value="US">United State</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <!-- Invalid Default Select -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="select4">Invalid Default Select</label>
+                                        <div class="ma-select-container ma-select-container--default">
+                                            <select id="select4" class="ma-input ma-select ma-select--default ma-select--invalid">
+                                                <option value="" disabled selected>Language</option>
+                                                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                                <option value="Español">Español</option>
+                                                <option value="English">English</option>
+                                                <option value="Italiano">Italiano</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                        <p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+                                            Language required.
+                                        </p>
+                                    </div>
+
+                                    <!-- Disabled Default Select -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="select5">Disabled Default Select</label>
+                                        <div class="ma-select-container ma-select-container--default">
+                                            <select id="select5" class="ma-input ma-select ma-select--default" disabled>
+                                                <option value="" disabled selected>Language</option>
+                                                <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                                <option value="Español">Español</option>
+                                                <option value="English">English</option>
+                                                <option value="Italiano">Italiano</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+
+                                    <hr class="space-top-5 space-5">
+
+
+                                    <! Textareas >
+                                    <h3>Textareas</h3>
+
+                                    <!-- TextArea Input -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="textarea1">Textarea Description</label>
+                                        <textarea id="textarea1" class="ma-input ma-input--default ma-textarea" placeholder="Describe your position on the company" rows="5" cols="40"></textarea>
+                                    </div>
+
+                                    <!-- TextArea Input with help text -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="textarea2">Textarea Description with help text</label>
+                                        <textarea id="textarea2" class="ma-input ma-input--default ma-textarea" placeholder="Describe your position on the company" rows="5" cols="40"></textarea>
+                                        <p class="ma-p ma-p--small font-weight-normal space-top-1">
+                                            This information is only required when you want to share it.
+                                            <a href="#" class="ma-link ma-link--simple ma-link--simple--secondary">
+                                                Learn more
+                                            </a>.
+                                        </p>
+                                    </div>
+
+                                    <!-- Invalid TextArea Input -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="textarea3">Invalid Textarea Description</label>
+                                        <textarea id="textarea3" class="ma-input ma-input--default ma-input--invalid ma-textarea" placeholder="Describe your position on the company" rows="5" cols="40"></textarea>
+                                        <p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+                                            Description required.
+                                        </p>
+                                    </div>
+
+                                    <!-- Disabled TextArea Input -->
+                                    <div class="form-group ma-form-group">
+                                        <label for="textarea4">Disabled Textarea Description</label>
+                                        <textarea id="textarea4" class="ma-input ma-input--default ma-textarea" placeholder="Describe your position on the company" rows="5" cols="40" disabled></textarea>
+                                    </div>
+
+
+                                    <hr class="space-top-5 space-5">
+
+
+                                    <! Checkboxes >
+                                    <h3>Checkboxes and radios</h3>
+
+                                    <!-- Primary Checkbox -->
+                                    <label class="ma-checkbox ma-checkbox--primary">
+                                        <input checked="checked" type="checkbox" value="1">
+                                        <span class="ma-label ma-label--simple ma-label--simple--default">Primary Label checkbox</span>
+                                    </label>
+
+                                    <!-- Secondary Checkbox -->
+                                    <label class="ma-checkbox ma-checkbox--secondary">
+                                        <input checked="checked" type="checkbox" value="1">
+                                        <span class="ma-label ma-label--simple ma-label--simple--default">Secondary Label checkbox</span>
+                                    </label>
+
+                                    <!-- Minimal Checkbox -->
+                                    <label class="ma-checkbox ma-checkbox--minimal">
+                                        <input checked="checked" type="checkbox" value="1">
+                                        <span class="ma-label ma-label--simple ma-label--simple--default">Minimal Label checkbox</span>
+                                    </label>
+
+                                    <!-- Checkbox Disabled -->
+                                    <label class="ma-checkbox ma-checkbox--secondary ma-checkbox--disabled">
+                                        <input checked="false" type="checkbox" value="1" disabled>
+                                        <span class="ma-label ma-label--simple ma-label--simple--default">Label checkbox disabled</span>
+                                    </label>
+
+
+                                </form>
+
+                            </div>
+
+                            <!Footer Form Container >
+                            <div class="ma-box__footer">
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
             </section>
