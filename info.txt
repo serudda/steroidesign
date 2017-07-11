@@ -7,4 +7,5 @@ description: N/A.
 Font: LL Circular + LL Brown
 Temporal Font: Lato (Google Fonts)
 
-Temporal Icons: fontawesome
+Temporal Icons: http://fontawesome.io/
+Temporal Icons: https://feathericons.com/
