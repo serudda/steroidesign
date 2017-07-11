@@ -2,35 +2,42 @@
 /*                         STARS                          */
 /**********************************************************/
 
+/* VARIABLES */
+$star-font-color: map-get($main-palette, secondary);
+$star-font-sizes: (
+  tiny: 14px,
+  small: 18px,
+  default: 24px,
+  large: 30px,
+);
+
+$star-label-container-margin-left: 3px;
+
+
+/**********************************************************/
+
+
 .ma-stars {
     display:inline-block;
 
     &__icon {
         color: $star-font-color;
 
-            &--tiny {
-                width: map-get($star-sizes, tiny);
-                height: map-get($star-sizes, tiny);
-                font-size: map-get($star-font-sizes, tiny);
-            }
+        &--tiny {
+            font-size: map-get($star-font-sizes, tiny)!important;
+        }
 
-            &--small {
-                width: map-get($star-sizes, small);
-                height: map-get($star-sizes, small);
-                font-size: map-get($star-font-sizes, small);
-            }
+        &--small {
+            font-size: map-get($star-font-sizes, small)!important;
+        }
 
-            &--default {
-                width: map-get($star-sizes, default);
-                height: map-get($star-sizes, default);
-                font-size: map-get($star-font-sizes, default);
-            }
+        &--default {
+            font-size: map-get($star-font-sizes, default)!important;
+        }
 
-            &--large {
-                width: map-get($star-sizes, large);
-                height: map-get($star-sizes, large);
-                font-size: map-get($star-font-sizes, large);
-            }
+        &--large {
+            font-size: map-get($star-font-sizes, large)!important;
+        }
     }
 
 }
@@ -39,7 +46,6 @@
     &__label-container {
         display: inline-block;
         vertical-align: top;
-        line-height: 1.2;
-        margin-left: 3px;
+        margin-left: $star-label-container-margin-left;
     }
 }

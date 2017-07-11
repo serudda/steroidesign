@@ -1,10 +1,27 @@
 /**********************************************************/
-/*                      PHOTO PROFILE                     */
+/*                     AVATAR PROFILE                     */
 /**********************************************************/
 
-/* SQUARE PROFILE IMAGE */
+/* VARIABLES */
+$avatar-default-path: $global-image-path + '/' + $global-photo-default-file;
+$avatar-sizes: (
+    tiny: 32px,
+    small: 70px,
+    default: 120px,
+    large: 180px,
+);
+$avatar-border-colors: (
+    primary: 2px solid map-get($main-palette, primary),
+    secondary: 2px solid map-get($main-palette, secondary),
+    minimal: 2px solid $light-dark,
+);
+$avatar-bg: $light-dark;
 
-.ma-photo-profile {
+
+/**********************************************************/
+
+
+.ma-avatar {
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -12,102 +29,58 @@
     display: inline-block;
     overflow: hidden;
 
-    background-color: $image-photo-background;
-    background: url($image-photo-default-path) 0 0 no-repeat;
+    background-color: $avatar-bg;
+    background: url($avatar-default-path) 0 0 no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
+
+    ///AVATAR_SIZE
+
     &--tiny {
-        height: map-get($image-photo-sizes, tiny);
-        width: map-get($image-photo-sizes, tiny);
+        height: map-get($avatar-sizes, tiny);
+        width: map-get($avatar-sizes, tiny);
     }
 
     &--small {
-        height: map-get($image-photo-sizes, small);
-        width: map-get($image-photo-sizes, small);
+        height: map-get($avatar-sizes, small);
+        width: map-get($avatar-sizes, small);
     }
 
     &--default {
-        width: map-get($image-photo-sizes, default);
-        height: map-get($image-photo-sizes, default);
+        width: map-get($avatar-sizes, default);
+        height: map-get($avatar-sizes, default);
     }
 
     &--medium {
-        width: map-get($image-photo-sizes, medium);
-        height: map-get($image-photo-sizes, medium);
+        width: map-get($avatar-sizes, medium);
+        height: map-get($avatar-sizes, medium);
     }
 
     &--large {
-        width: map-get($image-photo-sizes, large);
-        height: map-get($image-photo-sizes, large);
+        width: map-get($avatar-sizes, large);
+        height: map-get($avatar-sizes, large);
     }
 
     &--empty {
-        background: $medium-gray;
+        background: $avatar-bg;
     }
 
-}
 
+    ///AVATAR_COLOR
 
-/* RECTANGLE PROFILE IMAGE */
-
-.ma-rectangle-photo-profile {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: hidden;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-
-    background-color: $image-photo-background;
-    background: url($image-rectangle-photo-default-path) 0 0 no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    &--tiny {
-        height: map-get($image-rectangle-photo-height-sizes, tiny);
-        min-height: map-get($image-rectangle-photo-height-sizes, tiny);
-        min-width: map-get($image-rectangle-photo-width-sizes, tiny);
-        width: map-get($image-rectangle-photo-width-sizes, tiny);
+    &--border-primary {
+        border: map-get($avatar-borders, primary);
     }
 
-    &--small {
-        height: map-get($image-rectangle-photo-height-sizes, small);
-        min-height: map-get($image-rectangle-photo-height-sizes, small);
-        min-width: map-get($image-rectangle-photo-width-sizes, small);
-        width: map-get($image-rectangle-photo-width-sizes, small);
+    &--border-secondary {
+        border: map-get($avatar-borders, secondary);
     }
 
-    &--default {
-        height: map-get($image-rectangle-photo-height-sizes, default);
-        min-height: map-get($image-rectangle-photo-height-sizes, default);
-        min-width: map-get($image-rectangle-photo-width-sizes, default);
-        width: map-get($image-rectangle-photo-width-sizes, default);
-    }
-
-    &--medium {
-        width: map-get($image-rectangle-photo-width-sizes, medium);
-        height: map-get($image-rectangle-photo-height-sizes, medium);
-    }
-
-    &--large {
-        width: map-get($image-rectangle-photo-width-sizes, large);
-        height: map-get($image-rectangle-photo-height-sizes, large);
-    }
-
-    &--empty {
-        background: #f5f5f5;
-    }
-
-    img {
-        height: 100%;
-        -o-object-fit: cover;
-        object-fit: cover;
-        width: 100%;
+    &--border-minimal {
+        border: map-get($avatar-borders, minimal);
     }
 
 }

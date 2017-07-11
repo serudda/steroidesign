@@ -3,6 +3,8 @@
 /**********************************************************/
 
 /* VARIABLES */
+
+// Input Text
 $input-border: 1px solid #aaa;
 $input-radius: 2px;
 $input-bg-color: $white;
@@ -27,6 +29,7 @@ $input-outline-focus: 0;
 $input-disabled-opacity: 0.5;
 $input-disabled-bg-color: #F5F5F5;
 
+// Select
 $select-paddings: (
   small: 8px 25px 8px 10px,
   default: 12px 30px 12px 12px,
@@ -49,7 +52,6 @@ $select-icon-right: (
     large: 3px,
 );
 
-// Select
 $select-background: white\0 !important;
 
 $select-icon-font-size-small: 10px;
@@ -75,8 +77,31 @@ $checkbox-color: (
     disabled: $light-dark,
 );
 
-/**********************************************************/
+// Searchbox
+$searchbox-font-color: $body-font-color;
+$searchbox-font-size: 19px;
+$searchbox-line-height: 24px;
+$searchbox-radius: 4px;
+$searchbox-border: 1px solid #DBDBDB;
+$searchbox-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.08);
+$searchbox-padding: 0;
+$searchbox-icon-container-padding: 7px 7px 2px 7px;
+$searchbox-icon-height: 20px;
+$searchbox-icon-width: 20px;
+$searchbox-icon-stroke-width: 1;
+$searchbox-input-font-size: 15px;
+$searchbox-input-font-color: $body-font-color;
+$searchbox-input-line-height: 18px;
+$searchbox-input-letter-space: 0.2px;
+$searchbox-input-font-weight: 600;
+$searchbox-input-bg-color: transparent;
+$searchbox-input-border: 0 hidden transparent;
+$searchbox-input-padding: 8px 8px 8px 35px;
+$searchbox-input-width: 250px;
+$searchbox-input-focus-width: 500px;
+$searchbox-input-focus-border-bottom: 2px solid map-get($main-palette, secondary);
 
+/**********************************************************/
 
 
 /*                 TEXT INPUT                 */
@@ -220,6 +245,66 @@ $checkbox-color: (
 
     }
 
+}
+
+
+
+/*                 SEARCHBOX                  */
+/**********************************************/
+.ma-searchbox {
+    font-size: $searchbox-font-size;
+    line-height: $searchbox-line-height;
+    letter-spacing: undefined;
+    color: $searchbox-font-color;
+    border-radius: $searchbox-radius;
+    border: $searchbox-border;
+    box-shadow: $searchbox-box-shadow;
+    padding: $searchbox-padding;
+    display: table;
+    table-layout: fixed;
+    position: relative;
+    overflow: hidden;
+
+    &__icon-container {
+        float: left;
+        padding: $searchbox-icon-container-padding;
+        position: absolute;
+
+        .feather-search {
+            height: $searchbox-icon-height;
+            width: $searchbox-icon-width;
+            stroke-width: $searchbox-icon-stroke-width;
+        }
+    }
+
+    &__input-container {
+        overflow: hidden;
+        position: relative;
+
+        &__input {
+            font-size: $searchbox-input-font-size;
+            line-height: $searchbox-input-line-height;
+            letter-spacing: $searchbox-input-letter-space;
+            color: $searchbox-input-font-color;
+            font-weight: $searchbox-input-font-weight;
+            background-color: $searchbox-input-bg-color;
+            border: $searchbox-input-border;
+            padding: $searchbox-input-padding;
+            text-overflow: ellipsis;
+            outline: none;
+            width: $searchbox-input-width;
+            -webkit-transition: width 0.3s ease-in-out;
+            -moz-transition: width 0.3s ease-in-out;
+            -o-transition: width 0.3s ease-in-out;
+            transition: width 0.3s ease-in-out;
+
+            &:focus {
+                width: $searchbox-input-focus-width;
+                border-bottom: $searchbox-input-focus-border-bottom;
+                outline: none;
+            }
+        }
+    }
 }
 
 
