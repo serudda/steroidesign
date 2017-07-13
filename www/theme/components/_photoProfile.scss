@@ -10,7 +10,7 @@ $avatar-sizes: (
     default: 120px,
     large: 180px,
 );
-$avatar-border-colors: (
+$avatar-borders: (
     primary: 2px solid map-get($main-palette, primary),
     secondary: 2px solid map-get($main-palette, secondary),
     minimal: 2px solid $light-dark,
