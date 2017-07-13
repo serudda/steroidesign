@@ -24,6 +24,8 @@ $button-bg-color: (
     secondary: map-get($main-palette, secondary),
     secondary-without-bg: transparent,
     minimal: $white,
+    facebook: $global-facebook-color,
+    google: $global-google-color,
 );
 
 $button-font-sizes: (
@@ -44,6 +46,8 @@ $button-font-colors: (
     secondary: $white,
     secondary-without-bg: map-get($main-palette, secondary),
     minimal: $body-font-color,
+    facebook: $white,
+    google: $body-font-color,
 );
 
 $button-border-colors: (
@@ -52,6 +56,8 @@ $button-border-colors: (
     secondary: transparent,
     secondary-without-bg: map-get($main-palette, secondary),
     minimal: #C4C4C4,
+    facebook: transparent,
+    google: $body-font-color,
 );
 
 $button-opacity-disabled: 0.25;
@@ -226,6 +232,8 @@ $button-helpful-count-font-weight: $global-font-weight;
     /*              SPECIAL BUTTONS               */
     /**********************************************/
 
+
+    //Helpful Button
     &--helpful {
         border: 1px solid map-get($button-border-colors, minimal);
         overflow: hidden;
@@ -286,6 +294,45 @@ $button-helpful-count-font-weight: $global-font-weight;
             overflow: hidden;
             font-weight: $button-helpful-count-font-weight;
             vertical-align: bottom;
+        }
+    }
+
+
+    //Facebook Button
+    &--facebook {
+        color: map-get($button-font-colors, facebook);
+        background-color: map-get($button-bg-color, facebook);
+    }
+
+    &--facebook & {
+        &__content {
+            margin: 0px auto;
+            display: table;
+
+            &__icon-container {
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+    //Google Button
+    &--google {
+        color: map-get($button-font-colors, google);
+        background-color: map-get($button-bg-color, google);
+        border-color: map-get($button-border-colors, google);
+    }
+
+    &--google & {
+        &__content {
+            margin: 0px auto;
+            display: table;
+
+            &__icon-container {
+                display: table-cell;
+                vertical-align: middle;
+            }
         }
     }
 
