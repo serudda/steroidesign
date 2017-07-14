@@ -37,20 +37,23 @@ $select-paddings: (
 );
 
 $select-icon-top: (
-    small: 3px,
-    default: 4px,
-    large: 6px,
-);
-$select-icon-bottom: (
-    small: 0,
-    default: 0,
-    large: 0,
+    small: 10px,
+    default: 12px,
+    large: 16px,
 );
 $select-icon-right: (
-    small: 0,
-    default: 1px,
-    large: 3px,
+    small: 5px,
+    default: 5px,
+    large: 5px,
 );
+$select-icon-stroke-width: (
+    small: 1,
+    default: 1,
+    large: 1,
+);
+
+$select-icon-width-small: 15px;
+$select-icon-height-small: 15px;
 
 $select-background: white\0 !important;
 
@@ -160,49 +163,50 @@ $searchbox-input-focus-border-bottom: 2px solid map-get($main-palette, secondary
     display: inline-block;
     vertical-align: bottom;
 
-    &:before {
-        content: '\25bc';
-        position: absolute;
-        pointer-events: none;
-        color: $select-icon-color;
-        padding-top: $select-icon-padding;
-        line-height: $select-icon-line-height;
-        width: $select-icon-width;
-        text-align: center;
-        transform: $select-icon-transform;
-        -webkit-transform: $select-icon-transform;
-        -moz-transform: $select-icon-transform;
-        -ms-transform: $select-icon-transform;
-        -o-transform: $select-icon-transform;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand')";
-        filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.84, M12=0, M21=0, M22=0.42, SizingMethod='auto expand');
-    }
-
 
     /// SELECT CONTAINER SIZES
 
     &--small {
-        &:before {
+        .ma-select-arrow {
+            position: absolute;
             top: map-get($select-icon-top, small);
-            bottom: map-get($select-icon-bottom, small);
             right: map-get($select-icon-right, small);
-            font-size: $select-icon-font-size-small;
+            line-height: 0;
+            pointer-events: none;
+
+            &__icon {
+                stroke-width: map-get($select-icon-stroke-width, small);
+                width: $select-icon-width-small;
+                height: $select-icon-height-small;
+            }
         }
     }
 
     &--default {
-        &:before {
+        .ma-select-arrow {
+            position: absolute;
             top: map-get($select-icon-top, default);
-            bottom: map-get($select-icon-bottom, default);
             right: map-get($select-icon-right, default);
+            line-height: 0;
+            pointer-events: none;
+
+            &__icon {
+                stroke-width: map-get($select-icon-stroke-width, default);
+            }
         }
     }
 
     &--large {
-        &:before {
+        .ma-select-arrow {
+            position: absolute;
             top: map-get($select-icon-top, large);
-            bottom: map-get($select-icon-bottom, large);
             right: map-get($select-icon-right, large);
+            line-height: 0;
+            pointer-events: none;
+
+            &__icon {
+                stroke-width: map-get($select-icon-stroke-width, large);
+            }
         }
     }
 
