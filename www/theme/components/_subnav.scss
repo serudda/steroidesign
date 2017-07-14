@@ -1,0 +1,136 @@
+/**********************************************************/
+/*                        SUBNAV                          */
+/**********************************************************/
+
+/* VARIABLES */
+$subnav-height: 51px;
+$subnav-bg-color: $white;
+$subnav-border-bottom: 1px solid #DBDBDB;
+$subnav-width: 100%;
+$subnav-z-index: 200;
+
+$subnav-item-font-weight: normal;
+$subnav-item-font-size: 15px;
+$subnav-item-font-color: map-get($main-palette, secondary);
+$subnav-item-line-height: 18px;
+$subnav-item-letter-spacing: 0.2px;
+$subnav-item-padding: 0;
+
+$subnav-item-content-padding: 16px 0 16px 0;
+$subnav-item-active-font-color: $body-font-color;
+$subnav-item-active-font-weight: 600;
+
+$subnav-item-active-font-color-hover: $body-font-color;
+$subnav-item-active-font-weight-hover: 600;
+
+$subnav-tabs-item-font-size: 12px;
+$subnav-tabs-item-content-padding: 12px 0 12px 0;
+
+$subnav-tabs-item-font-weight: 700;
+$subnav-tabs-item-font-color: $body-font-color;
+$subnav-tabs-item-line-height: 18px;
+$subnav-tabs-item-letter-spacing: 0.2px;
+$subnav-tabs-item-padding:  0;
+$subnav-tabs-box-shadow: 0 5px 7px -4px rgba(0,0,0,0.1);
+
+$subnav-tabs-item-active-font-color-hover: map-get($main-palette, secondary);
+
+$subnav-tabs-item-active-border-bottom-hover: 2px solid map-get($main-palette, secondary);
+
+
+/**********************************************************/
+
+.ma-subnav {
+    background: $subnav-bg-color;
+    border-bottom: $subnav-border-bottom;
+    display: block;
+    width: $subnav-width;
+    z-index: $subnav-z-index;
+
+
+    ///SUBNAV_MODIFIERS
+
+    //Subnav Simple
+    &--simple & {
+        height: $subnav-height;
+
+        &__item {
+            font-weight: $subnav-item-font-weight;
+            color: $subnav-item-font-color!important;
+            word-wrap: break-word;
+            font-size: $subnav-item-font-size;
+            line-height: $subnav-item-line-height;
+            letter-spacing: $subnav-item-letter-spacing;
+            padding: $subnav-item-padding;
+            display: inline;
+
+            .content {
+                display: inline-block;
+                padding: $subnav-item-content-padding;
+            }
+
+            a {
+                color: $subnav-item-font-color;
+                &:hover {
+                    color: $subnav-item-font-color;
+                }
+            }
+
+            .active {
+                color: $subnav-item-active-font-color;
+                font-weight: $subnav-item-active-font-weight;
+                &:hover {
+                    color: $subnav-item-active-font-color-hover!important;
+                    font-weight: $subnav-item-active-font-weight-hover!important;
+                }
+            }
+        }
+    }
+
+
+    //Subnav Tabs
+    &--tabs & {
+
+        &__item {
+            font-weight: $subnav-tabs-item-font-weight;
+            color: $subnav-tabs-item-font-color!important;
+            word-wrap: break-word;
+            font-size: $subnav-tabs-item-font-size;
+            line-height: $subnav-tabs-item-line-height;
+            letter-spacing: $subnav-tabs-item-letter-spacing;
+            padding: $subnav-tabs-item-padding;
+            display: inline;
+
+            .content {
+                display: inline-block;
+                padding: $subnav-tabs-item-content-padding;
+                cursor: pointer;
+
+                a {
+                    &:hover {
+                        color: inherit;
+                    }
+                }
+
+                &:hover {
+                    color: $subnav-tabs-item-font-color!important;
+                }
+
+                &.active {
+                    color: $subnav-tabs-item-active-font-color-hover;
+                    border-bottom: $subnav-tabs-item-active-border-bottom-hover;
+                    &:hover {
+                        color: $subnav-tabs-item-active-font-color-hover!important;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &--tabs {
+        box-shadow: $subnav-tabs-box-shadow;
+    }
+
+
+}

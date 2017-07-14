@@ -1,0 +1,86 @@
+/**********************************************************/
+/*                     AVATAR PROFILE                     */
+/**********************************************************/
+
+/* VARIABLES */
+$avatar-default-path: $global-image-path + '/' + $global-photo-default-file;
+$avatar-sizes: (
+    tiny: 32px,
+    small: 70px,
+    default: 120px,
+    large: 180px,
+);
+$avatar-borders: (
+    primary: 2px solid map-get($main-palette, primary),
+    secondary: 2px solid map-get($main-palette, secondary),
+    minimal: 2px solid $light-dark,
+);
+$avatar-bg: $light-dark;
+
+
+/**********************************************************/
+
+
+.ma-avatar {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    background-color: $avatar-bg;
+    background: url($avatar-default-path) 0 0 no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    ///AVATAR_SIZE
+
+    &--tiny {
+        height: map-get($avatar-sizes, tiny);
+        width: map-get($avatar-sizes, tiny);
+    }
+
+    &--small {
+        height: map-get($avatar-sizes, small);
+        width: map-get($avatar-sizes, small);
+    }
+
+    &--default {
+        width: map-get($avatar-sizes, default);
+        height: map-get($avatar-sizes, default);
+    }
+
+    &--medium {
+        width: map-get($avatar-sizes, medium);
+        height: map-get($avatar-sizes, medium);
+    }
+
+    &--large {
+        width: map-get($avatar-sizes, large);
+        height: map-get($avatar-sizes, large);
+    }
+
+    &--empty {
+        background: $avatar-bg;
+    }
+
+
+    ///AVATAR_COLOR
+
+    &--border-primary {
+        border: map-get($avatar-borders, primary);
+    }
+
+    &--border-secondary {
+        border: map-get($avatar-borders, secondary);
+    }
+
+    &--border-minimal {
+        border: map-get($avatar-borders, minimal);
+    }
+
+}

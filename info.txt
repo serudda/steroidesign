@@ -1,0 +1,20 @@
+Airbnb - July 7 2017
+
+PUV: Book unique homes and experience a city like a local.
+description: N/A.
+
+
+Official Font: LL Circular + LL Brown (https://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/)
+It's not free, its price is around $930 (family package)
+
+Alternatives:
+- Lato (https://fonts.google.com/specimen/Lato)
+- Futura (https://www.myfonts.com/fonts/linotype/futura/)
+- Nunito (https://fonts.google.com/specimen/Nunito)
+- Campton (http://www.myfonts.com/fonts/rene-bieder/campton/)
+- Cabin (https://fonts.google.com/specimen/Cabin)
+
+Font used: Lato (https://fonts.google.com/specimen/Lato)
+
+Icons used: http://fontawesome.io/
+Icons used: https://feathericons.com/

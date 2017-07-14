@@ -2,234 +2,101 @@
 /*                         LABELS                         */
 /**********************************************************/
 
+/* VARIABLES */
+$label-box-border: 1px solid transparent;
+$label-box-radius: 4px;
+$label-box-line-height: 16px;
+$label-box-letter-spacing: 0.4px;
+
+$label-box-paddings: (
+  small: 1px 4px,
+  default: 4px 8px,
+  large: 6px 10px,
+);
+
+$label-box-font-sizes: (
+  small: 12px,
+  default: 16px,
+  large: 18px,
+);
+
+$label-box-bg-color: (
+    primary: map-get($main-palette, primary),
+    primary-without-bg: transparent,
+    secondary: map-get($main-palette, secondary),
+    secondary-without-bg: transparent,
+    minimal: $white,
+);
+
+$label-box-font-colors: (
+    primary: $white,
+    primary-without-bg: map-get($main-palette, primary),
+    secondary: $white,
+    secondary-without-bg: map-get($main-palette, secondary),
+    minimal: $body-font-color,
+);
+
+$label-simple-font-sizes: (
+  small: 12px,
+  default: 16px,
+  large: 18px,
+);
+
+/**********************************************************/
+
+
 .ma-label {
+
     display: inline-block;
-    //margin-bottom: 0;
-    vertical-align: middle;
-    line-height: $label-lineheight;
-    cursor: default;
-    text-decoration: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
 
 
     /*               LABEL BOX               */
     /*****************************************/
 
     &--box {
-        -webkit-border-radius: $label-radius;
-        -moz-border-radius: $label-radius;
-        border-radius: $label-radius;
-        border: 1px solid;
-        text-align: center;
-        font-weight: bold;
-        padding: map-get($label-box-paddings, default);
-        font-size: map-get($label-font-sizes, default);
+        border: $label-box-border;
+        -webkit-border-radius: $label-box-radius;
+        -moz-border-radius: $label-box-radius;
+        border-radius: $label-box-radius;
+        word-wrap: break-word;
+        line-height: $label-box-line-height;
+        letter-spacing: $label-box-letter-spacing;
+        font-weight: normal;
 
-        &--uppercase {
-            text-transform: uppercase;
-        }
 
         ///LABEL BOX SIZE
 
         &--small {
             padding: map-get($label-box-paddings, small);
-            font-size: map-get($label-font-sizes, small);
-
-            &--with-icon {
-                padding: map-get($label-box-withIcon-paddings, small);
-
-                &__icon {
-                    vertical-align: text-top;
-                    cursor: pointer;
-                    margin-left: map-get($label-box-withIcon-icon-margins, small);
-                    font-size: map-get($label-box-withIcon-icon-font-size, small);
-                    &:hover {
-                        color: map-get($main-palette, secondary);
-                    }
-                }
-            }
+            font-size: map-get($label-box-font-sizes, small);
         }
 
         &--default {
             padding: map-get($label-box-paddings, default);
-            font-size: map-get($label-font-sizes, default);
-
-            &--with-icon {
-                padding: map-get($label-box-withIcon-paddings, default);
-
-                &__icon {
-                    vertical-align: text-top;
-                    cursor: pointer;
-                    margin-left: map-get($label-box-withIcon-icon-margins, default);
-                    font-size: map-get($label-box-withIcon-icon-font-size, default);
-                    &:hover {
-                        color: map-get($main-palette, secondary);
-                    }
-                }
-            }
-        }
-
-        &--medium {
-            padding: map-get($label-box-paddings, medium);
-            font-size: map-get($label-font-sizes, medium);
-
-            &--with-icon {
-                padding: map-get($label-box-withIcon-paddings, medium);
-
-                &__icon {
-                    vertical-align: text-bottom;
-                    cursor: pointer;
-                    margin-left: map-get($label-box-withIcon-icon-margins, medium);
-                    font-size: map-get($label-box-withIcon-icon-font-size, medium);
-                    &:hover {
-                        color: map-get($main-palette, secondary);
-                    }
-                }
-            }
+            font-size: map-get($label-box-font-sizes, default);
         }
 
         &--large {
             padding: map-get($label-box-paddings, large);
-            font-size: map-get($label-font-sizes, large);
-
-            &--with-icon {
-                padding: map-get($label-box-withIcon-paddings, large);
-
-                &__icon {
-                    vertical-align: text-top;
-                    cursor: pointer;
-                    margin-left: map-get($label-box-withIcon-icon-margins, large);
-                    font-size: map-get($label-box-withIcon-icon-font-size, large);
-                    &:hover {
-                        color: map-get($main-palette, secondary);
-                    }
-                }
-            }
+            font-size: map-get($label-box-font-sizes, large);
         }
 
-        &--block {
-            display: block;
-            white-space: normal;
-            width: $label-box-width-block;
-        }
 
         ///LABEL BOX COLOR
 
         &--primary {
-            background: 0 0;
-            background-color: $label-box-primary-background;
-            color: $label-box-primary-font-color;
+            background-color: map-get($label-box-bg-color, primary);
+            color: map-get($label-box-font-colors, primary);
         }
 
         &--secondary {
-            background: 0 0;
-            border: $label-box-secondary-border;
-            color: $label-box-secondary-font-color;
-
-            &__input-to-edit {
-                border-bottom: 1px solid rgba(0, 181, 146, 0.22)!important;
-            }
+            background-color: map-get($label-box-bg-color, secondary);
+            color: map-get($label-box-font-colors, secondary);
         }
 
-        &--secondary-hover {
-            &:hover {
-                background: 0 0;
-                background-color: $label-box-secondary-hover-background;
-                border: $label-box-secondary-hover-border;
-                color: $label-box-secondary-hover-font-color;
-            }
-        }
-
-        &--primary-altern {
-            background: 0 0;
-            background-color: $label-box-primary-altern-background;
-            color: $label-box-primary-altern-font-color;
-        }
-
-        &--alert {
-            background: 0 0;
-            background-color: $label-box-alert-background;
-            color: $label-box-alert-font-color;
-        }
-
-        &--alert-secondary {
-            background: 0 0;
-            border: $label-box-alert-secondary-border;
-            color: $label-box-alert-secondary-font-color;
-        }
-
-        &--alert-secondary-hover {
-            &:hover {
-                background: 0 0;
-                background-color: $label-box-alert-secondary-hover-background;
-                border: $label-box-alert-secondary-hover-border;
-                color: $label-box-alert-secondary-hover-font-color;
-            }
-        }
-
-        &--gray {
-            background: 0 0;
-            background-color: $label-box-gray-background;
-            border: $label-box-gray-secondary-border;
-            color: $label-box-gray-font-color;
-
-            &--line-through {
-                text-decoration: line-through;
-            }
-        }
-
-        &--white-primary {
-            background: 0 0;
-            background-color: $label-box-white-primary-background;
-            border: 0 hidden transparent;
-            color: $label-box-white-primary-font-color;
-        }
-
-        &--white-alert {
-            background: 0 0;
-            background-color: $label-box-white-alert-background;
-            border: 0 hidden transparent;
-            color: $label-box-white-alert-font-color;
-        }
-
-        ///OPACITY BOX
-        &--opacity {
-            cursor: pointer;
-            opacity: 0.3;
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        ///CHECK BOX
-        &--check {
-            cursor: pointer;
-            &--active {
-                background: 0 0;
-                background-color: $label-box-primary-background;
-                color: $label-box-primary-font-color;
-                opacity: 1;
-            }
-        }
-
-        ///SPACE BETWEEN LABELS
-
-        &--space2 {
-            margin: 2px;
-        }
-
-        &--space5 {
-            margin: 5px;
-        }
-
-        /// INPUT TO EDIT LABEL
-
-        &__input-to-edit {
-            width: 100%;
-            border: 0 hidden transparent;
-            padding: 4px;
-            outline: none;
+        &--white {
+            background-color: map-get($label-box-bg-color, minimal);
+            color: map-get($label-box-font-colors, minimal);
         }
 
     }
@@ -242,54 +109,31 @@
         letter-spacing: 0;
         font-style: normal;
 
+
         ///SIMPLE LABEL SIZE
 
         &--small {
-            font-size: map-get($label-font-sizes-simple, small);
+            font-size: map-get($label-simple-font-sizes, small);
         }
 
         &--default {
-            font-size: map-get($label-font-sizes-simple, default);
-        }
-
-        &--medium {
-            font-size: map-get($label-font-sizes-simple, medium);
+            font-size: map-get($label-simple-font-sizes, default);
         }
 
         &--large {
-            font-size: map-get($label-font-sizes-simple, large);
+            font-size: map-get($label-simple-font-sizes, large);
         }
+
 
         ///SIMPLE LABEL COLOR
 
-        &--gray {
-            color: $label-simple-color-gray;
-        }
-
         &--primary {
-            color: $label-simple-color-primary;
+            color: map-get($main-palette, primary);
         }
 
-        &--alert {
-            color: $label-simple-color-alert;
-        }
-
-        &--disabled {
-            color: $label-simple-color-disabled;
+        &--secondary {
+            color: map-get($main-palette, secondary);
         }
     }
 
-}
-
-
-/* LABELS CONTAINER */
-.ma-labels-box {
-    &--dashed {
-        border: $labelsBox-dashed-border;
-        min-height: $labelsBox-dashed-height;
-        padding: $labelsBox-dashed-padding;
-        &--invalid {
-            border: $labelsBox-dashed-invalid-border;
-        }
-    }
 }

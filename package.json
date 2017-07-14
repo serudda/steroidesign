@@ -7,7 +7,8 @@
   "license": "REGULAR LICENSE",
   "dependencies": {
     "bower": "^1.8.0",
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "feather-icons": "^3.1.0"
   },
   "devDependencies": {
     "bower-files": "^4.0.0",

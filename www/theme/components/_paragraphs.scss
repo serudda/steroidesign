@@ -2,65 +2,49 @@
 /*                       PARAGRAPHS                       */
 /**********************************************************/
 
+/* VARIABLES */
+$paragraph-font-sizes: (
+  small: map-get($global-font-sizes, small),
+  default: map-get($global-font-sizes, default),
+  large: map-get($global-font-sizes, large),
+);
+$paragraph-font-weight: 300;
+$paragraph-font-colors: (
+    primary: map-get($main-palette, primary),
+    secondary: map-get($main-palette, secondary),
+    alert: #d93900,
+);
+
+/**********************************************************/
+
+
 .ma-p {
     letter-spacing: 0;
-    font-weight: 400;
     font-style: normal;
-    color: $paragraph-font-color;
+    font-weight: $paragraph-font-weight;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 
-    &__bold {
-        color: $paragraph-bold-font-color;
-    }
+
+    /// PARAGRAPH SIZES
 
     &--small {
-        font-size: 14px;
+        font-size: map-get($paragraph-font-sizes, small);
     }
 
     &--default {
-        font-size: 17px;
+        font-size: map-get($paragraph-font-sizes, default);
     }
 
     &--large {
-        font-size: 20px;
+        font-size: map-get($paragraph-font-sizes, large);
     }
 
-    /// COLOR
+
+    /// PARAGRAPH COLORS
+
     &--alert {
-        color: $paragraph-alert-font-color;
-
-        strong {
-            font-size: map-get($global-font-sizes, large);
-        }
+        color: map-get($paragraph-font-colors, alert);
     }
 
-    &--primary {
-        color: $paragraph-primary-font-color;
-
-        strong {
-            font-size: map-get($global-font-sizes, large);
-        }
-    }
-
-    &--info {
-        color: $paragraph-info-font-color;
-
-        strong {
-            font-size: map-get($global-font-sizes, large);
-        }
-    }
-
-    &--white {
-        color: $paragraph-white-font-color;
-
-        strong {
-            font-size: map-get($global-font-sizes, large);
-        }
-    }
-
-    &--disable-line-through {
-        text-decoration: line-through;
-        color: #ccc;
-    }
 }
