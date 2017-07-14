@@ -4,8 +4,17 @@ PUV: Book unique homes and experience a city like a local.
 description: N/A.
 
 
-Font: LL Circular + LL Brown
-Temporal Font: Lato (Google Fonts)
+Official Font: LL Circular + LL Brown (https://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/)
+It's not free, its price is around $930 (family package)
 
-Temporal Icons: http://fontawesome.io/
-Temporal Icons: https://feathericons.com/
+Alternatives:
+- Futura (https://www.myfonts.com/fonts/linotype/futura/)
+- Nunito (https://fonts.google.com/specimen/Nunito)
+- Campton (http://www.myfonts.com/fonts/rene-bieder/campton/)
+- Cera (http://www.myfonts.com/fonts/typemates/cera/)
+- Cabin (https://fonts.google.com/specimen/Cabin)
+
+Font used: Lato (https://fonts.google.com/specimen/Lato)
+
+Icons used: http://fontawesome.io/
+Icons used: https://feathericons.com/
