@@ -13,11 +13,17 @@
 
 ### Actual PUV on the landing page
 
+<br>
+
 <blockquote align="center">
 	<h3>Book unique homes and experience a city like a local.</h3>
 </blockquote>
 
+<br>
+
 ### Actual Slogan on the landing page
+
+<br>
 
 <blockquote align="center">
 <h3>N/A</h3>
@@ -32,7 +38,7 @@
 ### Logo evolution
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ad8d30cc/www/assets/images/logo%20evolution.png" alt="logo evolution">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/20e17736/www/assets/images/logo%20evolution.png" alt="logo evolution">
 </h3>
 
 <br>
@@ -45,9 +51,34 @@
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fb8381e7/www/assets/images/color%20palette.png" alt="logo evolution">
 </h3>
 
+<br>
+
+---
+
+<br>
+
+### Font Family
 
 
 
+**Official Font:** 
+
+- **LL Circular + LL Brown** [https://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/](https://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/) <br>
+	<sub><b>Note:</b> It's not free, its price is around <b>$930</b> (family package)</sub>
+
+**Alternatives:**
+
+- **Lato** [https://fonts.google.com/specimen/Lato](https://fonts.google.com/specimen/Lato)
+- **Futura** [https://www.myfonts.com/fonts/linotype/futura/](https://www.myfonts.com/fonts/linotype/futura/)
+- **Nunito** [https://fonts.google.com/specimen/Nunito](https://fonts.google.com/specimen/Nunito)
+- **Campton** [http://www.myfonts.com/fonts/rene-bieder/campton/](http://www.myfonts.com/fonts/rene-bieder/campton/)
+- **Cabin** [https://fonts.google.com/specimen/Cabin](https://fonts.google.com/specimen/Cabin)
+
+<br>
+
+---
+
+<br>
 
 ## License
 
