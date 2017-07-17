@@ -14,9 +14,9 @@
 
 <br>
 
-<p align="center" style="font-size:20px;">
+<h4 align="center">
 	<sub>Hecho con ❤ y ☕ por <a href="https://www.twitter.com/rosa7082" target="_blank">@rosa7082</a> y <a href="https://www.twitter.com/seruda" target="_blank">@seruda</a> en <a href="https://www.google.com/maps/place/Portland,OR" target="_blank">Portland, OR</a>.</sub>
-</p>
+</h4>
 
 <br>
 
