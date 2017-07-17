@@ -2,9 +2,11 @@
 	<img width="500" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/b95eeb88/www/assets/images/Steroidesign.svg" alt="Steroidesign">
 </h1>
 
-<h2 align="center">
+<br>
+
+<h3 align="center">
 	<b>Has que tus proyectos se vean tan bien 💎 como los grandes 💪🏻</b>
-</h2>
+</h3>
 
 <br>
 
@@ -12,17 +14,19 @@
 
 <br>
 
-<p align="center">
+<p align="center" style="font-size:20px;">
 	<sub>Hecho con ❤ y ☕ por <a href="https://www.twitter.com/rosa7082" target="_blank">@rosa7082</a> y <a href="https://www.twitter.com/seruda" target="_blank">@seruda</a> en <a href="https://www.google.com/maps/place/Portland,OR" target="_blank">Portland, OR</a>.</sub>
 </p>
 
 <br>
 
-### Problem
+## Problem
 
 Siempre que empezamos un proyecto, buscamos en miles de sitios para buscar inspiración, entre esa busqueda nos sumergimos en los sitios de las grandes Startups como: Airbnb, Medium, Asana, etc. Primero por que son sitios hermosos, y segundo, ya que han invertido mucho tiempo en analizar las mejores practicas de diseño, validacion de ideas, llamados a la acción, enganche, etc. y con el tiempo han ido creando estandares y tendencias, es bueno seguir su mismo camino.
 
-### Solución
+<br>
+
+## Solución
 
 Asi que hemos decidido recopilar un esqueleto de estilos y componentes html, basados en estas grandes compañias, temas que son 100% editables, y adaptables a tu paleta de colores, o agregandole tu propia magia! para que tu producto siga siendo autentico y unico.
 
@@ -33,6 +37,8 @@ Los temas incluyen los elementos basicos y más usados en un sitio web: botones,
 Todos estos temas pueden ayudarte a obtener inspiración y ponerte en el camino correcto, para que tu proyecto se vea como los grandes!.
 
 Contributions are more than welcome.
+
+<br>
 
 
 ## Contents
@@ -88,6 +94,7 @@ There you can see whole styles guideline.
 
 **Enjoy it!**
 
+<br>
 
 ## License
 
