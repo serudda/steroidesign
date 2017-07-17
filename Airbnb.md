@@ -14,13 +14,13 @@
 ### Actual PUV on the landing page
 
 <blockquote align="center">
-<font size="6">Book unique homes and experience a city like a local.</font>
+	<h3>Book unique homes and experience a city like a local.</h3>
 </blockquote>
 
 ### Actual Slogan on the landing page
 
-<blockquote align="center" font-size="20px">
-<font size="4">N/A</font>
+<blockquote align="center">
+<h3>N/A</h3>
 </blockquote>
 
 <br>
@@ -31,9 +31,9 @@
 
 ### Logo evolution
 
-<h1 align="center">
+<h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ad8d30cc/www/assets/images/logo%20evolution.png" alt="logo evolution">
-</h1>
+</h3>
 
 <br>
 
@@ -41,22 +41,9 @@
 
 ### Color Palette
 
-<table>
-	<thead>
-		<tr><th align="center">Primary</th>
-		<th align="center">Secondary</th>
-		<th align="center">Black</th>
-		<th align="center">Gray</th></tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td align="center" style="color:#FFF; background-color: #FF5A5F;">#FF5A5F</td>
-			<td align="center" style="color:#FFF; background-color: #008489;">#008489</td>
-			<td align="center" style="color:#FFF; background-color: #484848;">#484848</td>
-			<td align="center" style="color:#FFF; background-color: #767676;">#767676</td>
-		</tr>
-	</tbody>
-</table>
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fb8381e7/www/assets/images/color%20palette.png" alt="logo evolution">
+</h3>
 
 
 
