@@ -28,13 +28,11 @@ Siempre que empezamos un proyecto, buscamos en miles de sitios para buscar inspi
 
 ## Solución
 
-Asi que hemos decidido recopilar un esqueleto de estilos y componentes html, basados en estas grandes compañias, temas que son 100% editables, y adaptables a tu paleta de colores, o agregandole tu propia magia! para que tu producto siga siendo autentico y unico.
+Asi que hemos decidido recopilar un esqueleto de estilos y componentes html, basados en estas grandes compañias, temas que son 100% editables, y adaptables a tu propia paleta de colores o estilos, agregandole tu propia magia! para que tu producto siga siendo autentico y unico.
 
 **Con esto no buscamos copiar a las grandes compañias, sino obtener inspiración y usar esta de base para tus propios proyectos.**
 
 Los temas incluyen los elementos basicos y más usados en un sitio web: botones, labels, links, typograph, form elements, box componentes, searchbar, navbars, etc, etc, etc.
-
-Todos estos temas pueden ayudarte a obtener inspiración y ponerte en el camino correcto, para que tu proyecto se vea como los grandes!.
 
 Contributions are more than welcome.
 
