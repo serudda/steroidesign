@@ -66,6 +66,12 @@ Contributions are more than welcome.
 
 ## Instalación y uso
 
+<h1 align="center">
+	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="compare">
+</h1>
+
+<br>
+
 **1:** Install NodeJS v6 or latest (No estoy seguro si haya algun problema con versiones anteriores, pero este es el que usamos).
 
 **2:** On terminal (inside root directory) run the following commands:
