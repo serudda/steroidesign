@@ -80,6 +80,30 @@
 
 <br>
 
+## Some Components
+
+###Buttons
+
+**Primary Buttons**
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="logo evolution">
+</h3>
+
+<br>
+
+**Use**
+
+La clase principal para los botones es **```.ma-btn```**, al cual se le puede variar la forma con los modificadores: (```--small, --default, --large, --block```) o el tipo: (```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```)
+
+
+```html
+<button class="ma-btn ma-btn--small ma-btn--primary">Start Now</button>
+<button class="ma-btn ma-btn--default ma-btn--primary">Start Now</button>
+<button class="ma-btn ma-btn--large ma-btn--primary">Log in</button>
+<button class="ma-btn ma-btn--small ma-btn--primary ma-btn--block space-1">Small Primary Button</button>
+```
+
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
