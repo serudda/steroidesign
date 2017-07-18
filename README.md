@@ -1,8 +1,6 @@
 <h1 align="center">
-	<img width="500" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/b95eeb88/www/assets/images/Steroidesign.svg" alt="Steroidesign">
+	<img width="200" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/f14c6e27/www/assets/images/Steroidesign.png" alt="Steroidesign">
 </h1>
-
-<br>
 
 <h3 align="center">
 	<b>Has que tus proyectos se vean tan bien 💎 como los grandes 💪🏻</b>
