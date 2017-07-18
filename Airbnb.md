@@ -84,7 +84,10 @@
 
 ## Buttons
 
-La clase principal para los botones es: **```.ma-btn```**, el cual tiene modificadores de tipo y de tamaño:
+
+Para poder sobreescribir los estilos por defecto que proporciona Boostrap, es necesario usar la clase: **```.ma-btn```**, recomendamos no usar las clases que provee Boostrap ya que tendrias conflictos de estilos, y tendrias que trabajar extra tratando de sobreescribirlos.
+
+Los botones cuentan con modificadores de tipo y de tamaño:
 
 - **Tamaño:** ```--small, --default, --large, --block```
 - **Tipo:** ```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```
@@ -100,7 +103,7 @@ La clase principal para los botones es: **```.ma-btn```**, el cual tiene modific
 
 ### Use
 
-El modificador de un boton primary es ```--primary``` el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+El modificador de un boton primary es **```--primary```** el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--primary">Start Now</button>
@@ -177,6 +180,135 @@ El modificador de un boton secundario sin fondo es ```--secondary-without-bg``` 
 <button class="ma-btn ma-btn--large ma-btn--secondary-without-bg">Log in</button>
 <button class="ma-btn ma-btn--small ma-btn--secondary-without-bg ma-btn--block">Small Secondary Without Bg Button</button>
 ```
+
+<br>
+
+---
+
+<br>
+
+### Block Buttons
+
+Los botones de bloque, son los que adaptan su width dinamicamente, es decir llegan de extremo a extremo dentro del contenedor en el que se encuentren, en otras palabras no tienen un width fijo, el width se adapta a su contenedor padre.
+
+Para usar este tipo de botones, simplemente hay que agregar el modificador de tamaño: **```--block```**, esto le agregara un width de 100% y le permitira adaptar su width.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="button disabled">
+</h3>
+
+```html
+<button class="ma-btn ma-btn--default ma-btn--primary ma-btn--block">
+	Default Primary Button
+</button>
+```
+
+<br>
+
+---
+
+<br>
+
+### Special Buttons
+
+Además hay tipos especiales de botones que cuentan con un diseño especial y diferente a los botones tradicionales. Entre los cuales tenemos: botones sociales (**```ma-btn--facebook```**, **```ma-btn--google```**) y botones helpful (**```ma-btn--helpful```**).
+
+**Social Buttons**
+
+Los botones sociales estan compuestos por el texto y un icono alusivo a la red social.
+
+Además, los botones sociales tambien cuentan con modificadores de tamaño: **```--small```**, **```--default```** y **```--large```**
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="social buttons list">
+</h3>
+
+```html
+<!-- Default Facebook button -->
+<button class="ma-btn ma-btn--default ma-btn--facebook">
+    <div class="ma-btn__content">
+        <div class="ma-btn__content__icon-container">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="space-left-2">
+            <span>Log in with Facebook</span>
+        </div>
+    </div>
+</button>
+
+<! Default Google button >
+<button class="ma-btn ma-btn--default ma-btn--google">
+    <div class="ma-btn__content">
+        <div class="ma-btn__content__icon-container">
+            <!-- Google icon SVG -->
+            <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="display: block; height: 18px; width: 18px;"><g fill="none" fill-rule="evenodd"><path d="M9 3.48c1.69 0 2.83.73 3.48 1.34l2.54-2.48C13.46.89 11.43 0 9 0 5.48 0 2.44 2.02.96 4.96l2.91 2.26C4.6 5.05 6.62 3.48 9 3.48z" fill="#EA4335"></path><path d="M17.64 9.2c0-.74-.06-1.28-.19-1.84H9v3.34h4.96c-.1.83-.64 2.08-1.84 2.92l2.84 2.2c1.7-1.57 2.68-3.88 2.68-6.62z" fill="#4285F4"></path><path d="M3.88 10.78A5.54 5.54 0 0 1 3.58 9c0-.62.11-1.22.29-1.78L.96 4.96A9.008 9.008 0 0 0 0 9c0 1.45.35 2.82.96 4.04l2.92-2.26z" fill="#FBBC05"></path><path d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.84-2.2c-.76.53-1.78.9-3.12.9-2.38 0-4.4-1.57-5.12-3.74L.97 13.04C2.45 15.98 5.48 18 9 18z" fill="#34A853"></path><path d="M0 0h18v18H0V0z"></path></g></svg>
+        </div>
+        <div class="space-left-2">
+            <span>Log in with Google</span>
+        </div>
+    </div>
+</button>
+```
+
+<br>
+
+**Helpful Buttons**
+
+Los botones helpful son botones que usa Airbnb para calificar los reviews y comentarios dados por sus usuarios en su plataforma. Esta compuesto por un label, y un contador.
+
+Además, los botones helpful tambien cuentan con modificadores de tipo: **```--minimal```**, **```--primary```** y **```--secondary```**
+
+Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, más adelante trabajaremos un poco más en detalle en este tipo de componentes, y agregaremos más modificadores.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="helpful buttons list">
+</h3>
+
+```html
+<!-- Minimal Helpful button -->
+<button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--minimal">
+    <span>
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        <div class="ma-btn--helpful__text">Helpful</div>
+        <div class="ma-btn--helpful__count">3</div>
+    </span>
+</button>
+
+<!-- Primary Helpful button -->
+<button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--primary">
+    <span>
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        <div class="ma-btn--helpful__text">Helpful</div>
+        <div class="ma-btn--helpful__count">24</div>
+    </span>
+</button>
+
+<!-- Secondary Helpful button -->
+<button class="ma-btn ma-btn--helpful ma-btn--helpful--small ma-btn--helpful--secondary">
+    <span>
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        <div class="ma-btn--helpful__text">Helpful</div>
+        <div class="ma-btn--helpful__count">590</div>
+    </span>
+</button>
+```
+
+<br>
+
+**Button Disabled**
+
+Los botones cuentan con un modificador que nos permite cambiar los estilos a los botones deshabilitados facilmente. Este no requiere una clase modificador, simplemente al decir que el button esta disabled, este tomara los estilos que hemos proporcionado por defecto a los buttons disabled.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="button disabled">
+</h3>
+
+```html
+<button class="ma-btn ma-btn--default ma-btn--secondary" disabled>
+    Disabled Button
+</button>
+```
+
 <br>
 
 ---
