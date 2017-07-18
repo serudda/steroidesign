@@ -94,7 +94,7 @@ La clase principal para los botones es: **```.ma-btn```**, el cual tiene modific
 ### Primary Buttons
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="logo evolution">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="buttons list">
 </h3>
 
 
@@ -117,7 +117,7 @@ El modificador de un boton primary es ```--primary``` el cual determina los boto
 ### Secondary Buttons
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons.png" alt="logo evolution">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons.png" alt="buttons list">
 </h3>
 
 
@@ -140,7 +140,7 @@ El modificador de un boton secundario es ```--secondary``` el cual determina los
 ### Primary Without Background Buttons
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/primary_buttons_w_o_bg.png" alt="logo evolution">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/primary_buttons_w_o_bg.png" alt="buttons list">
 </h3>
 
 
@@ -163,7 +163,7 @@ El modificador de un boton primario sin fondo es ```--primary-without-bg``` el c
 ### Secondary Without Background Buttons
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="logo evolution">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="buttons list">
 </h3>
 
 
@@ -192,7 +192,9 @@ El uso es muy similar al de los buttons, la unica diferencia es que no poseen mo
 
 - **Tamaño:** ```--small, --default, --large, --block```
 
-Imagen
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/inputs%20type.png" alt="inputs list">
+</h3>
 
 ```html
 <!-- small input -->
@@ -218,7 +220,9 @@ Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a 
 
 - ```--invalid```: Al agregar el modificador ```--invalid```, este alterara los colores del input para mostrarle al usuario que no paso la validación requerida por el componente:
 
-Imagen
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/invalid_input.png" alt="inputs list">
+</h3>
 
 ```html
 <input class="ma-input ma-input--default ma-input--invalid">
@@ -229,7 +233,9 @@ Imagen
 
 - ```disabled```: Este no requiere una clase modificador, simplemente al decir que el input esta disabled, este tomara los estilos que hemos proporcionado por defecto a los inputs disabled.
 
-Imagen
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/input_disabled.png" alt="inputs list">
+</h3>
 
 ```html
 <input class="ma-input ma-input--default" disabled>
@@ -251,7 +257,9 @@ Los selects component tambien tienen modificadores de tamaño iguales a los inpu
 
 **Nota importante:** Es necesario que el ```.ma-select-container``` y el elemento ```.ma-select``` contengan el mismo modificador de tamaño, es decir, si ```.ma-select-container``` es ```--small```, el elemento hijo ```.ma-select``` tambien debe ser ```--small``` y usar dicha clase.
 
-Imagen
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select%20components.png" alt="inputs list">
+</h3>
 
 ```html
 <!-- select container -->
@@ -273,9 +281,17 @@ Imagen
 </div>
 ```
 
+<br>
+
 Los select component tambien cuentan con los modificadores: ```--invalid``` y ```disabled```.
 
-Imagen
+<br>
+
+**Invalid Select**
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/invalid_select.png" alt="invalid select">
+</h3>
 
 ```html
 <div class="ma-select-container ma-select-container--default">
@@ -296,7 +312,13 @@ Imagen
 </p>
 ```
 
-Imagen 
+<br>
+
+**Select Disabled**
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select_disabled.png" alt="inputs list">
+</h3>
 
 ```html
 <div class="ma-select-container ma-select-container--default">
