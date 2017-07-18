@@ -119,7 +119,7 @@ a search field with or without icon
 .search__input--icon {/* Styles */}
 ```
 
-###Naming Conventions
+### Naming Conventions
 
 The primary purpose of BEM methodology is to make names of CSS selectors as informative and transparent as possible. Original BEM style is defined in this way:
 
@@ -140,7 +140,7 @@ Modifier name starts with double hyphen ```--```:
 ```
 <br>
 
-###more references:
+### more references:
 
 - [http://getbem.com/introduction/](http://getbem.com/introduction/)
 - [https://www.toptal.com/css/introduction-to-bem-methodology](https://www.toptal.com/css/introduction-to-bem-methodology)
