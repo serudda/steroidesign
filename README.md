@@ -65,6 +65,93 @@ Contributions are more than welcome.
 
 <br>
 
+## Base methodology
+
+Los temas los escribimos bajo la **metodologia BEM**, para estructurar mucho mejor los elemento de un html, basados en bloque, elemento y modificadores. Dejamos una pequeña explicación aqui, y si desean profundizar más, dejamos la referencia a la pagina oficial: [https://en.bem.info/](https://en.bem.info/)
+
+On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.
+
+However, when it comes to larger, more complex projects, how you organize your code is the key to efficiency in at least these three ways: it affects how long it takes you to write code, how much of that code you’ll have to write and how much loading your browser will have to do. This becomes especially important when you’re working with teams of themers, and when high performance is essential.
+
+**BEM** stands for **Block Element Modifier**. The main idea behind it is to speed up the development process, and ease the teamwork of developers by arranging CSS classes into independent modules. If you ever saw a class name like ```.header__form--search```, that is BEM in action. Yes, classes can be named very long, but they are all readable and understandable.
+
+Note that the best practice is to use BEM only with classes, and not IDs because classes allow you to repeat names if necessary and create more consistent coding structure. Also, if you want to break your website into organized modules, it should consist of the same structure: block, element, and modifier. Where each block can have multiple elements, and both block and elements can have multiple modifiers. However, let’s first start with the basic BEM structure and explain it with examples.
+
+### Block
+
+A block represents an object in your website. Think of it as bigger structural chunks of your code. Most common blocks on every website today are header, content, sidebar, footer, and search. Blocks in BEM are always a starting point of chaining your CSS classes on to. Take a look at a few block examples:
+
+a content
+a menu
+a search form
+
+```css
+.content {/* Styles */}
+.menu {/* Styles */}
+.search {/* Styles */}
+```
+
+### Element
+
+An element is a component within the block that performs a particular function. It should only make sense in the context of its block:
+
+a content article
+a menu item
+a search input field
+
+```css
+.content__article {/* Styles */}
+.menu__item {/* Styles */}
+.search__input {/* Styles */}
+```
+
+### Modifier
+
+A modifier is how we represent the variations of a block. If you’ve ever used Bootstrap, then the best example would be the button sizes. Button sizes are just size variations of the button itself, which makes it the modifier:
+
+a content featured article
+a menu link
+a search field with or without icon
+
+```css
+.content__article--featured {/* Styles */}
+.menu__item--link {/* Styles */}
+.search__input--icon {/* Styles */}
+```
+
+###Naming Conventions
+
+The primary purpose of BEM methodology is to make names of CSS selectors as informative and transparent as possible. Original BEM style is defined in this way:
+
+Block name is usually a single word like ```.header```, but if you have longer block definition then it is divided with a single hyphen ```-```:
+
+```css
+.btn-container {/* Styles */}
+```
+Element name starts with double underscore ```__```:
+
+```css
+.btn-container__btn {/* Styles */}
+```
+Modifier name starts with double hyphen ```--```:
+
+```css
+.btn-container__btn--small {/* Styles */}
+```
+<br>
+
+###more references:
+
+- [http://getbem.com/introduction/](http://getbem.com/introduction/)
+- [https://www.toptal.com/css/introduction-to-bem-methodology](https://www.toptal.com/css/introduction-to-bem-methodology)
+
+<br>
+
+---
+
+<br>
+
+
 ## Instalación y uso
 
 <h1 align="center">
