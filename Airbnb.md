@@ -456,8 +456,48 @@ Los select component tambien cuentan con los modificadores: ```--invalid``` y ``
 </div>
 ```
 
+<br>
 
+---
 
+<br>
+
+## Labels
+
+Los labels son por lo general etiquetas que se usan para resaltar algo, e.g. una nueva sección, se le acostumbra a colocar la etiqueta 'NEW'.
+
+La clase principal de los labels es ```.ma-label```, los cuales se dividen en dos grupos, los label simples ```--simple``` y los box label ```--box```, los cuales tienen modificadores de tipo y de tamaño:
+
+- **Tamaño:** ```--small```, ```--default```, ```--large```
+- **Tipo:** ```--primary```, ```--secondary```, ```--white```(solo para label box)
+
+Cada modificador debe estar ligado a su grupo, ya sea ```--simple``` o ```--box```, e.g. **```--simple--small```**, **```--box--primary```**. 
+
+Image
+
+```html
+<! small primary label box >
+<span class="ma-label ma-label--box ma-label--box--primary ma-label--box--small">New</span>
+
+<! default secondary label box >
+<span class="ma-label ma-label--box ma-label--box--secondary ma-label--box--default">New</span>
+
+<! large white label box >
+<span class="ma-label ma-label--box ma-label--box--white ma-label--box--large">New</span>
+```
+
+Image
+
+```html
+<! small primary simple label > 
+<div class="ma-label ma-label--simple ma-label--simple--primary ma-label--simple--small">2 positions</div>
+
+<! default secondary simple label >
+<div class="ma-label ma-label--simple ma-label--simple--secondary ma-label--simple--default">2 positions</div>
+
+<! large simple label >
+<div class="ma-label ma-label--simple ma-label--simple--large">2 positions</div>
+```
 
 
 ## License
