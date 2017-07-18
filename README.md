@@ -8,6 +8,12 @@
 
 <br>
 
+<h1 align="center">
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
+</h1>	
+
+<br>
+
 ---
 
 <br>
@@ -36,30 +42,17 @@ Contributions are more than welcome.
 
 <br>
 
-
 ## Contents
 
 - [Base Methodology](#methodology)
 - [Instalación y uso](#install)
 - [Themes](#themes)
 	- [Airbnb](#airbnb)
-		- [PUV Actual](#airbnb-puv)
-		- [Description Actual](#airbnb-description)
-		- [Logo evolution](#airbnb-logo)
-		- [Color Palette](#airbnb-palette)
-		- [Font Family & Alternatives](#airbnb-font)
-		- [Preview de componentes](#airbnb-components)
-			- [Buttons](#airbnb-components-buttons)
-			- [Inputs](#airbnb-components-inputs)
-			- [Labels](#airbnb-components-labels)
-			- [Navbar](#airbnb-components-navbar)
-			- [Subnav](#airbnb-components-subnav)
 	- [Medium](#medium) (In Progress)
 	- [Product Hunt](#product-hunt) (Coming soon)
 	- [Asana](#asana-hunt) (Coming soon)
 	- [Sugierenos el proximo](#next-theme)
-- [Helper classes](#helper-classes)
-- [License] (#license)
+- [License](#license)
 
 <br>
 

@@ -1,4 +1,6 @@
-## Airbnb
+# Airbnb
+
+<br>
 
 <table>
 	<thead>
@@ -80,7 +82,44 @@
 
 <br>
 
-## Some Components
+# Components
+
+<br>
+
+## Contents
+
+- [Buttons](#buttons)
+	- [Primary Buttons](#primary-buttons)
+	- [Secondary Buttons](#secondary-buttons)
+	- [Primary Without Background Buttons](#primary-without-background-buttons)
+	- [Secondary Without Background Buttons](#secondary-without-background-buttons)
+	- [Block Buttons](#block-buttons)
+	- [Special Buttons](#special-buttons)
+		- [Social Buttons](#social-buttons)
+		- [Helpful Buttons](#helpful-buttons)
+		- [Button Disabled](#button-disabled)
+- [Inputs](#inputs)
+	- [Selects and Textarea](#selects-and-textarea)
+		- [Selects](#selects)
+		- [Invalid Select](#invalid-select)
+		- [Select Disabled](#elect-disabled)
+- [Labels](#labels)
+- [Navbar](#navbar)
+- [Subnav](#subnav)
+	- [Simple Subnav](#simple-subnav)
+	- [Subnav Tabs](#subnav-tabs)
+- [Others Components](#others-components)
+- [Helper classes](#helper-classes)
+- [Feedback](#feedback)
+- [Donate fo another ☕](#donate)
+- [License](#license)
+
+<br>
+
+
+---
+
+<br>
 
 ## Buttons
 
@@ -641,7 +680,7 @@ Para agregar una nueva opcion a la subnav, se agregar un elemento div con la cla
 
 <br>
 
-### Subnav tabs
+### Subnav Tabs
 
 Los subnav tabs se consiguen agregando el modificador: **```--tabs```** a la clase ```.ma-subnav```.
 Para agregar una nueva opcion a la subnav, se agregar un elemento div de la misma forma que en los subnav simples.
@@ -682,7 +721,43 @@ Para agregar una nueva opcion a la subnav, se agregar un elemento div de la mism
 </div>
 ```
 
+<br>
 
+## Others Components
+
+Hay otros componentes que no hemos documentado aqui, ya sea por tiempo, o por que son tan sencillos que no vale la pena hacer esta guia tan extensa.
+
+Esta es la lista de otros componentes que incluye el Airbnb theme:
+
+- Typograph
+	- Titles
+	- Paragraph 
+- Forms
+	- Basic form
+	- Horizontal form
+- Checkbox
+- Searchbox alternative
+- Box component
+- Rate stars
+- Profile avatars
+
+<br> 
+
+## Feedback
+
+Cualquier sugerencia que tengan, o si quieren aportar alguna ayuda, idea o mejora, pueden escribirnos a nuestros twitter: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), no duden en seguirnos, y recibir todas las novedades semanalmente suscribiendose an nuestro newletter. Semanalmente estaremos subiendo actualizaciones de temas o subiendo nuevos temas.
+
+<br>
+
+## Donate
+
+Este es un trabajo que hacemos por amor al arte, hemos decidido dejar nuestros trabajos para dedicarnos hacer los que más nos gusta, lo cual es crear. Si gustas donarnos algo para tomarnos un café, seria maravilloso! Muchas gracias, y espero que disfrutes nuestro trabajo.
+
+<h1 align="center">
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
+</h1>	
+
+<br>
 
 
 ## License
