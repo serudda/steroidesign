@@ -181,6 +181,141 @@ El modificador de un boton secundario sin fondo es ```--secondary-without-bg``` 
 
 ---
 
+<br>
+
+
+## Inputs 
+
+Para poder sobreescribir los estilos por defecto que proporciona Boostrap, es necesario usar la clase: ```.ma-input```, recomendamos no usar las clases que provee Boostrap ya que tendrias conflictos de estilos, y tendrias que trabajar extra tratando de sobreescribirlos.
+
+El uso es muy similar al de los buttons, la unica diferencia es que no poseen modificadores de tipo, solo de tamaño:
+
+- **Tamaño:** ```--small, --default, --large, --block```
+
+Imagen
+
+```html
+<!-- small input -->
+<input type="text" class="ma-input ma-input--small">
+
+<!-- default input -->
+<input type="text" class="ma-input ma-input--default">
+
+<!-- large input -->
+<input type="text" class="ma-input ma-input--large">
+
+<!-- input with help text -->
+<input type="text" class="ma-input ma-input--default">
+<p class="ma-p ma-p--small font-weight-normal space-top-1">
+    The magical day you were dropped from the sky
+    by a stork. We use this data for analysis and
+    never share it with other users.
+</p>
+```
+
+
+Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a cada campo, estos son: ```--invalid``` y el ```disabled```:
+
+- ```--invalid```: Al agregar el modificador ```--invalid```, este alterara los colores del input para mostrarle al usuario que no paso la validación requerida por el componente:
+
+Imagen
+
+```html
+<input class="ma-input ma-input--default ma-input--invalid">
+<p class="ma-p ma-p--small ma-p--alert font-weight-normal">
+	Value required.
+</p>
+```
+
+- ```disabled```: Este no requiere una clase modificador, simplemente al decir que el input esta disabled, este tomara los estilos que hemos proporcionado por defecto a los inputs disabled.
+
+Imagen
+
+```html
+<input class="ma-input ma-input--default" disabled>
+```
+
+<br>
+
+### Selects and Textarea
+
+Es necesario que los componentes Select y Textarea usen la clase ```.ma-input``` para heredar las clases bases de un input (e.g. el efecto focus, el disabled, etc.).
+
+**Select**
+
+El select component usa como clase base: ```.ma-select```, pero los selects component son un poco más complejos en su estructura, ya que estan compuestos por ```.ma-select-container``` (quien es el que contendra el ```.ma-select``` y el ```.ma-select-arrow```).
+
+Los selects component tambien tienen modificadores de tamaño iguales a los inputs text:
+
+- **Tamaño:** ```--small, --default, --large, --block```
+
+**Nota importante:** Es necesario que el ```.ma-select-container``` y el elemento ```.ma-select``` contengan el mismo modificador de tamaño, es decir, si ```.ma-select-container``` es ```--small```, el elemento hijo ```.ma-select``` tambien debe ser ```--small``` y usar dicha clase.
+
+Imagen
+
+```html
+<!-- select container -->
+<div class="ma-select-container ma-select-container--small">
+	
+	<!-- select component -->
+	<select class="ma-input ma-select ma-select--small">
+		<option value="" disabled selected>Gender</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Other">Other</option>
+	</select>
+	
+	<!-- arrow -->
+	<span class="ma-select-arrow">
+		<i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+	</span>
+	
+</div>
+```
+
+Los select component tambien cuentan con los modificadores: ```--invalid``` y ```disabled```.
+
+Imagen
+
+```html
+<div class="ma-select-container ma-select-container--default">
+	<select class="ma-input ma-select ma-select--default ma-select--invalid">
+        <option value="" disabled selected>Language</option>
+        <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+        <option value="Español">Español</option>
+        <option value="English">English</option>
+        <option value="Italiano">Italiano</option>
+        <option value="Other">Other</option>
+    </select>
+    <span class="ma-select-arrow">
+        <i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+    </span>
+</div>
+<p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+	Language required.
+</p>
+```
+
+Imagen 
+
+```html
+<div class="ma-select-container ma-select-container--default">
+	<select id="select5" class="ma-input ma-select ma-select--default" disabled>
+		<option value="" disabled selected>Language</option>
+		<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+		<option value="Español">Español</option>
+		<option value="English">English</option>
+		<option value="Italiano">Italiano</option>
+		<option value="Other">Other</option>
+   </select>
+   <span class="ma-select-arrow">
+   		<i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+   </span>
+</div>
+```
+
+
+
 
 
 ## License
