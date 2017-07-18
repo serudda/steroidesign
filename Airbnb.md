@@ -235,7 +235,84 @@ Imagen
 <input class="ma-input ma-input--default" disabled>
 ```
 
+<br>
 
+### Selects and Textarea
+
+Es necesario que los componentes Select y Textarea usen la clase ```.ma-input``` para heredar las clases bases de un input (e.g. el efecto focus, el disabled, etc.).
+
+**Select**
+
+El select component usa como clase base: ```.ma-select```, pero los selects component son un poco más complejos en su estructura, ya que estan compuestos por ```.ma-select-container``` (quien es el que contendra el ```.ma-select``` y el ```.ma-select-arrow```).
+
+Los selects component tambien tienen modificadores de tamaño iguales a los inputs text:
+
+- **Tamaño:** ```--small, --default, --large, --block```
+
+**Nota importante:** Es necesario que el ```.ma-select-container``` y el elemento ```.ma-select``` contengan el mismo modificador de tamaño, es decir, si ```.ma-select-container``` es ```--small```, el elemento hijo ```.ma-select``` tambien debe ser ```--small``` y usar dicha clase.
+
+Imagen
+
+```html
+<!-- select container -->
+<div class="ma-select-container ma-select-container--small">
+	
+	<!-- select component -->
+	<select class="ma-input ma-select ma-select--small">
+		<option value="" disabled selected>Gender</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+		<option value="Other">Other</option>
+	</select>
+	
+	<!-- arrow -->
+	<span class="ma-select-arrow">
+		<i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+	</span>
+	
+</div>
+```
+
+Los select component tambien cuentan con los modificadores: ```--invalid``` y ```disabled```.
+
+Imagen
+
+```html
+<div class="ma-select-container ma-select-container--default">
+	<select class="ma-input ma-select ma-select--default ma-select--invalid">
+        <option value="" disabled selected>Language</option>
+        <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+        <option value="Español">Español</option>
+        <option value="English">English</option>
+        <option value="Italiano">Italiano</option>
+        <option value="Other">Other</option>
+    </select>
+    <span class="ma-select-arrow">
+        <i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+    </span>
+</div>
+<p class="ma-p ma-p--small ma-p--alert font-weight-normal space-top-1">
+	Language required.
+</p>
+```
+
+Imagen 
+
+```html
+<div class="ma-select-container ma-select-container--default">
+	<select id="select5" class="ma-input ma-select ma-select--default" disabled>
+		<option value="" disabled selected>Language</option>
+		<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+		<option value="Español">Español</option>
+		<option value="English">English</option>
+		<option value="Italiano">Italiano</option>
+		<option value="Other">Other</option>
+   </select>
+   <span class="ma-select-arrow">
+   		<i data-feather="chevron-down" class="ma-select-arrow__icon"></i>
+   </span>
+</div>
+```
 
 
 
