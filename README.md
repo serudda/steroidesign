@@ -10,16 +10,21 @@
 
 <h1 align="center">
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
+	</a>
 </h1>	
 
 <br>
 
----
-
 <br>
 
 <h4 align="center">
-	<sub>Hecho con ❤ y ☕ por <a href="https://www.twitter.com/rosa7082" target="_blank">@rosa7082</a> y <a href="https://www.twitter.com/seruda" target="_blank">@seruda</a> en <a href="https://www.google.com/maps/place/Portland,OR" target="_blank">Portland, OR</a>.</sub>
+	Hecho con ❤ y ☕ por 
+		<a href="https://www.twitter.com/rosa7082" target="_blank">@rosa7082</a> 
+		y 
+		<a href="https://www.twitter.com/seruda" target="_blank">@seruda</a> 
+		en 
+		<a href="https://www.google.com/maps/place/Portland,OR" target="_blank">Portland, OR</a>
+		.
 </h4>
 
 <br>
