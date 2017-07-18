@@ -181,6 +181,64 @@ El modificador de un boton secundario sin fondo es ```--secondary-without-bg``` 
 
 ---
 
+<br>
+
+
+## Inputs 
+
+Para poder sobreescribir los estilos por defecto que proporciona Boostrap, es necesario usar la clase: .ma-input, recomendamos no usar las clases que provee Boostrap ya que tendrias conflictos de estilos, y tendrias que trabajar extra tratando de sobreescribirlos.
+
+El uso es muy similar al de los buttons, la unica diferencia es que no poseen modificadores de tipo, solo de tamaño:
+
+- **Tamaño:** ```--small, --default, --large, --block```
+
+Imagen
+
+```
+<!-- small input -->
+<input type="text" class="ma-input ma-input--small">
+
+<!-- default input -->
+<input type="text" class="ma-input ma-input--default">
+
+<!-- large input -->
+<input type="text" class="ma-input ma-input--large">
+
+<!-- input with help text -->
+<input type="text" class="ma-input ma-input--default">
+<p class="ma-p ma-p--small font-weight-normal space-top-1">
+    The magical day you were dropped from the sky
+    by a stork. We use this data for analysis and
+    never share it with other users.
+</p>
+```
+
+
+Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a cada campos, estos son: ```--invalid``` y el ```disabled```:
+
+- ```--invalid```: Al agregar el modificador ```--invalid``, este alterara los colores del input para mostrarle al usuario que no paso la validación requeria por el componente:
+
+Imagen
+
+```
+<input class="ma-input ma-input--default ma-input--invalid">
+<p class="ma-p ma-p--small ma-p--alert font-weight-normal">
+	Value required.
+</p>
+```
+
+- ```disabled```: Este no requiere una clase modificador, simplemente al decir que el input esta disabled, este tomara los estilos que hemos proporcionado por defecto a los inputs disabled.
+
+Imagen
+
+```
+<input class="ma-input ma-input--default" disabled>
+```
+
+
+
+
+
 
 
 ## License
