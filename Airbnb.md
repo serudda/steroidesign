@@ -96,14 +96,11 @@ Los botones cuentan con modificadores de tipo y de tamaño:
 
 ### Primary Buttons
 
+El modificador de un boton primary es **```--primary```** el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="buttons list">
 </h3>
-
-
-### Use
-
-El modificador de un boton primary es **```--primary```** el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--primary">Start Now</button>
@@ -119,14 +116,11 @@ El modificador de un boton primary es **```--primary```** el cual determina los 
 
 ### Secondary Buttons
 
+El modificador de un boton secundario es **```--secondary```** el cual determina los botones con el color secundario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons.png" alt="buttons list">
 </h3>
-
-
-### Use
-
-El modificador de un boton secundario es ```--secondary``` el cual determina los botones con el color secundario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--secondary">Start Now</button>
@@ -142,14 +136,11 @@ El modificador de un boton secundario es ```--secondary``` el cual determina los
 
 ### Primary Without Background Buttons
 
+El modificador de un boton primario sin fondo es **```--primary-without-bg```** el cual determina los botones con el color primario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/primary_buttons_w_o_bg.png" alt="buttons list">
 </h3>
-
-
-### Use
-
-El modificador de un boton primario sin fondo es ```--primary-without-bg``` el cual determina los botones con el color primario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--primary-without-bg">Start Now</button>
@@ -165,14 +156,11 @@ El modificador de un boton primario sin fondo es ```--primary-without-bg``` el c
 
 ### Secondary Without Background Buttons
 
+El modificador de un boton secundario sin fondo es **```--secondary-without-bg```** el cual determina los botones con el color secundario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="buttons list">
 </h3>
-
-
-### Use
-
-El modificador de un boton secundario sin fondo es ```--secondary-without-bg``` el cual determina los botones con el color secundario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--secondary-without-bg">Start Now</button>
@@ -194,7 +182,7 @@ Los botones de bloque, son los que adaptan su width dinamicamente, es decir lleg
 Para usar este tipo de botones, simplemente hay que agregar el modificador de tamaño: **```--block```**, esto le agregara un width de 100% y le permitira adaptar su width.
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="button disabled">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/block_buttons.png" alt="block button">
 </h3>
 
 ```html
@@ -220,7 +208,7 @@ Los botones sociales estan compuestos por el texto y un icono alusivo a la red s
 Además, los botones sociales tambien cuentan con modificadores de tamaño: **```--small```**, **```--default```** y **```--large```**
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="social buttons list">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/social_buttons.png" alt="social buttons list">
 </h3>
 
 ```html
@@ -261,7 +249,7 @@ Además, los botones helpful tambien cuentan con modificadores de tipo: **```--m
 Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, más adelante trabajaremos un poco más en detalle en este tipo de componentes, y agregaremos más modificadores.
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="helpful buttons list">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/helpful_buttons.png" alt="helpful buttons list">
 </h3>
 
 ```html
@@ -300,7 +288,7 @@ Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, m�
 Los botones cuentan con un modificador que nos permite cambiar los estilos a los botones deshabilitados facilmente. Este no requiere una clase modificador, simplemente al decir que el button esta disabled, este tomara los estilos que hemos proporcionado por defecto a los buttons disabled.
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="button disabled">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/button_disabled.png" alt="button disabled">
 </h3>
 
 ```html
