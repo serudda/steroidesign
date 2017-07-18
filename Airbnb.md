@@ -464,7 +464,7 @@ Los select component tambien cuentan con los modificadores: ```--invalid``` y ``
 
 ## Labels
 
-Los labels son por lo general etiquetas que se usan para resaltar algo, e.g. una nueva sección, se le acostumbra a colocar la etiqueta 'NEW'.
+Los labels son por lo general etiquetas que se usan para resaltar algo, e.g. una nueva sección, se le acostumbra a colocar la etiqueta **'NEW'**.
 
 La clase principal de los labels es ```.ma-label```, los cuales se dividen en dos grupos, los label simples ```--simple``` y los box label ```--box```, los cuales tienen modificadores de tipo y de tamaño:
 
@@ -506,6 +506,183 @@ Cada modificador debe estar ligado a su grupo, ya sea ```--simple``` o ```--box`
 <! large simple label >
 <div class="ma-label ma-label--simple ma-label--simple--large">2 positions</div>
 ```
+
+<br>
+
+---
+
+<br>
+
+## Navbar
+
+Los navbar o header son las barras superiores que permiten al usuario tener acceso constante a sección como: Editar Perfil, Log in, Sign up, Settings, etc.
+
+Se ha vuelto tendencia que muchos sitios incluyan un search bar en su header o navbar con el fin de que sus usuarios puedan acceder más facilmente a los productos o servicios que el sitio esta ofreciendo.
+
+Para hacer uso de este componente usamos la clase: **```.ma-header```**, con el modificador **```--large```** para pantallas medianas y grandes, y el modificador **```--small```** para pantallas pequeñas y dispositivos moviles.
+
+Dentro de la navbar podemos encontrar: el **logo** del sitio, **botones de navegación** (e.g. Log in, Sign up, Edit Profile, etc.), y el **search bar**.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/navbar.png" alt="labels box">
+</h3>
+
+```html
+<header class="ma-header ma-header--large">
+
+    <! Logo >
+    <div class="ma-header__logo-container">
+        <a class="link-reset">
+            <div class="content">
+                <div class="ma-logo temporal-logo">
+                    <! your own logo >
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <! Search box >
+    <div class="ma-header__search-container">
+        <form class="form-content hidden-xs">
+            <div class="ma-search-bar">
+                <i class="ma-search-bar__icon" data-feather="search"></i>
+                <label class="screen-reader-only" aria-hidden="true">Search</label>
+                <input class="ma-search-bar__input" placeholder="Search" type="text">
+            </div>
+        </form>
+    </div>
+
+    <! Navigation Container >
+    <div class="ma-header__nav-container">
+        <nav>
+            <ul class="ma-nav-list">
+                <! Log in button >
+                <li class="ma-nav-list__item">
+                    <button class="ma-nav-list__item__btn">Log in</button>
+                </li>
+                <! Sign up button >
+                <li class="ma-nav-list__item">
+                    <button class="ma-nav-list__item__btn">Sign up</button>
+                </li>
+                <! Avatar button >
+                <li>
+                    <a class="ma-nav-list__item__btn link-reset" href>
+                        <div class="content">
+                            <div class="ma-avatar ma-avatar--tiny ma-avatar--border-minimal round">
+                                <img width="32" height="32" src="path/to/avatar">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</header>
+```
+<br>
+
+---
+
+<br>
+
+## Subnav
+
+Los subnav son barras de navegación que permiten navegar dentro de la misma pagina, son opciones más simples, y se acostumbra a llamarlos: tabs.
+
+Usamos la clase: **```.ma-subnav```** para hacer uso de este componente, el cual esta divido en dos tipos, los **subnav simples** y los **subnav tabs**.
+
+### Simple Subnav
+
+Los subnav simples se consiguen agregando el modificador: **```--simple```** a la clase ```.ma-subnav```.
+Para agregar una nueva opcion a la subnav, se agregar un elemento div con la clase: **```.ma-subnav__item```**.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/simple_sub_nav.png" alt="labels box">
+</h3>
+
+```html
+<! Sub Nav Simple >
+<div class="ma-subnav ma-subnav--simple">
+    <nav class="container">
+        <div class="ma-subnav__item">
+            <div class="content">
+                <a href>Overview</a>
+            </div>
+        </div>
+
+        <span class="space-right-1 space-left-1"> · </span>
+
+        <div class="ma-subnav__item">
+            <div class="content">
+                <a href>Review</a>
+            </div>
+        </div>
+
+        <span class="space-right-1 space-left-1"> · </span>
+
+        <div class="ma-subnav__item">
+            <div class="content">
+                <a class="active" href>The Host</a>
+            </div>
+        </div>
+
+        <span class="space-right-1 space-left-1"> · </span>
+
+        <div class="ma-subnav__item">
+            <div class="content">
+                <a href>Location</a>
+            </div>
+        </div>
+
+    </nav>
+</div>
+```
+
+<br>
+
+### Subnav tabs
+
+Los subnav tabs se consiguen agregando el modificador: **```--tabs```** a la clase ```.ma-subnav```.
+Para agregar una nueva opcion a la subnav, se agregar un elemento div de la misma forma que en los subnav simples.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/sub_nav_tabs.png" alt="labels box">
+</h3>
+
+```html
+<! Sub Nav Tabs >
+<div class="ma-subnav ma-subnav--tabs">
+    <nav class="container">
+        <div class="ma-subnav__item space-right-4">
+            <div class="content">
+                <a class="link-reset" href>FOR YOU</a>
+            </div>
+        </div>
+
+        <div class="ma-subnav__item space-right-4">
+            <div class="content active">
+                <a class="link-reset" href>HOMES</a>
+            </div>
+        </div>
+
+        <div class="ma-subnav__item space-right-4">
+            <div class="content">
+                <a class="link-reset" href>EXPERIENCES</a>
+            </div>
+        </div>
+
+        <div class="ma-subnav__item">
+            <div class="content">
+                <a class="link-reset" href>PLACES</a>
+            </div>
+        </div>
+
+    </nav>
+</div>
+```
+
+
 
 
 ## License
