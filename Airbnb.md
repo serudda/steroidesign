@@ -437,7 +437,7 @@ Los select component tambien cuentan con los modificadores: ```--invalid``` y ``
 **Select Disabled**
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select_disabled.png" alt="inputs list">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select_disabled.png" alt="select disabled">
 </h3>
 
 ```html
@@ -473,7 +473,11 @@ La clase principal de los labels es ```.ma-label```, los cuales se dividen en do
 
 Cada modificador debe estar ligado a su grupo, ya sea ```--simple``` o ```--box```, e.g. **```--simple--small```**, **```--box--primary```**. 
 
-Image
+<br>
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/42cdc138/www/assets/images/label%20box.png" alt="labels box">
+</h3>
 
 ```html
 <! small primary label box >
@@ -486,7 +490,11 @@ Image
 <span class="ma-label ma-label--box ma-label--box--white ma-label--box--large">New</span>
 ```
 
-Image
+<br>
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/42cdc138/www/assets/images/simple_labels.png" alt="labels box">
+</h3>
 
 ```html
 <! small primary simple label > 
