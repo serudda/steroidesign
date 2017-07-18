@@ -41,6 +41,7 @@ Contributions are more than welcome.
 
 ## Contents
 
+- [Base Methodology](#methodology)
 - [Instalación y uso](#install)
 - [Themes](#themes)
 	- [Airbnb](#airbnb)

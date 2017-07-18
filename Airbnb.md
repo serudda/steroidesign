@@ -82,27 +82,106 @@
 
 ## Some Components
 
-###Buttons
+## Buttons
 
-**Primary Buttons**
+La clase principal para los botones es: **```.ma-btn```**, el cual tiene modificadores de tipo y de tamaño:
+
+- **Tamaño:** ```--small, --default, --large, --block```
+- **Tipo:** ```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```
+
+<br>
+
+### Primary Buttons
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="logo evolution">
 </h3>
 
-<br>
 
-**Use**
+### Use
 
-La clase principal para los botones es **```.ma-btn```**, al cual se le puede variar la forma con los modificadores: (```--small, --default, --large, --block```) o el tipo: (```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```)
-
+El modificador de un boton primary es ```--primary``` el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
 
 ```html
 <button class="ma-btn ma-btn--small ma-btn--primary">Start Now</button>
 <button class="ma-btn ma-btn--default ma-btn--primary">Start Now</button>
 <button class="ma-btn ma-btn--large ma-btn--primary">Log in</button>
-<button class="ma-btn ma-btn--small ma-btn--primary ma-btn--block space-1">Small Primary Button</button>
+<button class="ma-btn ma-btn--small ma-btn--primary ma-btn--block">Small Primary Button</button>
 ```
+<br>
+
+---
+
+<br>
+
+### Secondary Buttons
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons.png" alt="logo evolution">
+</h3>
+
+
+### Use
+
+El modificador de un boton secundario es ```--secondary``` el cual determina los botones con el color secundario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+
+```html
+<button class="ma-btn ma-btn--small ma-btn--secondary">Start Now</button>
+<button class="ma-btn ma-btn--default ma-btn--secondary">Start Now</button>
+<button class="ma-btn ma-btn--large ma-btn--secondary">Log in</button>
+<button class="ma-btn ma-btn--small ma-btn--secondary ma-btn--block">Small Secondary Button</button>
+```
+<br>
+
+---
+
+<br>
+
+### Primary Without Background Buttons
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/primary_buttons_w_o_bg.png" alt="logo evolution">
+</h3>
+
+
+### Use
+
+El modificador de un boton primario sin fondo es ```--primary-without-bg``` el cual determina los botones con el color primario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+
+```html
+<button class="ma-btn ma-btn--small ma-btn--primary-without-bg">Start Now</button>
+<button class="ma-btn ma-btn--default ma-btn--primary-without-bg">Start Now</button>
+<button class="ma-btn ma-btn--large ma-btn--primary-without-bg">Log in</button>
+<button class="ma-btn ma-btn--small ma-btn--primary-without-bg ma-btn--block">Small Primary Without Bg Button</button>
+```
+<br>
+
+---
+
+<br>
+
+### Secondary Without Background Buttons
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="logo evolution">
+</h3>
+
+
+### Use
+
+El modificador de un boton secundario sin fondo es ```--secondary-without-bg``` el cual determina los botones con el color secundario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+
+```html
+<button class="ma-btn ma-btn--small ma-btn--secondary-without-bg">Start Now</button>
+<button class="ma-btn ma-btn--default ma-btn--secondary-without-bg">Start Now</button>
+<button class="ma-btn ma-btn--large ma-btn--secondary-without-bg">Log in</button>
+<button class="ma-btn ma-btn--small ma-btn--secondary-without-bg ma-btn--block">Small Secondary Without Bg Button</button>
+```
+<br>
+
+---
+
+
 
 ## License
 
