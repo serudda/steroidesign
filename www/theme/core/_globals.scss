@@ -6,10 +6,6 @@
 $main-palette: (
   primary: #FF5A5F,
   secondary: #008489,
-  success: #3adb76,
-  warning: #e8ce47,
-  alert: #ff5a5f,
-  alert-secondary: #d45054,
 );
 
 $global-font-sizes:(
@@ -161,15 +157,6 @@ $separator-margin: 30px auto;
 
 .strong {
     font-weight: 700!important;
-
-    &--primary {
-        color: map-get($main-palette, primary);
-    }
-
-    &--alert {
-        color: map-get($main-palette, alert);
-    }
-
 }
 
 .line-through {
