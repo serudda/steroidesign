@@ -203,7 +203,7 @@ Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tiene
 - ***app.scss:*** Este es el archivo padre el cual lo unico que tiene es una referencias a todos los demas estilos:
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/56d23613/www/assets/images/app_file.png" alt="app file">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d6b7a6e5/www/assets/images/app_file.png" alt="app file">
 </h3>
 
 - ***app.css:*** Es el resultado final despues de correr una pequeña tarea en Gulp, donde toma el archivo app.scss, este llama a cada uno de los componentes y estilos del proyecto, y los concatena y minifica en un solo archivo, es este el archivo que linkearias en tu html.
