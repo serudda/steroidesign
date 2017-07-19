@@ -1,17 +1,17 @@
-<h1 align="center">
+<h3 align="center">
 	<img width="200" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/f14c6e27/www/assets/images/Steroidesign.png" alt="Steroidesign">
-</h1>
+</h3>
 
 <h1 align="center" style="border:0;">
-	<b>Has que tus proyectos se vean tan bien 💎 como los grandes 💪🏻</b>
+	<b>Make your projects look as good 💎 as the big ones 💪🏻</b>
 </h1>
 
 <br>
 
-<h1 align="center">
+<h3 align="center">
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
 	</a>
-</h1>	
+</h3>	
 
 <h3 align="center">
 	🚀 Join to the <a href="#">Steroidesign Weekly</a> newsletter! 🚀 
@@ -21,11 +21,11 @@
 <br>
 
 <h4 align="center">
-	Hecho con ❤ y ☕ por 
+	Made with ❤ & ☕ by 
 		<a href="https://www.twitter.com/rosa7082" target="_blank">@rosa7082</a> 
-		y 
+		& 
 		<a href="https://www.twitter.com/seruda" target="_blank">@seruda</a> 
-		en 
+		in 
 		<a href="https://www.google.com/maps/place/Portland,OR" target="_blank">Portland, OR</a>
 		.
 </h4>
@@ -34,17 +34,17 @@
 
 ## Problem
 
-Siempre que empezamos un proyecto, buscamos en miles de sitios para buscar inspiración, entre esa busqueda nos sumergimos en los sitios de las grandes Startups como: Airbnb, Medium, Asana, etc. Primero por que son sitios hermosos, y segundo, ya que han invertido mucho tiempo en analizar las mejores practicas de diseño, validacion de ideas, llamados a la acción, enganche, etc. y con el tiempo han ido creando estandares y tendencias, es bueno seguir su mismo camino.
+Whenever we start a new project, we spend a lot of time looking for inspiration on hundreds of websites, we take a little of each, and so we build our beloved Frankenstein 🤖. Our most important references are the most well-known Startups (Airbnb, Medium, Product Hunt, etc) as they have invested a lot of time in analyzing the best practices of design, validation of ideas, calls to action, hook, etc. And over time have been creating standards and trends.
 
 <br>
 
-## Solución
+## Solution
 
-Asi que hemos decidido recopilar un esqueleto de estilos y componentes html, basados en estas grandes compañias, temas que son 100% editables, y adaptables a tu propia paleta de colores o estilos, agregandole tu propia magia! para que tu producto siga siendo autentico y unico.
+Since many are looking for these sites, we decided to create a skeleton of HTML styles and components based on these big companies, themes that are 100% editable and adaptable to your own palette color or styles, adding your own magic 🔮!. So that your product remains authentic and unique.
 
-**Con esto no buscamos copiar a las grandes compañias, sino obtener inspiración y usar esta de base para tus propios proyectos.**
+**With this, we do not seek to copy the big companies, but to obtain inspiration and have its base for our own projects.**
 
-Los temas incluyen los elementos basicos y más usados en un sitio web: botones, labels, links, typograph, form elements, box componentes, searchbar, navbars, etc, etc, etc.
+The themes include the basic elements in a website: buttons, labels, links, typography, form elements, box components, search bar, navbars, etc, etc, etc.
 
 Contributions are more than welcome.
 
