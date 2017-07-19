@@ -770,12 +770,14 @@ Hemos agregados algunas clases que ahorran mucho tiempo y lineas de codigo, esto
 - **```.ma-separator```**: Add a cute separator line.
 
 <h3 align="center">
-	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/12ad4238/www/assets/images/separator.png" alt="separator">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/8fd5a5a7/www/assets/images/separator.png" alt="separator">
 </h3>
 
 ```html
 <hr class="ma-separator">
 ```
+
+<br>
 
 ## Feedback
 
