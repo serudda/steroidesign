@@ -150,11 +150,13 @@ Modifier name starts with double hyphen ```--```:
 
 ## Instalación y uso
 
-<h1 align="center">
+<h3 align="center">
 	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="compare">
-</h1>
+</h3>
 
 <br>
+
+### Install
 
 **1:** Install NodeJS v6 or latest (No estoy seguro si haya algun problema con versiones anteriores, pero este es el que usamos).
 
@@ -179,6 +181,51 @@ gulp start
 **http://localhost:8080/**
 
 There you can see whole styles guideline.
+
+<br>
+
+
+### How to use?
+
+Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tienes que hacer es copiar la carpeta **'theme'** en tu proyecto, dentro encontraras todos los estilos organizados por **componentes**, y un directorio **'core'** que contiene todos los estilos y variables globales (e.g. main pallete, helper classes, font family, etc.).
+
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="structure files">
+</h3>
+
+
+***La estructura de archivos esta compuesta por:***
+
+- ***components:*** Un directorio que contienen todos los estilos de cada componente (buttons, links, forms, paragraphs, inputs, etc.)
+
+- ***core:*** Es aqui donde iran todos los estilos base de tu proyecto, aqui encontraras un archivo llamado **_globals.scss** el cual contiene todas las variables globales, helper classes, y clases base que resetean los estilos de algunos componentes como el body, los H tags, etc.
+
+- ***app.scss:*** Este es el archivo padre el cual lo unico que tiene es una referencias a todos los demas estilos:
+
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="app file">
+</h3>
+
+- ***app.css:*** Es el resultado final despues de correr una pequeña tarea en Gulp, donde toma el archivo app.scss, este llama a cada uno de los componentes y estilos del proyecto, y los concatena y minifica en un solo archivo, es este el archivo que linkearias en tu html.
+
+```html
+<! your vendors >
+<link rel="stylesheet" href="/build/css/vendor.min.css">
+
+<! theme styles >
+<link rel="stylesheet" href="/theme/app.css">
+```
+
+**Nota:** Ya que algunas clases usan por debajo Boostrap, es necesario incluir los siguientes vendor para evitar conflictos:
+
+**animate.css v.3.5.1**
+
+**boostrap (css) v.3.3.7**
+
+
+Además podran ver ejemplos de todos los componentes que incluye cada tema en el file: **index.html**. Ahi veran todos los componentes organizados por grupos, pueden simplemente tomar el componente que necesiten, y llevarlo a su proyecto, y deberia funcionar perfectamente.
+
+Cualquier duda por favor escribirnos a [@rosa7082](https://www.twitter.com/rosa7082) y [@seruda](https://www.twitter.com/seruda)
 
 **Enjoy it!**
 
