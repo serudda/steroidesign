@@ -139,22 +139,6 @@ $separator-margin: 30px auto;
     border-radius: 50%;
 }
 
-.underline {
-
-    &--primary {
-        border-bottom: 2px solid map-get($main-palette, primary);
-    }
-
-    &--alert {
-        border-bottom: 2px solid map-get($main-palette, alert);
-    }
-
-    &--strong {
-        font-weight: 600;
-    }
-
-}
-
 .strong {
     font-weight: 700!important;
 }
