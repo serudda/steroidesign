@@ -110,6 +110,10 @@
 	- [Subnav Tabs](#subnav-tabs)
 - [Others Components](#others-components)
 - [Helper classes](#helper-classes)
+	- [resets](#resets) 
+	- [spaces](#spaces)
+	- [text modifiers](#text-modifiers)
+	- [others](#others)
 - [Feedback](#feedback)
 - [Donate fo another ☕](#donate)
 - [License](#license)
@@ -240,7 +244,7 @@ Para usar este tipo de botones, simplemente hay que agregar el modificador de ta
 
 Además hay tipos especiales de botones que cuentan con un diseño especial y diferente a los botones tradicionales. Entre los cuales tenemos: botones sociales (**```ma-btn--facebook```**, **```ma-btn--google```**) y botones helpful (**```ma-btn--helpful```**).
 
-**Social Buttons**
+#### Social Buttons
 
 Los botones sociales estan compuestos por el texto y un icono alusivo a la red social.
 
@@ -279,7 +283,7 @@ Además, los botones sociales tambien cuentan con modificadores de tamaño: **``
 
 <br>
 
-**Helpful Buttons**
+#### Helpful Buttons
 
 Los botones helpful son botones que usa Airbnb para calificar los reviews y comentarios dados por sus usuarios en su plataforma. Esta compuesto por un label, y un contador.
 
@@ -322,7 +326,7 @@ Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, m�
 
 <br>
 
-**Button Disabled**
+#### Button Disabled
 
 Los botones cuentan con un modificador que nos permite cambiar los estilos a los botones deshabilitados facilmente. Este no requiere una clase modificador, simplemente al decir que el button esta disabled, este tomara los estilos que hemos proporcionado por defecto a los buttons disabled.
 
@@ -406,7 +410,7 @@ Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a 
 
 Es necesario que los componentes Select y Textarea usen la clase ```.ma-input``` para heredar las clases bases de un input (e.g. el efecto focus, el disabled, etc.).
 
-**Select**
+#### Select
 
 El select component usa como clase base: ```.ma-select```, pero los selects component son un poco más complejos en su estructura, ya que estan compuestos por ```.ma-select-container``` (quien es el que contendra el ```.ma-select``` y el ```.ma-select-arrow```).
 
@@ -446,7 +450,7 @@ Los select component tambien cuentan con los modificadores: ```--invalid``` y ``
 
 <br>
 
-**Invalid Select**
+#### Invalid Select
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/invalid_select.png" alt="invalid select">
@@ -473,7 +477,7 @@ Los select component tambien cuentan con los modificadores: ```--invalid``` y ``
 
 <br>
 
-**Select Disabled**
+#### Select Disabled
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select_disabled.png" alt="select disabled">

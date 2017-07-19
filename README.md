@@ -2,9 +2,9 @@
 	<img width="200" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/f14c6e27/www/assets/images/Steroidesign.png" alt="Steroidesign">
 </h1>
 
-<h3 align="center">
+<h1 align="center" style="border:0;">
 	<b>Has que tus proyectos se vean tan bien 💎 como los grandes 💪🏻</b>
-</h3>
+</h1>
 
 <br>
 
@@ -13,7 +13,10 @@
 	</a>
 </h1>	
 
-<br>
+<h3 align="center">
+	🚀 Join to the <a href="#">Steroidesign Weekly</a> newsletter! 🚀 
+	<br> We'll submit a new theme every week (we know it's crazy, but it's possible 😵).
+</h3>
 
 <br>
 
@@ -49,14 +52,14 @@ Contributions are more than welcome.
 
 ## Contents
 
-- [Base Methodology](#methodology)
-- [Instalación y uso](#install)
+- [Base Methodology](#base-methodology)
+- [Installation and use](#installation-and-use)
 - [Themes](#themes)
-	- [Airbnb](#airbnb)
+	- [Airbnb](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)
 	- [Medium](#medium) (In Progress)
 	- [Product Hunt](#product-hunt) (Coming soon)
-	- [Asana](#asana-hunt) (Coming soon)
-	- [Sugierenos el proximo](#next-theme)
+	- [Asana](#asana) (Coming soon)
+	- [Suggest us the next one](#suggest-us-the-next-one)
 - [License](#license)
 
 <br>
@@ -148,7 +151,7 @@ Modifier name starts with double hyphen ```--```:
 <br>
 
 
-## Instalación y uso
+## Installation and use
 
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="compare">
@@ -233,6 +236,25 @@ Cualquier duda por favor escribirnos a [@rosa7082](https://www.twitter.com/rosa7
 
 ## Themes
 
+### Airbnb
+Status: **[v1.0.0](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)**
+
+### Medium
+Status: ***In Progress***
+
+### Product Hunt 
+Status: ***Coming soon***
+
+### Asana 
+Status: ***Coming soon***
+
+<br>
+
+## Suggest us the next one
+
+Hemos empezado a trabajar en los temas que creemos serian los más bonitos y completos. Pero si deseas que empecemos en otro más genial, simplemente haznolo saber: [@rosa7082](https://www.twitter.com/rosa7082) y [@seruda](https://www.twitter.com/seruda), o a nuestros emails: [Rosita](mailto:rosa.alvarez.maza@gmail.com) y [Sergio](mailto:sergioruizdavila@gmail.com) Puedes escribirnos cuando desees hablar con nosotros.
+
+<br>
 
 ## License
 
