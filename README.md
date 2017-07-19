@@ -190,7 +190,7 @@ There you can see whole styles guideline.
 Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tienes que hacer es copiar la carpeta **'theme'** en tu proyecto, dentro encontraras todos los estilos organizados por **componentes**, y un directorio **'core'** que contiene todos los estilos y variables globales (e.g. main pallete, helper classes, font family, etc.).
 
 <h3 align="center">
-	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="structure files">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/56d23613/www/assets/images/structure_files.png" alt="structure files">
 </h3>
 
 
@@ -203,7 +203,7 @@ Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tiene
 - ***app.scss:*** Este es el archivo padre el cual lo unico que tiene es una referencias a todos los demas estilos:
 
 <h3 align="center">
-	<img src="https://raw.githubusercontent.com/sergioruizdavila/startups-themes/develop/www/assets/images/compare%20themes.png" alt="app file">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/56d23613/www/assets/images/app_file.png" alt="app file">
 </h3>
 
 - ***app.css:*** Es el resultado final despues de correr una pequeña tarea en Gulp, donde toma el archivo app.scss, este llama a cada uno de los componentes y estilos del proyecto, y los concatena y minifica en un solo archivo, es este el archivo que linkearias en tu html.
