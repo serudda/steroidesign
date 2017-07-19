@@ -743,6 +743,40 @@ Esta es la lista de otros componentes que incluye el Airbnb theme:
 
 <br> 
 
+## Helper Classes
+
+Hemos agregados algunas clases que ahorran mucho tiempo y lineas de codigo, estos son algunos de los helper classes que te van a encantar:
+
+### resets:
+- **```.link-reset```**: reset base link styles (browser and boostrap styles).
+- **```.margin-reset```**: Put your element with margin 0.
+- **```.padding-reset```**: Put your element with padding 0.
+
+### spaces (we love it ❤):
+- **```.space-*```**: Add bottom margin to the element (use from 1 to 10 scale: e.g. ```.space-3```).
+- **```.space-top-*```**: Add top margin to the element (use from 1 to 10 scale: e.g. ```.space-top-10```).
+- **```.space-left-*```**: Add left margin to the element (use from 1 to 10 scale: e.g. ```.space-left-1```).
+- **```.space-right-*```**: Add right margin to the element (use from 1 to 10 scale: e.g. ```.space-right-8```).
+
+### text modifiers:
+- **```.text-shadow```**: Add a subtle and cute text shadow.
+- **```.line-through```**: Add a line through text.
+- **```.text-italic```**: Add text italic style to the text with this class.
+- **```.strong```**: Add a font-weight of 700 to the text with this class.
+- **```.font-weight-normal```**: Reset the font weight to normal text.
+
+### others:
+- **```.round```**: Round a element modifing its border radius to 50%.
+- **```.ma-separator```**: Add a cute separator line.
+
+<h3 align="center">
+	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/12ad4238/www/assets/images/separator.png" alt="separator">
+</h3>
+
+```html
+<hr class="ma-separator">
+```
+
 ## Feedback
 
 Cualquier sugerencia que tengan, o si quieren aportar alguna ayuda, idea o mejora, pueden escribirnos a nuestros twitter: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), no duden en seguirnos, y recibir todas las novedades semanalmente suscribiendose an nuestro newletter. Semanalmente estaremos subiendo actualizaciones de temas o subiendo nuevos temas.
