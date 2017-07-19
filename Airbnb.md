@@ -102,7 +102,7 @@
 	- [Selects and Textarea](#selects-and-textarea)
 		- [Selects](#selects)
 		- [Invalid Select](#invalid-select)
-		- [Select Disabled](#elect-disabled)
+		- [Select Disabled](#select-disabled)
 - [Labels](#labels)
 - [Navbar](#navbar)
 - [Subnav](#subnav)
@@ -410,7 +410,7 @@ Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a 
 
 Es necesario que los componentes Select y Textarea usen la clase ```.ma-input``` para heredar las clases bases de un input (e.g. el efecto focus, el disabled, etc.).
 
-#### Select
+#### Selects
 
 El select component usa como clase base: ```.ma-select```, pero los selects component son un poco más complejos en su estructura, ya que estan compuestos por ```.ma-select-container``` (quien es el que contendra el ```.ma-select``` y el ```.ma-select-arrow```).
 
@@ -756,7 +756,9 @@ Hemos agregados algunas clases que ahorran mucho tiempo y lineas de codigo, esto
 - **```.margin-reset```**: Put your element with margin 0.
 - **```.padding-reset```**: Put your element with padding 0.
 
-### spaces (we love it ❤):
+### spaces:
+#### (we love it ❤)
+
 - **```.space-*```**: Add bottom margin to the element (use from 1 to 10 scale: e.g. ```.space-3```).
 - **```.space-top-*```**: Add top margin to the element (use from 1 to 10 scale: e.g. ```.space-top-10```).
 - **```.space-left-*```**: Add left margin to the element (use from 1 to 10 scale: e.g. ```.space-left-1```).
