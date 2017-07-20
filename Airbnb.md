@@ -348,11 +348,11 @@ The buttons have a modifier that allows us to change the styles to the disabled 
 
 ## Inputs 
 
-Para poder sobreescribir los estilos por defecto que proporciona Boostrap, es necesario usar la clase: ```.ma-input```, recomendamos no usar las clases que provee Boostrap ya que tendrias conflictos de estilos, y tendrias que trabajar extra tratando de sobreescribirlos.
+In order to override the default styles provided by Boostrap (if you are using it), you need to use: ```.ma-input```, we recommend not to use the classes provided by Boostrap for the buttons since you would have style conflicts, and you would have to work extra trying to overwrite them.
 
-El uso es muy similar al de los buttons, la unica diferencia es que no poseen modificadores de tipo, solo de tamaño:
+The use very similar to the button component, the only difference is that they do not have modifiers of type, only of size:
 
-- **Tamaño:** ```--small, --default, --large, --block```
+- **Size:** ```--small, --default, --large, --block```
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/inputs%20type.png" alt="inputs list">
@@ -377,10 +377,9 @@ El uso es muy similar al de los buttons, la unica diferencia es que no poseen mo
 </p>
 ```
 
+It also includes two very useful modifiers when adding validations to each field, these are: ```--invalid``` and ```disabled```:
 
-Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a cada campo, estos son: ```--invalid``` y el ```disabled```:
-
-- ```--invalid```: Al agregar el modificador ```--invalid```, este alterara los colores del input para mostrarle al usuario que no paso la validación requerida por el componente:
+- **```--invalid```**: By adding the ```--invalid``` modifier, it will alter the colors of the input to show the user that he did not pass the validation required by the component:
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/invalid_input.png" alt="inputs list">
@@ -393,7 +392,7 @@ Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a 
 </p>
 ```
 
-- ```disabled```: Este no requiere una clase modificador, simplemente al decir que el input esta disabled, este tomara los estilos que hemos proporcionado por defecto a los inputs disabled.
+- **```disabled```**: This does not require a modifier class, simply by setting the input to disabled, this will take the styles we have provided by default to the inputs disabled.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/input_disabled.png" alt="inputs list">
@@ -407,17 +406,17 @@ Ademas incluye dos modificadores muy utiles a la hora de agregar validaciones a 
 
 ### Selects and Textarea
 
-Es necesario que los componentes Select y Textarea usen la clase ```.ma-input``` para heredar las clases bases de un input (e.g. el efecto focus, el disabled, etc.).
+It's necessary for the Select and Textarea components to use the ```.ma-input``` class to inherit base classes from an input (e.g. focus effect, disabled, etc.).
 
 #### Selects
 
-El select component usa como clase base: ```.ma-select```, pero los selects component son un poco más complejos en su estructura, ya que estan compuestos por ```.ma-select-container``` (quien es el que contendra el ```.ma-select``` y el ```.ma-select-arrow```).
+The select component uses ```.ma-select``` as a base class, but the select component is a bit more complex in their structure, since they have a ```.ma-select-container``` (which is the one that will contain ```.ma-select``` and ```.ma-select-arrow```).
 
-Los selects component tambien tienen modificadores de tamaño iguales a los inputs text:
+The select component also have size modifier:
 
-- **Tamaño:** ```--small, --default, --large, --block```
+- **Size:** ```--small, --default, --large, --block```
 
-**Nota importante:** Es necesario que el ```.ma-select-container``` y el elemento ```.ma-select``` contengan el mismo modificador de tamaño, es decir, si ```.ma-select-container``` es ```--small```, el elemento hijo ```.ma-select``` tambien debe ser ```--small``` y usar dicha clase.
+**Important note:** ```.ma-select-container```and the ```.ma-select``` element must contain the same size modifier, that is, if ```.ma-select-container``` is ```--small```, the child element ```.ma-select``` should also be ```--small``` and use the same modifier. 
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/2c9823e7/www/assets/images/select%20components.png" alt="inputs list">
@@ -445,7 +444,7 @@ Los selects component tambien tienen modificadores de tamaño iguales a los inpu
 
 <br>
 
-Los select component tambien cuentan con los modificadores: ```--invalid``` y ```disabled```.
+The select components also have modifier: ```--invalid``` and ```disabled```.
 
 <br>
 
