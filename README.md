@@ -1,7 +1,3 @@
-<h1>Current Status: We are translating to English right now, we are sorry for the Spanglish!</h1>
-
-<br>
-
 <h3 align="center">
 	<img width="200" src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/f14c6e27/www/assets/images/Steroidesign.png" alt="Steroidesign">
 </h3>
