@@ -13,7 +13,7 @@
 
 <br>
 
-### Actual PUV on the landing page
+### Current Unique Value Proposition (UVP)
 
 <br>
 
@@ -23,7 +23,7 @@
 
 <br>
 
-### Actual Slogan on the landing page
+### Current supporting headline
 
 <br>
 
@@ -127,19 +127,18 @@
 
 ## Buttons
 
+In order to override the default styles provided by Boostrap (if you are using it), it's necessary to use the class: **```.ma-btn```**, we recommend not to use the classes provided by Boostrap for the buttons since you would have style conflicts, and you would have to work extra trying to overwrite them.
 
-Para poder sobreescribir los estilos por defecto que proporciona Boostrap, es necesario usar la clase: **```.ma-btn```**, recomendamos no usar las clases que provee Boostrap ya que tendrias conflictos de estilos, y tendrias que trabajar extra tratando de sobreescribirlos.
+The buttons have modifiers of type and size:
 
-Los botones cuentan con modificadores de tipo y de tamaño:
-
-- **Tamaño:** ```--small, --default, --large, --block```
-- **Tipo:** ```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```
+- **Size:** ```--small, --default, --large, --block```
+- **Type:** ```--primary, --primary-without-bg, --secondary, --secondary-without-bg, --minimal```
 
 <br>
 
 ### Primary Buttons
 
-El modificador de un boton primary es **```--primary```** el cual determina los botones con el color primario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+The modifier of a primary button is **```--primary```** which determines the buttons with the primary color of the project. Next to this modifier you can use size modifiers:
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d13915fd/www/assets/images/primary_buttons.png" alt="buttons list">
@@ -159,7 +158,7 @@ El modificador de un boton primary es **```--primary```** el cual determina los 
 
 ### Secondary Buttons
 
-El modificador de un boton secundario es **```--secondary```** el cual determina los botones con el color secundario del proyecto. Junto a este modificador se pueden usar modificadores de tamaño:
+The modifier of a secondary button is **```--secondary```** which determines the buttons with the secondary color of the project. Next to this modifier you can use size modifiers:
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons.png" alt="buttons list">
@@ -179,7 +178,7 @@ El modificador de un boton secundario es **```--secondary```** el cual determina
 
 ### Primary Without Background Buttons
 
-El modificador de un boton primario sin fondo es **```--primary-without-bg```** el cual determina los botones con el color primario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+The modifier of a primary button without background is **```--primary-without-bg```**.  Next to this modifier you can use size modifiers:
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/primary_buttons_w_o_bg.png" alt="buttons list">
@@ -199,7 +198,7 @@ El modificador de un boton primario sin fondo es **```--primary-without-bg```** 
 
 ### Secondary Without Background Buttons
 
-El modificador de un boton secundario sin fondo es **```--secondary-without-bg```** el cual determina los botones con el color secundario sin fondo. Junto a este modificador se pueden usar modificadores de tamaño:
+The modifier of a secondary button without background is **```--secondary-without-bg```**.  Next to this modifier you can use size modifiers:
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/fdb645e5/www/assets/images/secondary_buttons_w_o_bg.png" alt="buttons list">
@@ -220,9 +219,9 @@ El modificador de un boton secundario sin fondo es **```--secondary-without-bg``
 
 ### Block Buttons
 
-Los botones de bloque, son los que adaptan su width dinamicamente, es decir llegan de extremo a extremo dentro del contenedor en el que se encuentren, en otras palabras no tienen un width fijo, el width se adapta a su contenedor padre.
+The block buttons, are the ones that adapt their width dynamically, that is to say, they occupy the space from end to end inside the container in which they are, in other words, they do not have a fixed width. 
 
-Para usar este tipo de botones, simplemente hay que agregar el modificador de tamaño: **```--block```**, esto le agregara un width de 100% y le permitira adaptar su width.
+To use this type of buttons, simply add the size modifier: **```--block```**, this will add a width of 100% and allow it adapt its width responsively.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/block_buttons.png" alt="block button">
@@ -242,13 +241,13 @@ Para usar este tipo de botones, simplemente hay que agregar el modificador de ta
 
 ### Special Buttons
 
-Además hay tipos especiales de botones que cuentan con un diseño especial y diferente a los botones tradicionales. Entre los cuales tenemos: botones sociales (**```ma-btn--facebook```**, **```ma-btn--google```**) y botones helpful (**```ma-btn--helpful```**).
+There are also special types of buttons that have a special design and different from the traditional buttons. Among them, we have the Social Buttons (**```ma-btn--facebook```**, **```ma-btn--google```**) and Helpful buttons (**```ma-btn--helpful```**).
 
 #### Social Buttons
 
-Los botones sociales estan compuestos por el texto y un icono alusivo a la red social.
+The social buttons are composed of the text and an icon allusive to the respective social network.
 
-Además, los botones sociales tambien cuentan con modificadores de tamaño: **```--small```**, **```--default```** y **```--large```**
+In addition, social buttons also have size modifiers: **```--small```**, **```--default```** y **```--large```**
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/social_buttons.png" alt="social buttons list">
@@ -285,11 +284,11 @@ Además, los botones sociales tambien cuentan con modificadores de tamaño: **``
 
 #### Helpful Buttons
 
-Los botones helpful son botones que usa Airbnb para calificar los reviews y comentarios dados por sus usuarios en su plataforma. Esta compuesto por un label, y un contador.
+The helpful buttons are buttons that Airbnb uses to rate the reviews and comments given by its users on the platform. It has a label and a counter.
 
-Además, los botones helpful tambien cuentan con modificadores de tipo: **```--minimal```**, **```--primary```** y **```--secondary```**
+In addition, the helpful buttons also have modifiers of type: **```--minimal```**, **```--primary```** y **```--secondary```**
 
-Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, más adelante trabajaremos un poco más en detalle en este tipo de componentes, y agregaremos más modificadores.
+So far we only include the size modifier: **```--small```**, later we'll work a little more in detail on this type of components, and we'll add more modifiers.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/helpful_buttons.png" alt="helpful buttons list">
@@ -328,7 +327,7 @@ Hasta el momento solo incluimos el modificador de tamaño: **```--small```**, m�
 
 #### Button Disabled
 
-Los botones cuentan con un modificador que nos permite cambiar los estilos a los botones deshabilitados facilmente. Este no requiere una clase modificador, simplemente al decir que el button esta disabled, este tomara los estilos que hemos proporcionado por defecto a los buttons disabled.
+The buttons have a modifier that allows us to change the styles to the disabled buttons easily. This does not require a modifier class, simply by setting the button to disabled, this will take the styles we have provided by default to the buttons disabled.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/ae955d2a/www/assets/images/button_disabled.png" alt="button disabled">
