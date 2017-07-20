@@ -1,6 +1,7 @@
 // VARIABLES
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -52,11 +53,23 @@ var sassOptions = {
     errLogToConsole: true
 };
 
-gulp.task('sass', function() {
+gulp.task('sass-min', function() {
   gulp
     .src(paths.inputSass)
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(rename('app.min.css'))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(paths.outputSass))
+    .pipe(connect.reload());
+});
+
+gulp.task('sass', function () {
+  gulp
+    .src(paths.inputSass)
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.outputSass))
@@ -111,4 +124,4 @@ gulp.task('watch', function() {
 /* BUILD VENDOR */
 gulp.task('build-vendor', ['bowerJS', 'vendorCSS']);
 /* LAUNCH LOCALSERVER */
-gulp.task('start', ['sass', 'html', 'webserver', 'build-vendor', 'watch']);
+gulp.task('start', ['sass', 'sass-min', 'html', 'webserver', 'build-vendor', 'watch']);
