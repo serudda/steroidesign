@@ -726,9 +726,9 @@ To use a subnav tabs you have to add the modifier **```--tabs```** to the ```.ma
 
 ## Others Components
 
-Hay otros componentes que no hemos documentado aqui, ya sea por tiempo, o por que son tan sencillos que no vale la pena hacer esta guia tan extensa.
+There are components that we have not documented here, either by time or because they are so simple that it is not worth making this guide more extensive.
 
-Esta es la lista de otros componentes que incluye el Airbnb theme:
+This is the list of other components that are included the Airbnb theme:
 
 - Typograph
 	- Titles
@@ -746,7 +746,7 @@ Esta es la lista de otros componentes que incluye el Airbnb theme:
 
 ## Helper Classes
 
-Hemos agregados algunas clases que ahorran mucho tiempo y lineas de codigo, estos son algunos de los helper classes que te van a encantar:
+We have added some classes that save a lot of time and code lines, here are some of the helper classes that you will love:
 
 ### resets:
 - **```.link-reset```**: reset base link styles (browser and boostrap styles).
@@ -784,13 +784,13 @@ Hemos agregados algunas clases que ahorran mucho tiempo y lineas de codigo, esto
 
 ## Feedback
 
-Cualquier sugerencia que tengan, o si quieren aportar alguna ayuda, idea o mejora, pueden escribirnos a nuestros twitter: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), no duden en seguirnos, y recibir todas las novedades semanalmente suscribiendose an nuestro newletter. Semanalmente estaremos subiendo actualizaciones de temas o subiendo nuevos temas.
+Any suggestion you have, or if you want to contribute some help, idea or improvement you can write us to our twitter: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), do not hesitate to follow us and receive all the updates weekly by subscribing to our newsletter. Weekly we'll be uploading theme updates and new themes.
 
 <br>
 
 ## Donate
 
-Este es un trabajo que hacemos por amor al arte, hemos decidido dejar nuestros trabajos para dedicarnos hacer los que más nos gusta, lo cual es crear. Si gustas donarnos algo para tomarnos un café, seria maravilloso! Muchas gracias, y espero que disfrutes nuestro trabajo.
+This is a work we do for the love of art, we have decided to leave our jobs to dedicate ourselves to do the things that we love, which is to create. If you would like donating something, it would be wonderful! Thanks a lot, and We hope you enjoy our work.
 
 <h1 align="center">
 	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
@@ -803,4 +803,10 @@ Este es un trabajo que hacemos por amor al arte, hemos decidido dejar nuestros t
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**Nota importante:** Los temas no son una copia, escribimos los estilos y estructura desde cero, basados en nuestra propia estructura de archivos y nuestra propia forma de organizar los estilos (usando como base la metodologia [BEM](http://getbem.com/introduction/)), lo que queremos con esto es poder crear un 'esqueleto' que sirva para ser usado, editado, modificado y reemplazado en cualquier proyecto.
+**Important:** Themes are not a copy, we write styles and structure from scratch, based on our own file structure and our own way of organizing styles (based n the [BEM methodology](https://en.bem.info/)), what we want with this is to create a 'skeleton' that can be used, edited, modified and replaced in any project.
+
+The user will be responsible for any improper, ilicit or abnormal use made of the content, information or functionalities.
+
+We are not liable for any damages caused by any alteration made with this material provided by us.
+
+We are not responsible for misinterpretation or inappropriate use of this content and information. In the same way, we will not be responsible for the damages caused directly or indirectly by the using of this material. In no way are we liable for the consequences of the improper or negligent use of this material.
