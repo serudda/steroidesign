@@ -557,13 +557,13 @@ Each modifier must be bound to its group, either ```--simple``` or ```--box```, 
 
 ## Navbar
 
-Los navbar o header son las barras superiores que permiten al usuario tener acceso constante a sección como: Editar Perfil, Log in, Sign up, Settings, etc.
+The navbar or header is the top bar that allows the user to have constant access to section like Edit Profile, Log in, Sign up, Setting, etc.
 
-Se ha vuelto tendencia que muchos sitios incluyan un search bar en su header o navbar con el fin de que sus usuarios puedan acceder más facilmente a los productos o servicios que el sitio esta ofreciendo.
+It has become a trend that many sites include a search bar in its header or navbar in order that users can more easily access the products or services that the site is offering.
 
-Para hacer uso de este componente usamos la clase: **```.ma-header```**, con el modificador **```--large```** para pantallas medianas y grandes, y el modificador **```--small```** para pantallas pequeñas y dispositivos moviles.
+To use this component we use the class: **```.ma-header```**, with the **```--large```** modifier for medium and large screens, and the modifier **```--small```** for small screens and small devices.
 
-Dentro de la navbar podemos encontrar: el **logo** del sitio, **botones de navegación** (e.g. Log in, Sign up, Edit Profile, etc.), y el **search bar**.
+Within the navbar we can find: the **logo**, **navigation buttons** (e.g. Log in, Sign up, Edit Profile, etc.), and the **search bar**.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/navbar.png" alt="labels box">
@@ -630,21 +630,20 @@ Dentro de la navbar podemos encontrar: el **logo** del sitio, **botones de naveg
 
 ## Subnav
 
-Los subnav son barras de navegación que permiten navegar dentro de la misma pagina, son opciones más simples, y se acostumbra a llamarlos: tabs.
+Subnav is a navigation bar that allows you to navigate within the same page, contains simpler options, and usually, it named: tabs.
 
-Usamos la clase: **```.ma-subnav```** para hacer uso de este componente, el cual esta divido en dos tipos, los **subnav simples** y los **subnav tabs**.
+We use the class: **```.ma-subnav```** to make use of this component, which is separated into two groups, the **simple subnav** and the **subnav tabs**. 
 
 ### Simple Subnav
 
-Los subnav simples se consiguen agregando el modificador: **```--simple```** a la clase ```.ma-subnav```.
-Para agregar una nueva opcion a la subnav, se agregar un elemento div con la clase: **```.ma-subnav__item```**.
+To use a simple subnav you have to add the modifier **```--simple```** to the ```.ma-subnav``` class. To add a new subnav option, add a div element with the **```.ma-subnav__item```** class.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/simple_sub_nav.png" alt="labels box">
 </h3>
 
 ```html
-<! Sub Nav Simple >
+<! Subnav Simple >
 <div class="ma-subnav ma-subnav--simple">
     <nav class="container">
         <div class="ma-subnav__item">
@@ -685,8 +684,7 @@ Para agregar una nueva opcion a la subnav, se agregar un elemento div con la cla
 
 ### Subnav Tabs
 
-Los subnav tabs se consiguen agregando el modificador: **```--tabs```** a la clase ```.ma-subnav```.
-Para agregar una nueva opcion a la subnav, se agregar un elemento div de la misma forma que en los subnav simples.
+To use a subnav tabs you have to add the modifier **```--tabs```** to the ```.ma-subnav``` class. To add a new subnav option, add a div element in the same way as in subnav simple.
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/4e1d5f94/www/assets/images/sub_nav_tabs.png" alt="labels box">
