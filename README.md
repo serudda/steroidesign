@@ -257,7 +257,7 @@ Status: ***Coming soon***
 
 ## Suggest us the next one
 
-Hemos empezado a trabajar en los temas que creemos serian los más bonitos y completos. Pero si deseas que empecemos en otro más genial, simplemente haznolo saber: [@rosa7082](https://www.twitter.com/rosa7082) y [@seruda](https://www.twitter.com/seruda), o a nuestros emails: [Rosita](mailto:rosa.alvarez.maza@gmail.com) y [Sergio](mailto:sergioruizdavila@gmail.com) Puedes escribirnos cuando desees hablar con nosotros.
+We started working on the themes that we believe would be the most beautiful and complete. But if you want us to start in a more great one, just let us know: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), or by email: [Rosita](mailto:rosa.alvarez.maza@gmail.com) & [Sergio](mailto:sergioruizdavila@gmail.com). You can write us if you'd like to talk to us.
 
 <br>
 
@@ -265,11 +265,10 @@ Hemos empezado a trabajar en los temas que creemos serian los más bonitos y com
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**Nota importante:** Los temas no son una copia, escribimos los estilos y estructura desde cero, basados en nuestra propia estructura de archivos y nuestra propia forma de organizar los estilos (usando como base la metodologia [BEM](http://getbem.com/introduction/)), lo que queremos con esto es poder crear un 'esqueleto' que sirva para ser usado, editado, modificado y reemplazado en cualquier proyecto.
+**Important:** Themes are not a copy, we write styles and structure from scratch, based on our own file structure and our own way of organizing styles (based n the [BEM methodology](https://en.bem.info/)), what we want with this is to create a 'skeleton' that can be used, edited, modified and replaced in any project.
 
-Importante: Los temas no son una copia, escribimos los estilos y estructura desde cero, basados en nuestra propia estructura de archivos y nuestra propia forma de organizar los estilos (usando como base la metodología BEM), lo que queremos con esto es poder crear un 'esqueleto' que sirva para ser usado, editado, modificado y reemplazado en cualquier proyecto.
-El usuario se hará responsable por cualquier uso indebido, ilícito o anormal que haga de los contenidos, información o funcionalidades.
-No nos hacemos responsables de ningún daño ocasionado en cualquier alteración que se haga con este material proporcionado por nosotros.
-No somos responsables por las malas interpretaciones o uso inapropiado de estos contenidos e información.
-De igual manera no nos haremos responsables por los daños o perjuicios causados de forma directa o indirecta por la modificación del material.
-De ninguna  manera somos responsables por las consecuencias del uso indebido o negligente  de este material.
+The user will be responsible for any improper, ilicit or abnormal use made of the content, information or functionalities.
+
+We are not liable for any damages caused by any alteration made with this material provided by us.
+
+We are not responsible for misinterpretation or inappropriate use of this content and information. In the same way, we will not be responsible for the damages caused directly or indirectly by the using of this material. In no way are we liable for the consequences of the improper or negligent use of this material.
