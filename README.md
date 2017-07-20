@@ -15,7 +15,7 @@
 
 <h3 align="center">
 	🚀 Join to the <a href="#">Steroidesign Weekly</a> newsletter! 🚀 
-	<br> We'll submit a new theme every week (we know it's crazy, but it's possible 😵).
+	<br> We'll submit a new theme every week (we know it's crazy, but it's not impossible 😵).
 </h3>
 
 <br>
@@ -174,16 +174,18 @@ Really you don´t need an **'installation'**, you just could clone the project, 
 
 **2:** On terminal (inside root directory) run the following commands:
 
-1. Install gulp, bower and express components: 
+1. Clone the project.
+
+2. Install gulp, bower and express components: 
 ```shell
 npm install
 ```
 
-2. Install basic components such as boostrap, jquery, animate.css:
+3. Install basic components such as boostrap, jquery, animate.css:
 ```shell
 bower install
 ```
-3. Launch a local server in order to see styles guideline:
+4. Launch a local server in order to see styles guideline:
 ```shell
 gulp start
 ```
@@ -217,7 +219,7 @@ It's very simple, you have to copy the **theme** folder into your own project, i
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d6b7a6e5/www/assets/images/app_file.png" alt="app file">
 </h3>
 
-- **app.css:** It's the final result after running a small task in Gulp, compile it, concatenates and minifies every style in a single file. This is the file you should add in the **< head >** html section.
+- **app.min.css:** It's the final result after running a small task in Gulp, compile it, concatenates and minifies every style in a single file. This is the file you should add in the **< head >** html section.
 
 ```html
 <! your vendors >
@@ -226,8 +228,11 @@ It's very simple, you have to copy the **theme** folder into your own project, i
 <! theme styles >
 <link rel="stylesheet" href="/theme/app.css">
 ```
+- **app.css**: If you don't use Sass or another preprocessor, don't worry you can take this file and include it into your own project, and you could use any of the components freely.
 
-You can also see examples of all components on index.html. You will see all the components organized by groups, you can simply take the component you need, and take it to your own project.
+<br>
+
+You can also see examples of all components on **index.html**. You will see all the components organized by groups, you can simply take the component you need, and take it to your own project.
 
 Any questions please write us: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda)
 
