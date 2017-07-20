@@ -70,7 +70,7 @@ Contributions are more than welcome.
 
 ## Base methodology
 
-Los temas los escribimos bajo la **metodologia BEM**, para estructurar mucho mejor los elemento de un html, basados en bloque, elemento y modificadores. Dejamos una pequeña explicación aqui, y si desean profundizar más, dejamos la referencia a la pagina oficial: [https://en.bem.info/](https://en.bem.info/)
+The themes were created based on **BEM methodology**, to structure much better the HTML elements and CSS styles, based on blocks, elements, and modifiers. We'll leave a small explanation here, but if you want to go further, we leave the reference to the official website: [https://en.bem.info/](https://en.bem.info/)
 
 On smaller brochure sites, how you organize your styles isn’t usually a big concern. You get in there, write some CSS, or maybe even some SASS. You compile it all into a single stylesheet with SASS’s production settings, and then you aggregate it to get all the stylesheets from modules into a nice tidy package.
 
@@ -165,20 +165,29 @@ Modifier name starts with double hyphen ```--```:
 
 ### Install
 
-**1:** Install NodeJS v6 or latest (No estoy seguro si haya algun problema con versiones anteriores, pero este es el que usamos).
+Really you don´t need an **'installation'**, you just could clone the project, take the 'theme' folder and you are able to start. The only tools that you need to use these themes are:
+
+- **Sass**
+- **Boostrap v3.3.7** *(to keep row and column structure, but you can feel free to use another library for that, the only issue is that you could see the components examples in index HTML a little bit wrong, because we use bootstrap to arrange each component inside row and column grids).*
+
+<br>
+
+#### If you want to run the demo page, you should follow this steps:
+
+**1:** Install NodeJS v6 or latest (Not sure if there is any problem with previous versions, but this is the one we use).
 
 **2:** On terminal (inside root directory) run the following commands:
 
-1. It'll install gulp, bower and express components
+1. Install gulp, bower and express components: 
 ```shell
 npm install
 ```
 
-2. It'll install basic components such as boostrap, jquery, animate.css
+2. Install basic components such as boostrap, jquery, animate.css:
 ```shell
 bower install
 ```
-3. It'll launch a local server in order to see styles guideline
+3. Launch a local server in order to see styles guideline:
 ```shell
 gulp start
 ```
@@ -187,33 +196,32 @@ gulp start
 
 **http://localhost:8080/**
 
-There you can see whole styles guideline.
+There you can see whole styles guidelinein in a demo page.
 
 <br>
 
 
 ### How to use?
 
-Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tienes que hacer es copiar la carpeta **'theme'** en tu proyecto, dentro encontraras todos los estilos organizados por **componentes**, y un directorio **'core'** que contiene todos los estilos y variables globales (e.g. main pallete, helper classes, font family, etc.).
+It's very simple, you have to copy the **theme** folder into your own project, inside you will find all styles organized by **components**, and a folder named **core** which contains all global styles and variables (e.g. main palette, helper classes, font family, etc.).
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/56d23613/www/assets/images/structure_files.png" alt="structure files">
 </h3>
 
+**The file structure is:**
 
-***La estructura de archivos esta compuesta por:***
+- ***components:*** A folder containing all styles of each component (buttons, links, forms, paragraphs, inputs, etc.)
 
-- ***components:*** Un directorio que contienen todos los estilos de cada componente (buttons, links, forms, paragraphs, inputs, etc.)
+- ***core:*** Here are all the base styles of your project, here you find a file named **_global.scss** which contains all the global variables, helper classes, and base classes to reset the styles of some global elements such as the body, H tags, labels, etc.
 
-- ***core:*** Es aqui donde iran todos los estilos base de tu proyecto, aqui encontraras un archivo llamado **_globals.scss** el cual contiene todas las variables globales, helper classes, y clases base que resetean los estilos de algunos componentes como el body, los H tags, etc.
-
-- ***app.scss:*** Este es el archivo padre el cual lo unico que tiene es una referencias a todos los demas estilos:
+- ***app.scss:*** This is the parent file which contains a reference to all other styles: 
 
 <h3 align="center">
 	<img src="https://cdn.rawgit.com/sergioruizdavila/startups-themes/d6b7a6e5/www/assets/images/app_file.png" alt="app file">
 </h3>
 
-- ***app.css:*** Es el resultado final despues de correr una pequeña tarea en Gulp, donde toma el archivo app.scss, este llama a cada uno de los componentes y estilos del proyecto, y los concatena y minifica en un solo archivo, es este el archivo que linkearias en tu html.
+- **app.css:** It's the final result after running a small task in Gulp, compile it, concatenates and minifies every style in a single file. This is the file you should add in the **< head >** html section.
 
 ```html
 <! your vendors >
@@ -223,16 +231,9 @@ Es muy sencillo, despues de seguir los pasos de instalación, lo unico que tiene
 <link rel="stylesheet" href="/theme/app.css">
 ```
 
-**Nota:** Ya que algunas clases usan por debajo Boostrap, es necesario incluir los siguientes vendor para evitar conflictos:
+You can also see examples of all components on index.html. You will see all the components organized by groups, you can simply take the component you need, and take it to your own project.
 
-**animate.css v.3.5.1**
-
-**boostrap (css) v.3.3.7**
-
-
-Además podran ver ejemplos de todos los componentes que incluye cada tema en el file: **index.html**. Ahi veran todos los componentes organizados por grupos, pueden simplemente tomar el componente que necesiten, y llevarlo a su proyecto, y deberia funcionar perfectamente.
-
-Cualquier duda por favor escribirnos a [@rosa7082](https://www.twitter.com/rosa7082) y [@seruda](https://www.twitter.com/seruda)
+Any questions please write us: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda)
 
 **Enjoy it!**
 
@@ -265,3 +266,10 @@ Hemos empezado a trabajar en los temas que creemos serian los más bonitos y com
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **Nota importante:** Los temas no son una copia, escribimos los estilos y estructura desde cero, basados en nuestra propia estructura de archivos y nuestra propia forma de organizar los estilos (usando como base la metodologia [BEM](http://getbem.com/introduction/)), lo que queremos con esto es poder crear un 'esqueleto' que sirva para ser usado, editado, modificado y reemplazado en cualquier proyecto.
+
+Importante: Los temas no son una copia, escribimos los estilos y estructura desde cero, basados en nuestra propia estructura de archivos y nuestra propia forma de organizar los estilos (usando como base la metodología BEM), lo que queremos con esto es poder crear un 'esqueleto' que sirva para ser usado, editado, modificado y reemplazado en cualquier proyecto.
+El usuario se hará responsable por cualquier uso indebido, ilícito o anormal que haga de los contenidos, información o funcionalidades.
+No nos hacemos responsables de ningún daño ocasionado en cualquier alteración que se haga con este material proporcionado por nosotros.
+No somos responsables por las malas interpretaciones o uso inapropiado de estos contenidos e información.
+De igual manera no nos haremos responsables por los daños o perjuicios causados de forma directa o indirecta por la modificación del material.
+De ninguna  manera somos responsables por las consecuencias del uso indebido o negligente  de este material.
