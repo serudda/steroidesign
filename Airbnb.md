@@ -505,14 +505,15 @@ The select components also have modifier: ```--invalid``` and ```disabled```.
 
 ## Labels
 
-Los labels son por lo general etiquetas que se usan para resaltar algo, e.g. una nueva sección, se le acostumbra a colocar la etiqueta **'NEW'**.
+Labels are tags generally used to highlight something, (e.g. a new section, you will be accustomed to place the tag **NEW**).
 
-La clase principal de los labels es ```.ma-label```, los cuales se dividen en dos grupos, los label simples ```--simple``` y los box label ```--box```, los cuales tienen modificadores de tipo y de tamaño:
+The main class of label is ```.ma-label```, which are separated in two groups, the label simple ```--simple``` and  label box ```--box```, which have modifiers of type and size:
 
-- **Tamaño:** ```--small```, ```--default```, ```--large```
-- **Tipo:** ```--primary```, ```--secondary```, ```--white```(solo para label box)
+- **Size:** ```--small```, ```--default```, ```--large```
 
-Cada modificador debe estar ligado a su grupo, ya sea ```--simple``` o ```--box```, e.g. **```--simple--small```**, **```--box--primary```**. 
+- **Type:** ```--primary```, ```--secondary```, ```--white```(label box only)
+
+Each modifier must be bound to its group, either ```--simple``` or ```--box```, (e.g. **```--simple--small```**, **```--box--primary```**). 
 
 <br>
 
