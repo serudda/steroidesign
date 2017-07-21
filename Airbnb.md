@@ -114,6 +114,7 @@
 	- [spaces](#spaces)
 	- [text modifiers](#text-modifiers)
 	- [others](#others)
+- [Resources used](#resources-used)
 - [Feedback](#feedback)
 - [Donate fo another ☕](#donate)
 - [License](#license)
@@ -779,6 +780,16 @@ We have added some classes that save a lot of time and code lines, here are some
 ```html
 <hr class="ma-separator">
 ```
+
+<br>
+
+## Resources used
+
+To help make the project look much more professional and cute, we included the following third-party resources:
+
+- **feather icons**: Beautiful open sources icons, really are so beautiful. [https://feathericons.com/](https://feathericons.com/)
+- **fontawesome**: Well known open sources icons. [http://fontawesome.io/](http://fontawesome.io/)
+- **google font**: A set of fonts from google. For the Airbnb theme, we used **'Lato font family'**. [https://fonts.googleapis.com/css?family=Lato](https://fonts.googleapis.com/css?family=Lato)
 
 <br>
 

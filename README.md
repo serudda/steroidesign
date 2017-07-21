@@ -176,6 +176,10 @@ Really you don´t need an **'installation'**, you just could clone the project, 
 
 1. Clone the project.
 
+```
+git clone https://github.com/sergioruizdavila/startups-themes.git projectname
+```
+
 2. Install gulp, bower and express components: 
 ```shell
 npm install
