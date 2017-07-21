@@ -795,6 +795,8 @@ To help make the project look much more professional and cute, we included the f
 
 ## Feedback
 
+Do not forget to sign up in our [Steroidesign weekly](http://eepurl.com/cWWRrD) newsletter to receives the updates about this theme and news about new themes.
+
 Any suggestion you have, or if you want to contribute some help, idea or improvement you can write us to our twitter: [@rosa7082](https://www.twitter.com/rosa7082) & [@seruda](https://www.twitter.com/seruda), do not hesitate to follow us and receive all the updates weekly by subscribing to our newsletter. Weekly we'll be uploading theme updates and new themes.
 
 <br>

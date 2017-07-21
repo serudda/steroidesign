@@ -14,7 +14,7 @@
 </h3>	
 
 <h3 align="center">
-	🚀 Join to the <a href="#">Steroidesign Weekly</a> newsletter! 🚀 
+	🚀 Join to the <a href="http://eepurl.com/cWWRrD">Steroidesign Weekly</a> newsletter! 🚀 
 	<br> We'll submit a new theme every week (we know it's crazy, but it's not impossible 😵).
 </h3>
 
