@@ -249,7 +249,7 @@ Any questions please write us: [@rosa7082](https://www.twitter.com/rosa7082) & [
 ### Airbnb
 Status: **[v1.0.0](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)**
 
-This site is using Airbnb theme: [http://www.waysily.com](http://www.waysily.com)
+We used this theme in other own project: [http://www.waysily.com](http://www.waysily.com)
 
 <h3 align="center">
 	<img width="500" src="https://cdn.rawgit.com/sruda/steroidesign/967bcd2f/www/assets/images/waysily-example.png" alt="compare">
