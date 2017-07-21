@@ -1,10 +1,18 @@
-//TODO Arreglar y limpiar
+/**********************************************************/
+/*                         LOGO                           */
+/**********************************************************/
+
+/* VARIABLES */
+$logo-path: $global-image-path + '/' + $global-logo;
+$logo-width: 32px;
+$logo-height: 35px;
+/**********************************************************/
+
+
 .ma-logo {
-    color: #FF5A5F;
+    background-image: url($logo-path);
+    background-repeat: no-repeat;
+    height: $logo-height;
+    width: $logo-width;
     display: inline-block;
-    vertical-align: middle;
-    font-size: 34px;
-    -webkit-transition: 0.25s color;
-    -moz-transition: 0.25s color;
-    transition: 0.25s color;
 }

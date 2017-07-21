@@ -117,7 +117,7 @@ gulp.task('bowerJS', function () {
  */
 
 gulp.task('watch', function() {
-    gulp.watch(paths.inputSass, ['sass', 'vendorCSS']);
+    gulp.watch(paths.inputSass, ['sass', 'sass-min', 'vendorCSS']);
     gulp.watch([paths.htmlTemplates], ['html']);
 });
 
