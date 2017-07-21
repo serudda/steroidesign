@@ -251,6 +251,10 @@ Status: **[v1.0.0](https://github.com/sergioruizdavila/startups-themes/blob/mast
 
 This site is using Airbnb theme: [http://www.waysily.com](http://www.waysily.com)
 
+<h3 align="center">
+	<img width="500" src="https://cdn.rawgit.com/sruda/steroidesign/967bcd2f/www/assets/images/waysily-example.png" alt="compare">
+</h3>
+
 ### Medium
 Status: ***In Progress***
 
