@@ -9,14 +9,10 @@
 <br>
 
 <h3 align="center">
-	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
-	</a>
-</h3>	
-
-<h3 align="center">
 	🚀 Join to the <a href="http://eepurl.com/cWWRrD">Steroidesign Weekly</a> newsletter! 🚀 
 	<br> We'll submit a new theme every week (we know it's crazy, but it's not impossible 😵).
 </h3>
+<h3 align="center">Show us your interest by signing up, so we'll know that there are people interested in this.</h3>
 
 <br>
 
