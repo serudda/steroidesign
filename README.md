@@ -51,7 +51,7 @@ Contributions are more than welcome.
 - [Base Methodology](#base-methodology)
 - [Installation and use](#installation-and-use)
 - [Themes](#themes)
-	- [Airbnb](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)
+	- [Airbnb](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md) (Done v.1.0.0)
 	- [Medium](#medium) (In Progress)
 	- [Product Hunt](#product-hunt) (Coming soon)
 	- [Asana](#asana) (Coming soon)
