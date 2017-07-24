@@ -243,7 +243,7 @@ Any questions please write us: [@rosa7082](https://www.twitter.com/rosa7082) & [
 ## Themes
 
 ### Airbnb
-Status: **[v1.0.0](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)**
+Status: **[See components (v1.0.0)](https://github.com/sergioruizdavila/startups-themes/blob/master/Airbnb.md)**
 
 We used this theme in other own project: [http://www.waysily.com](http://www.waysily.com)
 
