@@ -801,25 +801,11 @@ Any suggestion you have, or if you want to contribute some help, idea or improve
 
 <br>
 
-## Donate
-
-This is a work we do for the love of art, we have decided to leave our jobs to dedicate ourselves to do the things that we love, which is to create. If you would like donating something, it would be wonderful! Thanks a lot, and We hope you enjoy our work.
-
-<h1 align="center">
-	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FR7CTJ3ZHK4FQ">Donate for another ☕
-</h1>	
-
-<br>
-
 
 ## License
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 **Important:** Themes are not a copy, we write styles and structure from scratch, based on our own file structure and our own way of organizing styles (based n the [BEM methodology](https://en.bem.info/)), what we want with this is to create a 'skeleton' that can be used, edited, modified and replaced in any project.
-
-The user will be responsible for any improper, ilicit or abnormal use made of the content, information or functionalities.
-
-We are not liable for any damages caused by any alteration made with this material provided by us.
 
 We are not responsible for misinterpretation or inappropriate use of this content and information. In the same way, we will not be responsible for the damages caused directly or indirectly by the using of this material. In no way are we liable for the consequences of the improper or negligent use of this material.
